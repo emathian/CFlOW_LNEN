@@ -110,6 +110,7 @@ def test_meta_epoch(c, epoch, loader, encoder, decoders, pool_layers, N):
     files_path_list = []
     loss_list = []
     I = len(loader)
+
     with torch.no_grad():
         for i, (image, label, mask, filespath) in enumerate(tqdm(loader, disable=c.hide_tqdm_bar)):
             if i % 10 == 0:
@@ -192,28 +193,28 @@ def test_meta_epoch_lnen(c, epoch, loader, encoder, decoders, pool_layers, N):
     decoders = [decoder.eval() for decoder in decoders]
     height = list()
     width = list()
-    image_list = list()
-    gt_label_list = list()
-    gt_mask_list = list()
     test_loss = 0.0
     test_count = 0
     start = time.time()
-    files_path_list = []
-    loss_list = []
-    score_label_max_l = []
     score_label_mean_l = []
     I = len(loader)
+    os.makedirs(os.path.join(c.viz_dir, c.class_name), exist_ok= True)
+    if not c.infer_train:
+        res_tab_name = 'results_table.csv'
+    else:
+        res_tab_name = 'results_table_train.csv'
+    print('os.path.join(c.viz_dir, c.class_name, res_tab_name)  ', os.path.join(c.viz_dir, c.class_name, res_tab_name))
+    with open(os.path.join(c.viz_dir, c.class_name, res_tab_name), 'w') as table_file: 
+        table_file.write("file_path,binary_lab,MaxScoreAnomalyMap,MeanScoreAnomalyMap\n")
+    table_file.close()
     with torch.no_grad():
         for i, (image, label, mask, filespath) in enumerate(tqdm(loader, disable=c.hide_tqdm_bar)):
             if i % 20 == 0:
                 print('\n step  % : ', (i/I) * 100, ' i/I = ', i , '/' , I)
-            files_path_list.append(filespath)
             files_path_list_c = filespath
             # save
-            if c.viz:
-                image_list.extend(t2np(image))
-            gt_label_list.extend(t2np(label))
-            gt_mask_list.extend(t2np(mask))
+            
+            labels_c = t2np(label)
             # data
             image = image.to(c.device) # single scale
             _ = encoder(image)  # BxCxHxW
@@ -294,31 +295,44 @@ def test_meta_epoch_lnen(c, epoch, loader, encoder, decoders, pool_layers, N):
 
             score_label_max = np.max(super_mask, axis=(1, 2))
             score_label_mean = np.mean(super_mask, axis=(1, 2))
-            score_label_max_l.append(score_label_max.flatten().tolist())
-            score_label_mean_l.append(score_label_mean.flatten().tolist())
-
+            ### write table 
+            # files_path_list_c
+            res_df = pd.DataFrame()
+            res_df['FilesPath'] = files_path_list_c
+            res_df['BinaryLabels'] = labels_c
+            res_df['MaxScoreAnomalyMap'] = score_label_max.flatten().tolist()
+            res_df['MeanScoreAnomalyMap'] = score_label_mean.flatten().tolist()
+            with open(os.path.join(c.viz_dir, c.class_name, res_tab_name), 'a') as table_file: 
+                for row in range(res_df.shape[0]):
+                    file_path_ = res_df[ 'FilesPath'][row]
+                    binary_lab_ = res_df[ 'BinaryLabels'][row]
+                    MaxScoreAnomalyMap = res_df[ 'MaxScoreAnomalyMap'][row]
+                    MeanScoreAnomalyMap = res_df[ 'MeanScoreAnomalyMap'][row]
+                    table_file.write(f"{file_path_},{binary_lab_},{MaxScoreAnomalyMap},{MeanScoreAnomalyMap}\n")
+                table_file.close()
             if i % 1000 == 0 :
                 print('Epoch: {:d} \t step: {:.4f} '.format(epoch, i))
-    # Write summary table
-    files_path_list =  [item for sublist in files_path_list for item in sublist]
-    res_df = pd.DataFrame()
-    res_df['FilesPath'] = files_path_list
-    res_df['BinaryLabels'] = gt_label_list
-    score_label_mean_l = np.array(score_label_mean_l).flatten().tolist()
-    score_label_max_l = np.array(score_label_max_l).flatten().tolist()
-    score_label_max_l =  [item for sublist in score_label_max_l for item  in sublist]
-    score_label_mean_l =  [item for sublist in score_label_mean_l for item  in sublist]
+        
+#     # Write summary table
+#     files_path_list =  [item for sublist in files_path_list for item in sublist]
+#     res_df = pd.DataFrame()
+#     res_df['FilesPath'] = files_path_list
+#     res_df['BinaryLabels'] = gt_label_list
+#     score_label_mean_l = np.array(score_label_mean_l).flatten().tolist()
+#     score_label_max_l = np.array(score_label_max_l).flatten().tolist()
+#     score_label_max_l =  [item for sublist in score_label_max_l for item  in sublist]
+#     score_label_mean_l =  [item for sublist in score_label_mean_l for item  in sublist]
 
-    res_df['MaxScoreAnomalyMap'] = score_label_max_l
-    res_df['MeanScoreAnomalyMap'] = score_label_mean_l
-    export_results_df(c,  res_df)
+#     res_df['MaxScoreAnomalyMap'] = score_label_max_l
+#     res_df['MeanScoreAnomalyMap'] = score_label_mean_l
+#     export_results_df(c,  res_df)
 
-    fps = len(loader.dataset) / (time.time() - start)
-    mean_test_loss = test_loss / test_count
-    if c.verbose:
-        print('Epoch: {:d} \t test_loss: {:.4f} and {:.2f} fps'.format(epoch, mean_test_loss, fps))
-    #
-    return height, width, image_list, test_dist, gt_label_list, gt_mask_list, files_path_list
+#     fps = len(loader.dataset) / (time.time() - start)
+#     mean_test_loss = test_loss / test_count
+#     if c.verbose:
+#         print('Epoch: {:d} \t test_loss: {:.4f} and {:.2f} fps'.format(epoch, mean_test_loss, fps))
+#     #
+#     return height, width, image_list, test_dist, gt_label_list, gt_mask_list, files_path_list
 
 
 def test_meta_fps(c, epoch, loader, encoder, decoders, pool_layers, N):
