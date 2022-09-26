@@ -18,10 +18,12 @@ def get_args():
                         help='visualization outputdir')
     parser.add_argument('-rd', '--res-dir', default='/gpfsscratch/rech/ohv/ueu39kt/CFLOW/results', type=str, metavar='C',
                         help='result outputdir')
-    parser.add_argument('-wd', '--weights-dir', default='/gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights', type=str, metavar='C',
+    parser.add_argument('-wd', '--weights-dir', default='/gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67', type=str, metavar='C',
                         help='result outputdir')
     parser.add_argument('--infer_train', action='store_true', default=False,
                         help='Infer the train set')
+    parser.add_argument('--parallel', action='store_true', default=False,
+                        help='Parallelize the training on the data set')
     parser.add_argument('-enc', '--enc-arch', default='wide_resnet50_2', type=str, metavar='A',
                         help='feature extractor: wide_resnet50_2/resnet18/mobilenet_v3_large (default: wide_resnet50_2)')
     parser.add_argument('-dec', '--dec-arch', default='freia-cflow', type=str, metavar='A',
