@@ -12,14 +12,14 @@ def get_args():
                         help='file with saved checkpoint')
     parser.add_argument('-cl', '--class-name', default='none', type=str, metavar='C',
                         help='class name for MVTec/STC (default: none)')
-    parser.add_argument('-lf', '--list-file', default='TestTumorNormal.txt', type=str, metavar='C',
+    parser.add_argument('-lf', '--list-file', default='TrainTumorNormal.txt', type=str, metavar='C',
                         help='List of files for LNEN dataset')
     parser.add_argument('-vd', '--viz-dir', default='/gpfsscratch/rech/ohv/ueu39kt/CFLOW/viz', type=str, metavar='C',
                         help='visualization outputdir')
     parser.add_argument('-rd', '--res-dir', default='/gpfsscratch/rech/ohv/ueu39kt/CFLOW/results', type=str, metavar='C',
                         help='result outputdir')
-    parser.add_argument('-wd', '--weights-dir', default='/gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67', type=str, metavar='C',
-                        help='result outputdir')
+    parser.add_argument('-wd', '--weights-dir', default='/gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_2809_3', type=str, metavar='C', help='result outputdir')
+    # /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67_2809
     parser.add_argument('--infer_train', action='store_true', default=False,
                         help='Infer the train set')
     parser.add_argument('--parallel', action='store_true', default=False,
@@ -39,12 +39,12 @@ def get_args():
     parser.add_argument("--action-type", default='norm-train', type=str, metavar='T',
                         help='norm-train/norm-test (default: norm-train)')
     parser.add_argument('-bs', '--batch-size', default=32, type=int, metavar='B',
-                        help='train batch size (default: 32)')
+                        help='train batch size (default: 32)') # 64 if parallel 2 GPU
     parser.add_argument('--lr', type=float, default=2e-4, metavar='LR',
                         help='learning rate (default: 2e-4)')
     parser.add_argument('--meta-epochs', type=int, default=25, metavar='N',
                         help='number of meta epochs to train (default: 25)')
-    parser.add_argument('--sub-epochs', type=int, default=8, metavar='N',
+    parser.add_argument('--sub-epochs', type=int, default=1, metavar='N',
                         help='number of sub epochs to train (default: 8)')
     parser.add_argument('--pro', action='store_true', default=False,
                         help='enables estimation of AUPRO metric')

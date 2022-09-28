@@ -199,6 +199,7 @@ class MVTecDataset(Dataset):
         gt_dir = os.path.join(self.dataset_path, self.class_name, 'ground_truth')
 
         img_types = sorted(os.listdir(img_dir))
+        print('img_types  ', len(img_types))
         for img_type in img_types:
 
             # load images
@@ -273,13 +274,16 @@ class TumorNormalDataset(Dataset):
     def load_dataset_folder(self):
         if self.is_train :
             phase = 'train' 
+            list_file = 'TrainTumorNormal.txt'
         else:
             if not self.infer_train:
                 phase = 'test'
+                list_file = 'TestTumorNormal.txt'
             else:
                 phase = 'train'
+                list_file = 'TrainTumorNormal.txt'
         x, y, mask = [], [], []
-        img_dir = os.path.join(self.dataset_path, self.list_file)
+        img_dir = os.path.join(self.dataset_path, list_file)
         with open(img_dir, 'r') as f:
             content =  f.readlines()
         files_list = []

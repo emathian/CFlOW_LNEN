@@ -182,9 +182,9 @@ def write_anom_map(c, super_mask, files_path_list):
     for i in range(len(files_path_list)):
         img_name = files_path_list[i].split('/')[-1]
         ########## For TumorNormal folder
-        # anom = files_path_list[i].split('/')[-2]
+        # anom = files_path_list[i].split('/')[-3]
         ########## For TumorNormal inference
-        anom = files_path_list[i].split('/')[-3]
+        anom = files_path_list[i].split('/')[-2]
         os.makedirs(os.path.join(c.viz_dir, c.class_name, anom_map_folder, anom), exist_ok= True)
         c_anom_map = super_mask[i]
         np.save(os.path.join(c.viz_dir, c.class_name, anom_map_folder, anom, img_name.split('.')[0]), c_anom_map)

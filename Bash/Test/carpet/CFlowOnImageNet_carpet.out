@@ -1,0 +1,66 @@
+LR schedule: [12, 18, 22]
+Number of pool layers = 3
+CNF coder: 512
+CNF coder: 1024
+CNF coder: 2048
+img_types   1
+img_types   6
+train/test loader length 280 117
+train/test loader batches 8 4
+Loading weights from /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_2809_2/carpet/1/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_1_0.pt
+Len test_loader   4
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+Epoch: 0 	 step: 0.0000 
+Epoch: 0 	 test_loss: 1.2707 and 6.15 fps
+DET_AUROC: 	 last: 89.97 	 max: 89.97 	 epoch_max: 0
+DET_AUROC  0.8996789727126805
+ SEG_AUROC   0.9188712658771513
+SEG_AUROC: 	 last: 91.89 	 max: 91.89 	 epoch_max: 0
+========================================================================
+Second test
+========================================================================
+LR schedule: [12, 18, 22]
+Number of pool layers = 3
+CNF coder: 512
+CNF coder: 1024
+CNF coder: 2048
+img_types   1
+img_types   6
+train/test loader length 280 117
+train/test loader batches 8 4
+Loading weights from /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_2809_2/carpet/2/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2_0.pt
+Len test_loader   4
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+Epoch: 0 	 step: 0.0000 
+Epoch: 0 	 test_loss: 1.2718 and 6.16 fps
+DET_AUROC: 	 last: 90.57 	 max: 90.57 	 epoch_max: 0
+DET_AUROC  0.9056982343499197
+ SEG_AUROC   0.9189168260533549
+SEG_AUROC: 	 last: 91.89 	 max: 91.89 	 epoch_max: 0
+========================================================================
+Third test
+========================================================================
+LR schedule: [12, 18, 22]
+Number of pool layers = 3
+CNF coder: 512
+CNF coder: 1024
+CNF coder: 2048
+img_types   1
+img_types   6
+train/test loader length 280 117
+train/test loader batches 8 4
+Loading weights from /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_2809_2/carpet/10/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_10_0.pt
+Len test_loader   4
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+Epoch: 0 	 step: 0.0000 
+Epoch: 0 	 test_loss: 1.2713 and 6.12 fps
+DET_AUROC: 	 last: 90.33 	 max: 90.33 	 epoch_max: 0
+DET_AUROC  0.9032905296950241
+ SEG_AUROC   0.9184624278874737
+SEG_AUROC: 	 last: 91.85 	 max: 91.85 	 epoch_max: 0

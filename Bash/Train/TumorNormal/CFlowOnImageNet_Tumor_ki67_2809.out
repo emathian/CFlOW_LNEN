@@ -1,0 +1,389 @@
+ c.data_path   /gpfsscratch/rech/ohv/ueu39kt/KI67_Normal_Tumoral
+LR schedule: [12, 18, 22]
+Number of pool layers = 3
+CNF coder: 512
+CNF coder: 1024
+CNF coder: 2048
+train/test loader length 10870 9256
+train/test loader batches 339 290
+Train meta epoch: 0
+Len train loader =  339
+Epoch: 0 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 339
+step  % :  5.899705014749262  i/I =  20 / 339
+step  % :  11.799410029498524  i/I =  40 / 339
+step  % :  17.699115044247787  i/I =  60 / 339
+step  % :  23.59882005899705  i/I =  80 / 339
+step  % :  29.49852507374631  i/I =  100 / 339
+step  % :  35.39823008849557  i/I =  120 / 339
+step  % :  41.29793510324484  i/I =  140 / 339
+step  % :  47.1976401179941  i/I =  160 / 339
+step  % :  53.09734513274337  i/I =  180 / 339
+step  % :  58.99705014749262  i/I =  200 / 339
+step  % :  64.89675516224189  i/I =  220 / 339
+step  % :  70.79646017699115  i/I =  240 / 339
+step  % :  76.69616519174042  i/I =  260 / 339
+step  % :  82.59587020648968  i/I =  280 / 339
+step  % :  88.49557522123894  i/I =  300 / 339
+step  % :  94.3952802359882  i/I =  320 / 339
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67_2809/Tumor/0/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_0.pt
+Epoch: 0.0 	 train loss: 0.2359, lr=0.000031
+Epoch: 0 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 339
+step  % :  5.899705014749262  i/I =  20 / 339
+step  % :  11.799410029498524  i/I =  40 / 339
+step  % :  17.699115044247787  i/I =  60 / 339
+step  % :  23.59882005899705  i/I =  80 / 339
+step  % :  29.49852507374631  i/I =  100 / 339
+step  % :  35.39823008849557  i/I =  120 / 339
+step  % :  41.29793510324484  i/I =  140 / 339
+step  % :  47.1976401179941  i/I =  160 / 339
+step  % :  53.09734513274337  i/I =  180 / 339
+step  % :  58.99705014749262  i/I =  200 / 339
+step  % :  64.89675516224189  i/I =  220 / 339
+step  % :  70.79646017699115  i/I =  240 / 339
+step  % :  76.69616519174042  i/I =  260 / 339
+step  % :  82.59587020648968  i/I =  280 / 339
+step  % :  88.49557522123894  i/I =  300 / 339
+step  % :  94.3952802359882  i/I =  320 / 339
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67_2809/Tumor/0/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_1.pt
+Epoch: 0.1 	 train loss: 0.1870, lr=0.000042
+Epoch: 0 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 339
+step  % :  5.899705014749262  i/I =  20 / 339
+step  % :  11.799410029498524  i/I =  40 / 339
+step  % :  17.699115044247787  i/I =  60 / 339
+step  % :  23.59882005899705  i/I =  80 / 339
+step  % :  29.49852507374631  i/I =  100 / 339
+step  % :  35.39823008849557  i/I =  120 / 339
+step  % :  41.29793510324484  i/I =  140 / 339
+step  % :  47.1976401179941  i/I =  160 / 339
+step  % :  53.09734513274337  i/I =  180 / 339
+step  % :  58.99705014749262  i/I =  200 / 339
+step  % :  64.89675516224189  i/I =  220 / 339
+step  % :  70.79646017699115  i/I =  240 / 339
+step  % :  76.69616519174042  i/I =  260 / 339
+step  % :  82.59587020648968  i/I =  280 / 339
+step  % :  88.49557522123894  i/I =  300 / 339
+step  % :  94.3952802359882  i/I =  320 / 339
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67_2809/Tumor/0/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_2.pt
+Epoch: 0.2 	 train loss: 0.1721, lr=0.000053
+Epoch: 0 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 339
+step  % :  5.899705014749262  i/I =  20 / 339
+step  % :  11.799410029498524  i/I =  40 / 339
+step  % :  17.699115044247787  i/I =  60 / 339
+step  % :  23.59882005899705  i/I =  80 / 339
+step  % :  29.49852507374631  i/I =  100 / 339
+step  % :  35.39823008849557  i/I =  120 / 339
+step  % :  41.29793510324484  i/I =  140 / 339
+step  % :  47.1976401179941  i/I =  160 / 339
+step  % :  53.09734513274337  i/I =  180 / 339
+step  % :  58.99705014749262  i/I =  200 / 339
+step  % :  64.89675516224189  i/I =  220 / 339
+step  % :  70.79646017699115  i/I =  240 / 339
+step  % :  76.69616519174042  i/I =  260 / 339
+step  % :  82.59587020648968  i/I =  280 / 339
+step  % :  88.49557522123894  i/I =  300 / 339
+step  % :  94.3952802359882  i/I =  320 / 339
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67_2809/Tumor/0/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_3.pt
+Epoch: 0.3 	 train loss: 0.1606, lr=0.000064
+Epoch: 0 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 339
+step  % :  5.899705014749262  i/I =  20 / 339
+step  % :  11.799410029498524  i/I =  40 / 339
+step  % :  17.699115044247787  i/I =  60 / 339
+step  % :  23.59882005899705  i/I =  80 / 339
+step  % :  29.49852507374631  i/I =  100 / 339
+step  % :  35.39823008849557  i/I =  120 / 339
+step  % :  41.29793510324484  i/I =  140 / 339
+step  % :  47.1976401179941  i/I =  160 / 339
+step  % :  53.09734513274337  i/I =  180 / 339
+step  % :  58.99705014749262  i/I =  200 / 339
+step  % :  64.89675516224189  i/I =  220 / 339
+step  % :  70.79646017699115  i/I =  240 / 339
+step  % :  76.69616519174042  i/I =  260 / 339
+step  % :  82.59587020648968  i/I =  280 / 339
+step  % :  88.49557522123894  i/I =  300 / 339
+step  % :  94.3952802359882  i/I =  320 / 339
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67_2809/Tumor/0/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_4.pt
+Epoch: 0.4 	 train loss: 0.1487, lr=0.000075
+Epoch: 0 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 339
+step  % :  5.899705014749262  i/I =  20 / 339
+step  % :  11.799410029498524  i/I =  40 / 339
+step  % :  17.699115044247787  i/I =  60 / 339
+step  % :  23.59882005899705  i/I =  80 / 339
+step  % :  29.49852507374631  i/I =  100 / 339
+step  % :  35.39823008849557  i/I =  120 / 339
+step  % :  41.29793510324484  i/I =  140 / 339
+step  % :  47.1976401179941  i/I =  160 / 339
+step  % :  53.09734513274337  i/I =  180 / 339
+step  % :  58.99705014749262  i/I =  200 / 339
+step  % :  64.89675516224189  i/I =  220 / 339
+step  % :  70.79646017699115  i/I =  240 / 339
+step  % :  76.69616519174042  i/I =  260 / 339
+step  % :  82.59587020648968  i/I =  280 / 339
+step  % :  88.49557522123894  i/I =  300 / 339
+step  % :  94.3952802359882  i/I =  320 / 339
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67_2809/Tumor/0/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_5.pt
+Epoch: 0.5 	 train loss: 0.1370, lr=0.000086
+Epoch: 0 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 339
+step  % :  5.899705014749262  i/I =  20 / 339
+step  % :  11.799410029498524  i/I =  40 / 339
+step  % :  17.699115044247787  i/I =  60 / 339
+step  % :  23.59882005899705  i/I =  80 / 339
+step  % :  29.49852507374631  i/I =  100 / 339
+step  % :  35.39823008849557  i/I =  120 / 339
+step  % :  41.29793510324484  i/I =  140 / 339
+step  % :  47.1976401179941  i/I =  160 / 339
+step  % :  53.09734513274337  i/I =  180 / 339
+step  % :  58.99705014749262  i/I =  200 / 339
+step  % :  64.89675516224189  i/I =  220 / 339
+step  % :  70.79646017699115  i/I =  240 / 339
+step  % :  76.69616519174042  i/I =  260 / 339
+step  % :  82.59587020648968  i/I =  280 / 339
+step  % :  88.49557522123894  i/I =  300 / 339
+step  % :  94.3952802359882  i/I =  320 / 339
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67_2809/Tumor/0/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_6.pt
+Epoch: 0.6 	 train loss: 0.8629, lr=0.000097
+Epoch: 0 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 339
+step  % :  5.899705014749262  i/I =  20 / 339
+step  % :  11.799410029498524  i/I =  40 / 339
+step  % :  17.699115044247787  i/I =  60 / 339
+step  % :  23.59882005899705  i/I =  80 / 339
+step  % :  29.49852507374631  i/I =  100 / 339
+step  % :  35.39823008849557  i/I =  120 / 339
+step  % :  41.29793510324484  i/I =  140 / 339
+step  % :  47.1976401179941  i/I =  160 / 339
+step  % :  53.09734513274337  i/I =  180 / 339
+step  % :  58.99705014749262  i/I =  200 / 339
+step  % :  64.89675516224189  i/I =  220 / 339
+step  % :  70.79646017699115  i/I =  240 / 339
+step  % :  76.69616519174042  i/I =  260 / 339
+step  % :  82.59587020648968  i/I =  280 / 339
+step  % :  88.49557522123894  i/I =  300 / 339
+step  % :  94.3952802359882  i/I =  320 / 339
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67_2809/Tumor/0/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_7.pt
+Epoch: 0.7 	 train loss: 0.1178, lr=0.000108
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 290
+Epoch: 0 	 step: 0.0000 
+step  % :  3.4482758620689653  i/I =  10 / 290
+step  % :  6.896551724137931  i/I =  20 / 290
+step  % :  10.344827586206897  i/I =  30 / 290
+step  % :  13.793103448275861  i/I =  40 / 290
+step  % :  17.24137931034483  i/I =  50 / 290
+step  % :  20.689655172413794  i/I =  60 / 290
+step  % :  24.137931034482758  i/I =  70 / 290
+step  % :  27.586206896551722  i/I =  80 / 290
+step  % :  31.03448275862069  i/I =  90 / 290
+step  % :  34.48275862068966  i/I =  100 / 290
+step  % :  37.93103448275862  i/I =  110 / 290
+step  % :  41.37931034482759  i/I =  120 / 290
+step  % :  44.827586206896555  i/I =  130 / 290
+step  % :  48.275862068965516  i/I =  140 / 290
+step  % :  51.724137931034484  i/I =  150 / 290
+step  % :  55.172413793103445  i/I =  160 / 290
+step  % :  58.620689655172406  i/I =  170 / 290
+step  % :  62.06896551724138  i/I =  180 / 290
+step  % :  65.51724137931035  i/I =  190 / 290
+step  % :  68.96551724137932  i/I =  200 / 290
+step  % :  72.41379310344827  i/I =  210 / 290
+step  % :  75.86206896551724  i/I =  220 / 290
+step  % :  79.3103448275862  i/I =  230 / 290
+step  % :  82.75862068965517  i/I =  240 / 290
+step  % :  86.20689655172413  i/I =  250 / 290
+step  % :  89.65517241379311  i/I =  260 / 290
+step  % :  93.10344827586206  i/I =  270 / 290
+step  % :  96.55172413793103  i/I =  280 / 290
+Epoch: 0 	 test_loss: 53.6299 and 0.98 fps
+Train meta epoch: 1
+Len train loader =  339
+Epoch: 1 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 339
+step  % :  5.899705014749262  i/I =  20 / 339
+step  % :  11.799410029498524  i/I =  40 / 339
+step  % :  17.699115044247787  i/I =  60 / 339
+step  % :  23.59882005899705  i/I =  80 / 339
+step  % :  29.49852507374631  i/I =  100 / 339
+step  % :  35.39823008849557  i/I =  120 / 339
+step  % :  41.29793510324484  i/I =  140 / 339
+step  % :  47.1976401179941  i/I =  160 / 339
+step  % :  53.09734513274337  i/I =  180 / 339
+step  % :  58.99705014749262  i/I =  200 / 339
+step  % :  64.89675516224189  i/I =  220 / 339
+step  % :  70.79646017699115  i/I =  240 / 339
+step  % :  76.69616519174042  i/I =  260 / 339
+step  % :  82.59587020648968  i/I =  280 / 339
+step  % :  88.49557522123894  i/I =  300 / 339
+step  % :  94.3952802359882  i/I =  320 / 339
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67_2809/Tumor/1/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_0.pt
+Epoch: 1.0 	 train loss: 0.1104, lr=0.000119
+Epoch: 1 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 339
+step  % :  5.899705014749262  i/I =  20 / 339
+step  % :  11.799410029498524  i/I =  40 / 339
+step  % :  17.699115044247787  i/I =  60 / 339
+step  % :  23.59882005899705  i/I =  80 / 339
+step  % :  29.49852507374631  i/I =  100 / 339
+step  % :  35.39823008849557  i/I =  120 / 339
+step  % :  41.29793510324484  i/I =  140 / 339
+step  % :  47.1976401179941  i/I =  160 / 339
+step  % :  53.09734513274337  i/I =  180 / 339
+step  % :  58.99705014749262  i/I =  200 / 339
+step  % :  64.89675516224189  i/I =  220 / 339
+step  % :  70.79646017699115  i/I =  240 / 339
+step  % :  76.69616519174042  i/I =  260 / 339
+step  % :  82.59587020648968  i/I =  280 / 339
+step  % :  88.49557522123894  i/I =  300 / 339
+step  % :  94.3952802359882  i/I =  320 / 339
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67_2809/Tumor/1/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_1.pt
+Epoch: 1.1 	 train loss: 523.3857, lr=0.000131
+Epoch: 1 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 339
+step  % :  5.899705014749262  i/I =  20 / 339
+step  % :  11.799410029498524  i/I =  40 / 339
+step  % :  17.699115044247787  i/I =  60 / 339
+step  % :  23.59882005899705  i/I =  80 / 339
+step  % :  29.49852507374631  i/I =  100 / 339
+step  % :  35.39823008849557  i/I =  120 / 339
+step  % :  41.29793510324484  i/I =  140 / 339
+step  % :  47.1976401179941  i/I =  160 / 339
+step  % :  53.09734513274337  i/I =  180 / 339
+step  % :  58.99705014749262  i/I =  200 / 339
+step  % :  64.89675516224189  i/I =  220 / 339
+step  % :  70.79646017699115  i/I =  240 / 339
+step  % :  76.69616519174042  i/I =  260 / 339
+step  % :  82.59587020648968  i/I =  280 / 339
+step  % :  88.49557522123894  i/I =  300 / 339
+step  % :  94.3952802359882  i/I =  320 / 339
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67_2809/Tumor/1/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_2.pt
+Epoch: 1.2 	 train loss: 147.2735, lr=0.000142
+Epoch: 1 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 339
+step  % :  5.899705014749262  i/I =  20 / 339
+step  % :  11.799410029498524  i/I =  40 / 339
+step  % :  17.699115044247787  i/I =  60 / 339
+step  % :  23.59882005899705  i/I =  80 / 339
+step  % :  29.49852507374631  i/I =  100 / 339
+step  % :  35.39823008849557  i/I =  120 / 339
+step  % :  41.29793510324484  i/I =  140 / 339
+step  % :  47.1976401179941  i/I =  160 / 339
+step  % :  53.09734513274337  i/I =  180 / 339
+step  % :  58.99705014749262  i/I =  200 / 339
+step  % :  64.89675516224189  i/I =  220 / 339
+step  % :  70.79646017699115  i/I =  240 / 339
+step  % :  76.69616519174042  i/I =  260 / 339
+step  % :  82.59587020648968  i/I =  280 / 339
+step  % :  88.49557522123894  i/I =  300 / 339
+step  % :  94.3952802359882  i/I =  320 / 339
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67_2809/Tumor/1/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_3.pt
+Epoch: 1.3 	 train loss: 139.4134, lr=0.000153
+Epoch: 1 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 339
+step  % :  5.899705014749262  i/I =  20 / 339
+step  % :  11.799410029498524  i/I =  40 / 339
+step  % :  17.699115044247787  i/I =  60 / 339
+step  % :  23.59882005899705  i/I =  80 / 339
+step  % :  29.49852507374631  i/I =  100 / 339
+step  % :  35.39823008849557  i/I =  120 / 339
+step  % :  41.29793510324484  i/I =  140 / 339
+step  % :  47.1976401179941  i/I =  160 / 339
+step  % :  53.09734513274337  i/I =  180 / 339
+step  % :  58.99705014749262  i/I =  200 / 339
+step  % :  64.89675516224189  i/I =  220 / 339
+step  % :  70.79646017699115  i/I =  240 / 339
+step  % :  76.69616519174042  i/I =  260 / 339
+step  % :  82.59587020648968  i/I =  280 / 339
+step  % :  88.49557522123894  i/I =  300 / 339
+step  % :  94.3952802359882  i/I =  320 / 339
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67_2809/Tumor/1/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_4.pt
+Epoch: 1.4 	 train loss: 0.0927, lr=0.000164
+Epoch: 1 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 339
+step  % :  5.899705014749262  i/I =  20 / 339
+step  % :  11.799410029498524  i/I =  40 / 339
+step  % :  17.699115044247787  i/I =  60 / 339
+step  % :  23.59882005899705  i/I =  80 / 339
+step  % :  29.49852507374631  i/I =  100 / 339
+step  % :  35.39823008849557  i/I =  120 / 339
+step  % :  41.29793510324484  i/I =  140 / 339
+step  % :  47.1976401179941  i/I =  160 / 339
+step  % :  53.09734513274337  i/I =  180 / 339
+step  % :  58.99705014749262  i/I =  200 / 339
+step  % :  64.89675516224189  i/I =  220 / 339
+step  % :  70.79646017699115  i/I =  240 / 339
+step  % :  76.69616519174042  i/I =  260 / 339
+step  % :  82.59587020648968  i/I =  280 / 339
+step  % :  88.49557522123894  i/I =  300 / 339
+step  % :  94.3952802359882  i/I =  320 / 339
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67_2809/Tumor/1/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_5.pt
+Epoch: 1.5 	 train loss: 1.2480, lr=0.000175
+Epoch: 1 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 339
+step  % :  5.899705014749262  i/I =  20 / 339
+step  % :  11.799410029498524  i/I =  40 / 339
+step  % :  17.699115044247787  i/I =  60 / 339
+step  % :  23.59882005899705  i/I =  80 / 339
+step  % :  29.49852507374631  i/I =  100 / 339
+step  % :  35.39823008849557  i/I =  120 / 339
+step  % :  41.29793510324484  i/I =  140 / 339
+step  % :  47.1976401179941  i/I =  160 / 339
+step  % :  53.09734513274337  i/I =  180 / 339
+step  % :  58.99705014749262  i/I =  200 / 339
+step  % :  64.89675516224189  i/I =  220 / 339
+step  % :  70.79646017699115  i/I =  240 / 339
+step  % :  76.69616519174042  i/I =  260 / 339
+step  % :  82.59587020648968  i/I =  280 / 339
+step  % :  88.49557522123894  i/I =  300 / 339
+step  % :  94.3952802359882  i/I =  320 / 339
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67_2809/Tumor/1/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_6.pt
+Epoch: 1.6 	 train loss: 97.7367, lr=0.000186
+Epoch: 1 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 339
+step  % :  5.899705014749262  i/I =  20 / 339
+step  % :  11.799410029498524  i/I =  40 / 339
+step  % :  17.699115044247787  i/I =  60 / 339
+step  % :  23.59882005899705  i/I =  80 / 339
+step  % :  29.49852507374631  i/I =  100 / 339
+step  % :  35.39823008849557  i/I =  120 / 339
+step  % :  41.29793510324484  i/I =  140 / 339
+step  % :  47.1976401179941  i/I =  160 / 339
+step  % :  53.09734513274337  i/I =  180 / 339
+step  % :  58.99705014749262  i/I =  200 / 339
+step  % :  64.89675516224189  i/I =  220 / 339
+step  % :  70.79646017699115  i/I =  240 / 339
+step  % :  76.69616519174042  i/I =  260 / 339
+step  % :  82.59587020648968  i/I =  280 / 339
+step  % :  88.49557522123894  i/I =  300 / 339
+step  % :  94.3952802359882  i/I =  320 / 339
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67_2809/Tumor/1/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_7.pt
+Epoch: 1.7 	 train loss: 80.5621, lr=0.000197
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 290
+Epoch: 1 	 step: 0.0000 
+step  % :  3.4482758620689653  i/I =  10 / 290
+step  % :  6.896551724137931  i/I =  20 / 290
+step  % :  10.344827586206897  i/I =  30 / 290
+step  % :  13.793103448275861  i/I =  40 / 290

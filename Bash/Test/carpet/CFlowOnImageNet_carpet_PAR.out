@@ -1,0 +1,47 @@
+========================================================================
+First test parallel
+========================================================================
+LR schedule: [12, 18, 22]
+LR schedule: [12, 18, 22]
+local_rank   1
+local_rank   0
+Number of pool layers = 3
+Number of pool layers = 3
+CNF coder: 512
+CNF coder: 512
+CNF coder: 1024
+CNF coder: 1024
+CNF coder: 2048
+CNF coder: 2048
+img_types   1
+img_types   1
+img_types   6
+img_types   6
+train/test loader length 280 117
+train/test loader length 280 117
+train/test loader batches 9 4
+train/test loader batches 9 4
+Loading weights from /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_2809_2/carpet/1/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_1_0.pt
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Loading weights from /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_2809_2/carpet/1/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_1_0.pt
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 0 	 step: 0.0000 
+Epoch: 0 	 step: 0.0000 
+Epoch: 0 	 test_loss: 1.2711 and 6.12 fps
+Epoch: 0 	 test_loss: 1.2711 and 6.23 fps
+DET_AUROC: 	 last: 90.33 	 max: 90.33 	 epoch_max: 0
+DET_AUROC  0.903290529695024
+DET_AUROC: 	 last: 90.33 	 max: 90.33 	 epoch_max: 0
+DET_AUROC  0.903290529695024
+ SEG_AUROC   0.9170373572774364
+SEG_AUROC: 	 last: 91.70 	 max: 91.70 	 epoch_max: 0
+ SEG_AUROC   0.9170373572774364
+SEG_AUROC: 	 last: 91.70 	 max: 91.70 	 epoch_max: 0

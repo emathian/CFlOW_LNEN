@@ -51,7 +51,7 @@ def main(c):
     elif c.dataset == 'video':
         c.data_path = c.video_path
     elif  c.dataset == 'TumorNormal':
-        c.data_path = '/gpfsscratch/rech/ohv/ueu39kt/Tiles_HE_all_samples_384_384_Vahadane_2'
+        c.data_path =  '/gpfsscratch/rech/ohv/ueu39kt/KI67_Normal_Tumoral'# '/gpfsscratch/rech/ohv/ueu39kt/Tiles_HE_all_samples_384_384_Vahadane_2' ### LNEN
         print(' c.data_path  ',  c.data_path)
         #'/gpfsscratch/rech/ohv/ueu39kt/TumoralNormalForFastFlow_Vahadane'
     else:

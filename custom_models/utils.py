@@ -18,7 +18,7 @@ def save_results(c , det_roc_obs, seg_roc_obs, seg_pro_obs, model_name, class_na
         det_roc_obs.name, seg_roc_obs.name, seg_pro_obs.name,
         det_roc_obs.max_epoch, seg_roc_obs.max_epoch, seg_pro_obs.max_epoch, class_name)
     if not os.path.exists(c.res_dir):
-        os.makedirs(c.res_dir)
+        os.makedirs(c.res_dir, exist_ok = True)
     if not os.path.exists(os.path.join(c.res_dir, c.class_name)):
         os.makedirs(os.path.join(c.res_dir, c.class_name), exist_ok = True)
     if c.dataset != 'TumorNormal':
@@ -31,35 +31,45 @@ def save_results(c , det_roc_obs, seg_roc_obs, seg_pro_obs, model_name, class_na
 
 def save_weights(c, encoder, decoders, model_name, run_date):
     if not os.path.exists(c.weights_dir):
-        os.makedirs(c.weights_dir)
+        os.makedirs(c.weights_dir, exist_ok = True)
     if not os.path.exists(os.path.join(c.weights_dir, c.class_name)):
-        os.makedirs(os.path.join(c.weights_dir, c.class_name))
+        os.makedirs(os.path.join(c.weights_dir, c.class_name), exist_ok = True)
     state = {'encoder_state_dict': encoder.state_dict(),
              'decoder_state_dict': [decoder.state_dict() for decoder in decoders]}
     filename = '{}_{}.pt'.format(model_name, run_date)
     path = os.path.join(c.weights_dir, c.class_name,  filename)
-    torch.save(state, path)
-    print('Saving weights to {}'.format(filename))
+    if c.parallel:
+        if c.idr_torch_rank == 0:
+            torch.save(state, path)
+    else:
+        torch.save(state, path)
+    print('Function: save_weights - Saving weights to {}'.format(filename))
 
 def save_weights_epoch(c, encoder, decoders, model_name, epoch, sub_epoch):
     epoch = str(epoch)
     sub_epoch = str(sub_epoch)
     if not os.path.exists(c.weights_dir):
-        os.makedirs(c.weights_dir)
+        os.makedirs(c.weights_dir, exist_ok = True)
     if not os.path.exists(os.path.join(c.weights_dir, c.class_name)):
-        os.makedirs(os.path.join(c.weights_dir, c.class_name))
+        os.makedirs(os.path.join(c.weights_dir, c.class_name), exist_ok = True)
     if not os.path.exists(os.path.join(c.weights_dir, c.class_name, epoch)):
-        os.makedirs(os.path.join(c.weights_dir, c.class_name, epoch))
+        os.makedirs(os.path.join(c.weights_dir, c.class_name, epoch), exist_ok = True)
     state = {'encoder_state_dict': encoder.state_dict(),
              'decoder_state_dict': [decoder.state_dict() for decoder in decoders]}
     filename = '{}_{}_{}.pt'.format(model_name, epoch, sub_epoch)
     path = os.path.join(c.weights_dir, c.class_name, epoch,  filename)
-    torch.save(state, path)
+    print('Path : ', path)
+    if c.parallel:
+        if c.idr_torch_rank == 0:
+            print('Path : ', path)
+            torch.save(state, path)
+    else:
+        torch.save(state, path)
     print('Saving weights to {}'.format(filename))
 
 def load_weights(encoder, decoders, filename):
     path = os.path.join(filename)
-    state = torch.load(path)
+    state = torch.load(path, map_location='cuda:0')
     encoder.load_state_dict(state['encoder_state_dict'], strict=False)
     decoders = [decoder.load_state_dict(state, strict=False) for decoder, state in zip(decoders, state['decoder_state_dict'])]
     print('Loading weights from {}'.format(filename))

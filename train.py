@@ -29,6 +29,7 @@ def train_meta_epoch(c, epoch, loader, encoder, decoders, optimizer, pool_layers
     decoders = [decoder.train() for decoder in decoders]
     adjust_learning_rate(c, optimizer, epoch)
     I = len(loader)
+    print('Len train loader = ', I)
     iterator = iter(loader)
     for sub_epoch in range(c.sub_epochs):
         print('Epoch: {:d} \t sub-epoch: {:.4f} '.format(epoch, sub_epoch))
@@ -88,10 +89,29 @@ def train_meta_epoch(c, epoch, loader, encoder, decoders, optimizer, pool_layers
                     loss.mean().backward()
                     optimizer.step()
                     train_loss += t2np(loss.sum())
-                    train_count += len(loss)
-        #
-        #if c.dataset == 'TumorNormal':
-        save_weights_epoch(c, encoder, decoders, c.model, epoch, sub_epoch)
+                    train_count += len(loss)       
+        if c.parallel:
+            # ~~~~~~~~~~~~~~~~~ SAVE PART ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            print('Save each subepoch data parallel')
+            print('c.idr_torch_rank  ', c.idr_torch_rank)
+            epoch_s = str(epoch)
+            sub_epoch_s = str(sub_epoch)
+            if not os.path.exists(c.weights_dir):
+                os.makedirs(c.weights_dir, exist_ok = True )
+            if not os.path.exists(os.path.join(c.weights_dir, c.class_name)):
+                os.makedirs(os.path.join(c.weights_dir, c.class_name), exist_ok = True)
+            if not os.path.exists(os.path.join(c.weights_dir, c.class_name, epoch_s)):
+                os.makedirs(os.path.join(c.weights_dir, c.class_name, epoch_s), exist_ok = True)
+            state = {'encoder_state_dict': encoder.state_dict(),
+                     'decoder_state_dict': [decoder.state_dict() for decoder in decoders]}
+            filename = '{}_{}_{}.pt'.format(c.model, epoch_s, sub_epoch_s)
+            path = os.path.join(c.weights_dir, c.class_name, epoch_s,  filename)
+            if c.idr_torch_rank == 0:
+                print('Path : ', path)
+                torch.save(state, path)
+            
+        else:
+            save_weights_epoch(c, encoder, decoders, c.model, epoch, sub_epoch)
         mean_train_loss = train_loss / train_count
         if c.verbose:
             print('Epoch: {:d}.{:d} \t train loss: {:.4f}, lr={:.6f}'.format(epoch, sub_epoch, mean_train_loss, lr))
@@ -429,10 +449,14 @@ def test_meta_fps(c, epoch, loader, encoder, decoders, pool_layers, N):
 def train(c):
     if c.parallel:
         idr_torch_rank = int(os.environ['SLURM_PROCID'])
+        # New config
+        c.idr_torch_rank = idr_torch_rank
+        
         local_rank = int(os.environ['SLURM_LOCALID'])
+        print('local_rank  ', local_rank)
         idr_torch_size = int(os.environ['SLURM_NTASKS'])
         cpus_per_task = int(os.environ['SLURM_CPUS_PER_TASK'])
-        run_date = datetime.datetime.now().strftime("%Y-%m-%d-%H:%M:%S")
+        torch.backends.cudnn.enabled = False
         
         # get node list from slurm
         hostnames = hostlist.expand_hostlist(os.environ['SLURM_JOB_NODELIST'])
@@ -446,25 +470,22 @@ def train(c):
                             world_size=idr_torch_size, 
                             rank=idr_torch_rank)
         torch.cuda.set_device(local_rank)
-        # According to the tutorial 
-        gpu = torch.device("cuda")
-        
+    # According to the tutorial 
+    gpu = torch.device("cuda")
+    run_date = datetime.datetime.now().strftime("%Y-%m-%d-%H:%M:%S")
     L = c.pool_layers # number of pooled layers
     print('Number of pool layers =', L)
     encoder, pool_layers, pool_dims = load_encoder_arch(c, L)
     encoder = encoder.to(gpu).eval()
-
     if  c.parallel:
-        ddp_encoder = DDP(encoder, device_ids=[local_rank], output_device=local_rank)
-
-    #print(encoder)
+        ddp_encoder = DDP(encoder, device_ids=[local_rank]) # , output_device=local_rank
     # NF decoder
     decoders = [load_decoder_arch(c, pool_dim) for pool_dim in pool_dims]
-    decoders = [decoder.to(c.device) for decoder in decoders]
+    decoders = [decoder.to(gpu) for decoder in decoders]
     if c.parallel:
         ddp_decoders = []
         for decoder in decoders:
-             ddp_decoders.append(DDP(decoder, device_ids=[local_rank], output_device=local_rank))
+             ddp_decoders.append(DDP(decoder, device_ids=[local_rank])) # , output_device=local_rank
     params = list(decoders[0].parameters())
     for l in range(1, L):
         if c.parallel:
@@ -491,9 +512,12 @@ def train(c):
     if c.parallel:
         batch_size_per_gpu =  c.batch_size // idr_torch_size
         train_sampler = torch.utils.data.distributed.DistributedSampler(train_dataset, num_replicas=idr_torch_size, rank=idr_torch_rank) 
-        train_loader = torch.utils.data.DataLoader(dataset=train_dataset,  batch_size=batch_size_per_gpu,  shuffle=False,   num_workers=4,                         pin_memory=True, sampler=train_sampler)
+        train_loader = torch.utils.data.DataLoader(dataset=train_dataset,  batch_size=batch_size_per_gpu,  shuffle=False,   num_workers=0,                         pin_memory=True, sampler=train_sampler)
+        
         test_sampler = torch.utils.data.distributed.DistributedSampler(test_dataset, num_replicas=idr_torch_size, rank=idr_torch_rank) 
-        test_loader = torch.utils.data.DataLoader(dataset=train_loader,  batch_size=batch_size_per_gpu,  shuffle=False,   num_workers=4,                         pin_memory=True, sampler=test_sampler)
+        test_loader = torch.utils.data.DataLoader(dataset=test_dataset,  batch_size=batch_size_per_gpu,  shuffle=False,   num_workers=0,                         pin_memory=True, sampler=test_sampler,  prefetch_factor=2)
+        #test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=c.batch_size, shuffle=True, drop_last=False, **kwargs)
+
     else:
         train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=c.batch_size, shuffle=True, drop_last=True, **kwargs)
         test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=c.batch_size, shuffle=True, drop_last=False, **kwargs)
@@ -506,11 +530,10 @@ def train(c):
     seg_pro_obs = Score_Observer('SEG_AUPRO')
     if c.action_type == 'norm-test':
         c.meta_epochs = 1
-    for epoch in range(c.meta_epochs):
+    for epoch in range(c.meta_epochs):  
         if c.action_type == 'norm-test' and c.checkpoint:
-            load_weights(encoder, decoders, c.checkpoint)
+                load_weights(encoder, decoders, c.checkpoint)
         elif c.action_type == 'norm-train':
-            print('Train meta epoch: {}'.format(epoch))
             if c.parallel:
                 train_meta_epoch(c, epoch, train_loader, ddp_encoder, ddp_decoders, optimizer, pool_layers, N)
             else:
@@ -521,151 +544,165 @@ def train(c):
         #height, width, test_image_list, test_dist, gt_label_list, gt_mask_list = test_meta_fps(
         #    c, epoch, test_loader, encoder, decoders, pool_layers, N)
         # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        if not c.parallel:    
-            if c.dataset != 'TumorNormal' : 
+        #if not c.parallel:    
+        
+        if c.dataset != 'TumorNormal' :
+            print('Len test_loader  ', len(test_loader))
+            if c.parallel:
+                print('Eval model parallel')
                 height, width, test_image_list, test_dist, gt_label_list, gt_mask_list, files_path_list = test_meta_epoch(
-                c, epoch, test_loader, encoder, decoders, pool_layers, N)
+            c, epoch, test_loader, ddp_encoder, ddp_decoders, pool_layers, N)
             else:
-                height, width, test_image_list, test_dist, gt_label_list, gt_mask_list, files_path_list = test_meta_epoch_lnen(
-                c, epoch, test_loader, encoder, decoders, pool_layers, N) # test_meta_epoch_lnen
-            if  c.dataset != 'TumorNormal'  :
-                files_path_list =  [item for sublist in files_path_list for item in sublist]
+                height, width, test_image_list, test_dist, gt_label_list, gt_mask_list, files_path_list = test_meta_epoch(
+            c, epoch, test_loader, encoder, decoders, pool_layers, N)
+        else:
+            # LINE FOR VALIDATION
+            height, width, test_image_list, test_dist, gt_label_list, gt_mask_list, files_path_list = test_meta_epoch(
+            c, epoch, test_loader, encoder, decoders, pool_layers, N)
+            # LINE FOR EVALUATION
+#             height, width, test_image_list, test_dist, gt_label_list, gt_mask_list, files_path_list = test_meta_epoch_lnen(
+#             c, epoch, test_loader, encoder, decoders, pool_layers, N) # test_meta_epoch_lnen
+            
+        if  c.dataset != 'TumorNormal'  :
+            files_path_list =  [item for sublist in files_path_list for item in sublist]
+            res_df = pd.DataFrame()
+            res_df['FilesPath'] = files_path_list
+            res_df['BinaryLabels'] = gt_label_list
+            # PxEHW
+            test_map = [list() for p in pool_layers]
+            for l, p in enumerate(pool_layers):
+                test_norm = torch.tensor(test_dist[l], dtype=torch.double)  # EHWx1
+                test_norm-= torch.max(test_norm) # normalize likelihoods to (-Inf:0] by subtracting a constant
+                test_prob = torch.exp(test_norm) # convert to probs in range [0:1]
+                test_mask = test_prob.reshape(-1, height[l], width[l])
+                test_mask = test_prob.reshape(-1, height[l], width[l])
 
-                res_df = pd.DataFrame()
-                res_df['FilesPath'] = files_path_list
-                res_df['BinaryLabels'] = gt_label_list
-                # PxEHW
-                test_map = [list() for p in pool_layers]
-                for l, p in enumerate(pool_layers):
-                    test_norm = torch.tensor(test_dist[l], dtype=torch.double)  # EHWx1
-                    test_norm-= torch.max(test_norm) # normalize likelihoods to (-Inf:0] by subtracting a constant
-                    test_prob = torch.exp(test_norm) # convert to probs in range [0:1]
-                    test_mask = test_prob.reshape(-1, height[l], width[l])
-                    test_mask = test_prob.reshape(-1, height[l], width[l])
+                # upsample
+                test_map[l] = F.interpolate(test_mask.unsqueeze(1),
+                    size=c.crp_size, mode='bilinear', align_corners=True).squeeze().numpy()
+            # score aggregation
+            score_map = np.zeros_like(test_map[0])
+            for l, p in enumerate(pool_layers):
+                score_map += test_map[l]
+            score_mask = score_map
+            # invert probs to anomaly scores
+            super_mask = score_mask.max() - score_mask
+            # calculate detection AUROC
+            score_label = np.max(super_mask, axis=(1, 2))
+            score_label_mean = np.mean(super_mask, axis=(1, 2))
+            res_df['MaxScoreAnomalyMap'] = score_label
+            res_df['MeanScoreAnomalyMap'] = score_label_mean
+            # Save result table 
+            if c.action_type == 'norm-test':
+                export_results_df(c, res_df)
+                if  c.dataset != 'TumorNormal'  : # to comment
+                    # Export anomaly map
+                    write_anom_map(c, super_mask, files_path_list)
 
-                    # upsample
-                    test_map[l] = F.interpolate(test_mask.unsqueeze(1),
-                        size=c.crp_size, mode='bilinear', align_corners=True).squeeze().numpy()
-                # score aggregation
-                score_map = np.zeros_like(test_map[0])
-                for l, p in enumerate(pool_layers):
-                    score_map += test_map[l]
-                score_mask = score_map
-                # invert probs to anomaly scores
-                super_mask = score_mask.max() - score_mask
-                # calculate detection AUROC
-                score_label = np.max(super_mask, axis=(1, 2))
-                score_label_mean = np.mean(super_mask, axis=(1, 2))
-                res_df['MaxScoreAnomalyMap'] = score_label
-                res_df['MeanScoreAnomalyMap'] = score_label_mean
-                # Save result table 
-                if c.action_type == 'norm-test':
-                    export_results_df(c, res_df)
-                    if  c.dataset != 'TumorNormal'  :
-                        # Export anomaly map
-                        write_anom_map(c, super_mask, files_path_list)
-
-                gt_label = np.asarray(gt_label_list, dtype=np.bool)
-                if not c.infer_train:
-                    det_roc_auc = roc_auc_score(gt_label, score_label)
-                    _ = det_roc_obs.update(100.0*det_roc_auc, epoch)
-                    # calculate segmentation AUROC
-                    if c.dataset != 'TumorNormal'  :
-                        gt_mask = np.squeeze(np.asarray(gt_mask_list, dtype=np.bool), axis=1)
-                        seg_roc_auc = roc_auc_score(gt_mask.flatten(), super_mask.flatten())
-                        save_best_seg_weights = seg_roc_obs.update(100.0*seg_roc_auc, epoch)
-                        if save_best_seg_weights and c.action_type != 'norm-test':
-                            if c.parallel:
-                                save_weights(c, ddp_encoder, ddp_decoders, c.model, run_date) 
-                            else:
-                                save_weights(c, encoder, decoders, c.model, run_date)  # avoid unnecessary saves
-                    # calculate segmentation AUPRO
-                    # from https://github.com/YoungGod/DFR:
-                    # No mask for TunorNormal -> Results not meaningful
-                    if c.pro and  c.dataset != 'TumorNormal' :  # and (epoch % 4 == 0):  # AUPRO is expensive to compute
-                        max_step = 1000
-                        expect_fpr = 0.3  # default 30%
-                        max_th = super_mask.max()
-                        min_th = super_mask.min()
-                        delta = (max_th - min_th) / max_step
-                        ious_mean = []
-                        ious_std = []
-                        pros_mean = []
-                        pros_std = []
-                        threds = []
-                        fprs = []
-                        binary_score_maps = np.zeros_like(super_mask, dtype=np.bool)
-                        for step in range(max_step):
-                            thred = max_th - step * delta
-                            # segmentation
-                            binary_score_maps[super_mask <= thred] = 0
-                            binary_score_maps[super_mask >  thred] = 1
-                            pro = []  # per region overlap
-                            iou = []  # per image iou
-                            # pro: find each connected gt region, compute the overlapped pixels between the gt region and predicted region
-                            # iou: for each image, compute the ratio, i.e. intersection/union between the gt and predicted binary map 
-                            for i in range(len(binary_score_maps)):    # for i th image
-                                # pro (per region level)
-                                label_map = label(gt_mask[i], connectivity=2)
-                                props = regionprops(label_map)
-                                for prop in props:
-                                    x_min, y_min, x_max, y_max = prop.bbox    # find the bounding box of an anomaly region 
-                                    cropped_pred_label = binary_score_maps[i][x_min:x_max, y_min:y_max]
-                                    # cropped_mask = gt_mask[i][x_min:x_max, y_min:y_max]   # bug!
-                                    cropped_mask = prop.filled_image    # corrected!
-                                    intersection = np.logical_and(cropped_pred_label, cropped_mask).astype(np.float32).sum()
-                                    pro.append(intersection / prop.area)
-                                # iou (per image level)
-                                intersection = np.logical_and(binary_score_maps[i], gt_mask[i]).astype(np.float32).sum()
-                                union = np.logical_or(binary_score_maps[i], gt_mask[i]).astype(np.float32).sum()
-                                if gt_mask[i].any() > 0:    # when the gt have no anomaly pixels, skip it
-                                    iou.append(intersection / union)
-                            # against steps and average metrics on the testing data
-                            ious_mean.append(np.array(iou).mean())
-                            #print("per image mean iou:", np.array(iou).mean())
-                            ious_std.append(np.array(iou).std())
-                            pros_mean.append(np.array(pro).mean())
-                            pros_std.append(np.array(pro).std())
-                            # fpr for pro-auc
-                            gt_masks_neg = ~gt_mask
-                            fpr = np.logical_and(gt_masks_neg, binary_score_maps).sum() / gt_masks_neg.sum()
-                            fprs.append(fpr)
-                            threds.append(thred)
-                        # as array
-                        threds = np.array(threds)
-                        pros_mean = np.array(pros_mean)
-                        pros_std = np.array(pros_std)
-                        fprs = np.array(fprs)
-                        ious_mean = np.array(ious_mean)
-                        ious_std = np.array(ious_std)
-                        # best per image iou
-                        best_miou = ious_mean.max()
-                        #print(f"Best IOU: {best_miou:.4f}")
-                        # default 30% fpr vs pro, pro_auc
-                        idx = fprs <= expect_fpr  # find the indexs of fprs that is less than expect_fpr (default 0.3)
-                        fprs_selected = fprs[idx]
-                        fprs_selected = rescale(fprs_selected)  # rescale fpr [0,0.3] -> [0, 1]
-                        pros_mean_selected = pros_mean[idx]    
-                        seg_pro_auc = auc(fprs_selected, pros_mean_selected)
-                        _ = seg_pro_obs.update(100.0*seg_pro_auc, epoch)
-                #
-                if  c.dataset != 'TumorNormal':
-                    save_results(c, det_roc_obs, seg_roc_obs, seg_pro_obs, c.model, c.class_name, run_date)
-                # export visualuzations
-                if c.viz  and  c.dataset != 'TumorNormal' :
-                    precision, recall, thresholds = precision_recall_curve(gt_label, score_label)
-                    a = 2 * precision * recall
-                    b = precision + recall
-                    f1 = np.divide(a, b, out=np.zeros_like(a), where=b != 0)
-                    det_threshold = thresholds[np.argmax(f1)]
-                    print('Optimal DET Threshold: {:.2f}'.format(det_threshold))
-                    precision, recall, thresholds = precision_recall_curve(gt_mask.flatten(), super_mask.flatten())
-                    a = 2 * precision * recall
-                    b = precision + recall
-                    f1 = np.divide(a, b, out=np.zeros_like(a), where=b != 0)
-                    seg_threshold = thresholds[np.argmax(f1)]
-                    print('Optimal SEG Threshold: {:.2f}'.format(seg_threshold))
-                    export_groundtruth(c, test_image_list, gt_mask)
-                    export_scores(c, test_image_list, super_mask, seg_threshold)
-                    export_test_images(c, test_image_list, gt_mask, super_mask, seg_threshold)
-                    export_hist(c, gt_mask, super_mask, seg_threshold)
+            gt_label = np.asarray(gt_label_list, dtype=np.bool)
+            if not c.infer_train:
+                det_roc_auc = roc_auc_score(gt_label, score_label)
+                _ = det_roc_obs.update(100.0*det_roc_auc, epoch)
+                print('DET_AUROC ', det_roc_auc)
+                # calculate segmentation AUROC
+                if c.dataset != 'TumorNormal'  :
+                    gt_mask = np.squeeze(np.asarray(gt_mask_list, dtype=np.bool), axis=1)
+                    seg_roc_auc = roc_auc_score(gt_mask.flatten(), super_mask.flatten())
+                    print(' SEG_AUROC  ', seg_roc_auc)
+                    save_best_seg_weights = seg_roc_obs.update(100.0*seg_roc_auc, epoch)
+                    if save_best_seg_weights and c.action_type != 'norm-test':
+                        if c.parallel:
+                            print('Save best Weight parallel')
+                            save_weights(c, ddp_encoder, ddp_decoders, c.model, run_date) 
+                        else:
+                            save_weights(c, encoder, decoders, c.model, run_date)  # avoid unnecessary saves
+                # calculate segmentation AUPRO
+                # from https://github.com/YoungGod/DFR:
+                # No mask for TunorNormal -> Results not meaningful
+                if c.pro and  c.dataset != 'TumorNormal' :  # and (epoch % 4 == 0):  # AUPRO is expensive to compute
+                    max_step = 1000
+                    expect_fpr = 0.3  # default 30%
+                    max_th = super_mask.max()
+                    min_th = super_mask.min()
+                    delta = (max_th - min_th) / max_step
+                    ious_mean = []
+                    ious_std = []
+                    pros_mean = []
+                    pros_std = []
+                    threds = []
+                    fprs = []
+                    binary_score_maps = np.zeros_like(super_mask, dtype=np.bool)
+                    for step in range(max_step):
+                        thred = max_th - step * delta
+                        # segmentation
+                        binary_score_maps[super_mask <= thred] = 0
+                        binary_score_maps[super_mask >  thred] = 1
+                        pro = []  # per region overlap
+                        iou = []  # per image iou
+                        # pro: find each connected gt region, compute the overlapped pixels between the gt region and predicted region
+                        # iou: for each image, compute the ratio, i.e. intersection/union between the gt and predicted binary map 
+                        for i in range(len(binary_score_maps)):    # for i th image
+                            # pro (per region level)
+                            label_map = label(gt_mask[i], connectivity=2)
+                            props = regionprops(label_map)
+                            for prop in props:
+                                x_min, y_min, x_max, y_max = prop.bbox    # find the bounding box of an anomaly region 
+                                cropped_pred_label = binary_score_maps[i][x_min:x_max, y_min:y_max]
+                                # cropped_mask = gt_mask[i][x_min:x_max, y_min:y_max]   # bug!
+                                cropped_mask = prop.filled_image    # corrected!
+                                intersection = np.logical_and(cropped_pred_label, cropped_mask).astype(np.float32).sum()
+                                pro.append(intersection / prop.area)
+                            # iou (per image level)
+                            intersection = np.logical_and(binary_score_maps[i], gt_mask[i]).astype(np.float32).sum()
+                            union = np.logical_or(binary_score_maps[i], gt_mask[i]).astype(np.float32).sum()
+                            if gt_mask[i].any() > 0:    # when the gt have no anomaly pixels, skip it
+                                iou.append(intersection / union)
+                        # against steps and average metrics on the testing data
+                        ious_mean.append(np.array(iou).mean())
+                        #print("per image mean iou:", np.array(iou).mean())
+                        ious_std.append(np.array(iou).std())
+                        pros_mean.append(np.array(pro).mean())
+                        pros_std.append(np.array(pro).std())
+                        # fpr for pro-auc
+                        gt_masks_neg = ~gt_mask
+                        fpr = np.logical_and(gt_masks_neg, binary_score_maps).sum() / gt_masks_neg.sum()
+                        fprs.append(fpr)
+                        threds.append(thred)
+                    # as array
+                    threds = np.array(threds)
+                    pros_mean = np.array(pros_mean)
+                    pros_std = np.array(pros_std)
+                    fprs = np.array(fprs)
+                    ious_mean = np.array(ious_mean)
+                    ious_std = np.array(ious_std)
+                    # best per image iou
+                    best_miou = ious_mean.max()
+                    #print(f"Best IOU: {best_miou:.4f}")
+                    # default 30% fpr vs pro, pro_auc
+                    idx = fprs <= expect_fpr  # find the indexs of fprs that is less than expect_fpr (default 0.3)
+                    fprs_selected = fprs[idx]
+                    fprs_selected = rescale(fprs_selected)  # rescale fpr [0,0.3] -> [0, 1]
+                    pros_mean_selected = pros_mean[idx]    
+                    seg_pro_auc = auc(fprs_selected, pros_mean_selected)
+                    _ = seg_pro_obs.update(100.0*seg_pro_auc, epoch)
+            #
+            if  c.dataset != 'TumorNormal':
+                save_results(c, det_roc_obs, seg_roc_obs, seg_pro_obs, c.model, c.class_name, run_date)
+            # export visualuzations
+            if c.viz  and  c.dataset != 'TumorNormal' :
+                precision, recall, thresholds = precision_recall_curve(gt_label, score_label)
+                a = 2 * precision * recall
+                b = precision + recall
+                f1 = np.divide(a, b, out=np.zeros_like(a), where=b != 0)
+                det_threshold = thresholds[np.argmax(f1)]
+                print('Optimal DET Threshold: {:.2f}'.format(det_threshold))
+                precision, recall, thresholds = precision_recall_curve(gt_mask.flatten(), super_mask.flatten())
+                a = 2 * precision * recall
+                b = precision + recall
+                f1 = np.divide(a, b, out=np.zeros_like(a), where=b != 0)
+                seg_threshold = thresholds[np.argmax(f1)]
+                print('Optimal SEG Threshold: {:.2f}'.format(seg_threshold))
+                export_groundtruth(c, test_image_list, gt_mask)
+                export_scores(c, test_image_list, super_mask, seg_threshold)
+                export_test_images(c, test_image_list, gt_mask, super_mask, seg_threshold)
+                export_hist(c, gt_mask, super_mask, seg_threshold)

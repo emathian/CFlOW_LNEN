@@ -1,0 +1,554 @@
+[D 09:48:11.687 NotebookApp] Searching ['/gpfs7kw/linkhome/rech/genkmw01/ueu39kt/cflow-ad/Bash/Train/TumorNormal', '/gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter', '/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter', '/usr/local/etc/jupyter', '/etc/jupyter'] for config files
+[D 09:48:11.687 NotebookApp] Looking for jupyter_config in /etc/jupyter
+[D 09:48:11.687 NotebookApp] Looking for jupyter_config in /usr/local/etc/jupyter
+[D 09:48:11.687 NotebookApp] Looking for jupyter_config in /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter
+[D 09:48:11.700 NotebookApp] Looking for jupyter_config in /gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter
+[D 09:48:11.700 NotebookApp] Looking for jupyter_config in /gpfs7kw/linkhome/rech/genkmw01/ueu39kt/cflow-ad/Bash/Train/TumorNormal
+[D 09:48:11.701 NotebookApp] Looking for jupyter_notebook_config in /etc/jupyter
+[D 09:48:11.701 NotebookApp] Looking for jupyter_notebook_config in /usr/local/etc/jupyter
+[D 09:48:11.701 NotebookApp] Looking for jupyter_notebook_config in /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter
+[D 09:48:11.710 NotebookApp] Loaded config file: /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/jupyter_notebook_config.json
+[D 09:48:11.710 NotebookApp] Looking for jupyter_notebook_config in /gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter
+[D 09:48:11.711 NotebookApp] Loaded config file: /gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter/jupyter_notebook_config.py
+[D 09:48:11.711 NotebookApp] Loaded config file: /gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter/jupyter_notebook_config.json
+[D 09:48:11.711 NotebookApp] Looking for jupyter_notebook_config in /gpfs7kw/linkhome/rech/genkmw01/ueu39kt/cflow-ad/Bash/Train/TumorNormal
+[D 09:48:12.133 NotebookApp] Paths used for configuration of jupyter_notebook_config: 
+    	/etc/jupyter/jupyter_notebook_config.json
+[D 09:48:12.133 NotebookApp] Paths used for configuration of jupyter_notebook_config: 
+    	/usr/local/etc/jupyter/jupyter_notebook_config.json
+[D 09:48:12.141 NotebookApp] Paths used for configuration of jupyter_notebook_config: 
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/jupyter_notebook_config.d/ipyparallel-serverextension.json
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/jupyter_notebook_config.d/jupyterlab.json
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/jupyter_notebook_config.json
+[D 09:48:12.165 NotebookApp] Paths used for configuration of jupyter_notebook_config: 
+    	/gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter/jupyter_notebook_config.json
+[I 09:48:20.864 NotebookApp] Loading IPython parallel extension
+[D 09:48:21.247 NotebookApp] [jupyter_nbextensions_configurator] Loading 0.4.1
+[D 09:48:21.247 NotebookApp] [jupyter_nbextensions_configurator]   Editing templates path to add /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/jupyter_nbextensions_configurator/templates
+[D 09:48:21.247 NotebookApp] [jupyter_nbextensions_configurator]   Editing nbextensions path to add /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/jupyter_nbextensions_configurator/static
+[D 09:48:21.247 NotebookApp] [jupyter_nbextensions_configurator]   Adding new handlers
+[I 09:48:21.248 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.4.1
+[I 09:48:42.403 NotebookApp] jupyter_tensorboard extension loaded.
+[W 2022-08-23 09:48:44.646 LabApp] 'base_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-08-23 09:48:44.646 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-08-23 09:48:44.646 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-08-23 09:48:44.651 LabApp] 'certfile' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-08-23 09:48:44.651 LabApp] 'keyfile' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-08-23 09:48:44.651 LabApp] 'notebook_dir' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-08-23 09:48:44.651 LabApp] 'notebook_dir' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-08-23 09:48:44.651 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2022-08-23 09:48:44.709 LabApp] JupyterLab extension loaded from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/jupyterlab
+[I 2022-08-23 09:48:44.709 LabApp] JupyterLab application directory is /gpfs7kro/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/share/jupyter/lab
+[I 09:48:44.718 NotebookApp] Serving notebooks from local directory: /linkhome/rech/genkmw01/ueu39kt
+[I 09:48:44.718 NotebookApp] Jupyter Notebook 6.4.0 is running at:
+[I 09:48:44.718 NotebookApp] https://jean-zay3:8006/jean-zay3_8006/
+[I 09:48:44.718 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 09:48:47.113 NotebookApp] 302 GET /jean-zay3_8006/ (10.148.0.38) 0.660000ms
+[I 09:48:47.136 NotebookApp] 302 GET /jean-zay3_8006/tree? (10.148.0.38) 0.580000ms
+[D 09:48:47.164 NotebookApp] Using contents: services/contents
+[D 09:48:47.291 NotebookApp] Path base/images/favicon.ico served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/base/images/favicon.ico
+[D 09:48:47.345 NotebookApp] Path components/jquery-ui/themes/smoothness/jquery-ui.min.css served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/jquery-ui/themes/smoothness/jquery-ui.min.css
+[D 09:48:47.389 NotebookApp] Path components/jquery-typeahead/dist/jquery.typeahead.min.css served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/jquery-typeahead/dist/jquery.typeahead.min.css
+[D 09:48:47.405 NotebookApp] Path style/style.min.css served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/style/style.min.css
+[D 09:48:47.438 NotebookApp] Path auth/css/override.css served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/auth/css/override.css
+[D 09:48:47.460 NotebookApp] Path components/es6-promise/promise.min.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/es6-promise/promise.min.js
+[D 09:48:47.474 NotebookApp] Path components/react/react.production.min.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/react/react.production.min.js
+[D 09:48:47.490 NotebookApp] Path components/react/react-dom.production.min.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/react/react-dom.production.min.js
+[D 09:48:47.506 NotebookApp] Path components/create-react-class/index.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/create-react-class/index.js
+[D 09:48:47.533 NotebookApp] Path components/requirejs/require.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/requirejs/require.js
+[D 09:48:47.548 NotebookApp] Path base/images/logo.png served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/base/images/logo.png
+[D 09:48:47.550 NotebookApp] 200 GET /jean-zay3_8006/login?next=%2Fjean-zay3_8006%2Ftree%3F (10.148.0.38) 389.210000ms
+[D 09:48:47.598 NotebookApp] 200 GET /jean-zay3_8006/static/components/jquery-ui/themes/smoothness/jquery-ui.min.css?v=fb45616eef2c454960f91fcd2a04efeda84cfacccf0c5d741ba2793dc1dbd6d3ab01aaae6485222945774c7d7a9a2e9fb87e0d8ef1ea96893aa6906147a371bb (10.148.0.38) 2.170000ms
+[D 09:48:47.639 NotebookApp] 200 GET /jean-zay3_8006/static/components/react/react.production.min.js?v=9a0aaf84a316c8bedd6c2ff7d5b5e0a13f8f84ec02442346cba0b842c6c81a6bf6176e64f3675c2ebf357cb5bb048e0b527bd39377c95681d22468da3d5de735 (10.148.0.38) 2.420000ms
+[D 09:48:47.640 NotebookApp] 200 GET /jean-zay3_8006/static/auth/css/override.css?v=7d24c52c4d63c7ed3ca286c051f232acd6a5ee3ed2aa32f56bea22ef20a2e3d184a638aad5602a39e8d5ef9a66ed93fdbaf80cf979948a947bab117618bd6486 (10.148.0.38) 3.430000ms
+[D 09:48:47.642 NotebookApp] 200 GET /jean-zay3_8006/static/components/jquery-typeahead/dist/jquery.typeahead.min.css?v=5edf53bf6bb9c3b1ddafd8594825a7e2ed621f19423e569c985162742f63911c09eba2c529f8fb47aebf27fafdfe287d563347f58c1126b278189a18871b6a9a (10.148.0.38) 4.770000ms
+[D 09:48:47.654 NotebookApp] Path custom.css served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/custom/custom.css
+[D 09:48:47.656 NotebookApp] 200 GET /jean-zay3_8006/custom/custom.css (10.148.0.38) 18.270000ms
+[D 09:48:47.658 NotebookApp] 200 GET /jean-zay3_8006/static/style/style.min.css?v=56dfd556850eb17b7998c6828467598a322b41593edc758739c66cb2c3fea98f23d0dd8bf8b9b0f5d67bb976a50e4c34f789fe640cbb440fa089e1bf5ec170bd (10.148.0.38) 2.320000ms
+[D 09:48:47.662 NotebookApp] 200 GET /jean-zay3_8006/static/components/es6-promise/promise.min.js?v=bea335d74136a63ae1b5130f5ac9a50c6256a5f435e6e09fef599491a84d834a8b0f011ca3eaaca3b4ab6a2da2d3e1191567a2f171e60da1d10e5b9d52f84184 (10.148.0.38) 3.030000ms
+[D 09:48:47.668 NotebookApp] 200 GET /jean-zay3_8006/static/components/react/react-dom.production.min.js?v=6fc58c1c4736868ff84f57bd8b85f2bdb985993a9392718f3b4af4bfa10fb4efba2b4ddd68644bd2a8daf0619a3844944c9c43f8528364a1aa6fc01ec1b8ae84 (10.148.0.38) 1.890000ms
+[D 09:48:47.670 NotebookApp] 200 GET /jean-zay3_8006/static/components/create-react-class/index.js?v=894ad57246e682b4cfbe7cd5e408dcd6b38d06af4de4f3425991e2676fdc2ef1732cbd19903104198878ae77de12a1996de3e7da3a467fb226bdda8f4618faec (10.148.0.38) 1.610000ms
+[D 09:48:47.672 NotebookApp] 200 GET /jean-zay3_8006/static/components/requirejs/require.js?v=d37b48bb2137faa0ab98157e240c084dd5b1b5e74911723aa1d1f04c928c2a03dedf922d049e4815f7e5a369faa2e6b6a1000aae958b7953b5cc60411154f593 (10.148.0.38) 1.650000ms
+[D 09:48:47.739 NotebookApp] 200 GET /jean-zay3_8006/static/base/images/logo.png?v=a2a176ee3cee251ffddf5fa21fe8e43727a9e5f87a06f9c91ad7b776d9e9d3d5e0159c16cc188a3965e00375fb4bc336c16067c688f5040c0c2d4bfdb852a9e4 (10.148.0.38) 1.500000ms
+[D 09:48:47.774 NotebookApp] Path auth/js/main.min.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/auth/js/main.min.js
+[D 09:48:47.789 NotebookApp] 200 GET /jean-zay3_8006/static/auth/js/main.min.js?v=20220823094812 (10.148.0.38) 25.410000ms
+[D 09:48:47.853 NotebookApp] 200 GET /jean-zay3_8006/static/base/images/favicon.ico?v=50afa725b5de8b00030139d09b38620224d4e7dba47c07ef0e86d4643f30c9bfe6bb7e1a4a1c561aa32834480909a4b6fe7cd1e17f7159330b6b5914bf45a880 (10.148.0.38) 1.620000ms
+[I 09:48:53.614 NotebookApp] 302 POST /jean-zay3_8006/login?next=%2Fjean-zay3_8006%2Ftree%3F (10.148.0.38) 124.230000ms
+[D 09:48:53.651 NotebookApp] Using contents: services/contents
+[D 09:48:53.739 NotebookApp] Path tree/js/main.min.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/tree/js/main.min.js
+[D 09:48:53.758 NotebookApp] 200 GET /jean-zay3_8006/tree? (10.148.0.38) 107.630000ms
+[D 09:48:53.814 NotebookApp] 304 GET /jean-zay3_8006/custom/custom.css (10.148.0.38) 1.570000ms
+[D 09:48:53.849 NotebookApp] 200 GET /jean-zay3_8006/static/tree/js/main.min.js?v=85ffbfc462c14eb834279ef785f2bd2e65b44d07fefb9017c4f4f3e46ab13d9c68da3f98516e65549f7b3649a8e21d4587b66136c6ac19fac09263dae29825d6 (10.148.0.38) 16.340000ms
+[D 09:48:54.068 NotebookApp] Path services/contents.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/services/contents.js
+[D 09:48:54.081 NotebookApp] 200 GET /jean-zay3_8006/static/services/contents.js?v=20220823094812 (10.148.0.38) 38.880000ms
+[D 09:48:54.114 NotebookApp] Paths used for configuration of tree: 
+    	/etc/jupyter/nbconfig/tree.json
+[D 09:48:54.114 NotebookApp] Paths used for configuration of tree: 
+    	/usr/local/etc/jupyter/nbconfig/tree.json
+[D 09:48:54.140 NotebookApp] Paths used for configuration of tree: 
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/tree.d/ipyparallel-nbextension.json
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/tree.json
+[D 09:48:54.151 NotebookApp] Paths used for configuration of tree: 
+    	/gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter/nbconfig/tree.json
+[D 09:48:54.166 NotebookApp] 200 GET /jean-zay3_8006/api/config/tree?_=1661240934699 (10.148.0.38) 53.580000ms
+[D 09:48:54.177 NotebookApp] Paths used for configuration of common: 
+    	/etc/jupyter/nbconfig/common.json
+[D 09:48:54.177 NotebookApp] Paths used for configuration of common: 
+    	/usr/local/etc/jupyter/nbconfig/common.json
+[D 09:48:54.177 NotebookApp] Paths used for configuration of common: 
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/common.json
+[D 09:48:54.178 NotebookApp] Paths used for configuration of common: 
+    	/gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter/nbconfig/common.json
+[D 09:48:54.178 NotebookApp] 200 GET /jean-zay3_8006/api/config/common?_=1661240934700 (10.148.0.38) 3.090000ms
+[D 09:48:54.180 NotebookApp] 200 GET /jean-zay3_8006/api/terminals?_=1661240934701 (10.148.0.38) 1.170000ms
+[D 09:48:54.196 NotebookApp] Path components/font-awesome/fonts/fontawesome-webfont.woff2 served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/font-awesome/fonts/fontawesome-webfont.woff2
+[D 09:48:54.207 NotebookApp] 200 GET /jean-zay3_8006/static/components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 (10.148.0.38) 27.720000ms
+[D 09:48:54.244 NotebookApp] Found kernel xpython in /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/share/jupyter/kernels
+[D 09:48:54.244 NotebookApp] Found kernel python3 in /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/share/jupyter/kernels
+[D 09:48:54.316 NotebookApp] 200 GET /jean-zay3_8006/api/kernelspecs (10.148.0.38) 135.970000ms
+[D 09:48:54.317 NotebookApp] 200 GET /jean-zay3_8006/api/sessions?_=1661240934702 (10.148.0.38) 1.330000ms
+[D 09:48:54.327 NotebookApp] 200 GET /jean-zay3_8006/api/terminals?_=1661240934703 (10.148.0.38) 1.170000ms
+[D 09:48:54.336 NotebookApp] Path custom.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/custom/custom.js
+[D 09:48:54.337 NotebookApp] 200 GET /jean-zay3_8006/custom/custom.js?v=20220823094812 (10.148.0.38) 11.610000ms
+[D 09:48:54.381 NotebookApp] Path ipyparallel/main.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/share/jupyter/nbextensions/ipyparallel/main.js
+[D 09:48:54.382 NotebookApp] 200 GET /jean-zay3_8006/nbextensions/ipyparallel/main.js?v=20220823094812 (10.148.0.38) 56.110000ms
+[D 09:48:54.423 NotebookApp] Path nbextensions_configurator/tree_tab/main.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/tree_tab/main.js
+[D 09:48:54.424 NotebookApp] 200 GET /jean-zay3_8006/nbextensions/nbextensions_configurator/tree_tab/main.js?v=20220823094812 (10.148.0.38) 41.940000ms
+[D 09:48:54.464 NotebookApp] Path jupyter_tensorboard/tree.js served from /gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.local/share/jupyter/nbextensions/jupyter_tensorboard/tree.js
+[D 09:48:54.465 NotebookApp] 200 GET /jean-zay3_8006/nbextensions/jupyter_tensorboard/tree.js?v=20220823094812 (10.148.0.38) 34.810000ms
+[D 09:48:54.699 NotebookApp] 200 GET /jean-zay3_8006/api/contents?type=directory&_=1661240934704 (10.148.0.38) 234.250000ms
+[D 09:48:54.715 NotebookApp] Path ipyparallel/clusterlist.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/share/jupyter/nbextensions/ipyparallel/clusterlist.js
+[D 09:48:54.735 NotebookApp] 200 GET /jean-zay3_8006/nbextensions/ipyparallel/clusterlist.js?v=20220823094812 (10.148.0.38) 31.780000ms
+[D 09:48:54.739 NotebookApp] Path nbextensions_configurator/main.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/main.js
+[D 09:48:54.754 NotebookApp] 200 GET /jean-zay3_8006/nbextensions/nbextensions_configurator/main.js?v=20220823094812 (10.148.0.38) 18.300000ms
+[D 09:48:54.783 NotebookApp] Path nbextensions_configurator/render/render.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/render/render.js
+[D 09:48:54.786 NotebookApp] 200 GET /jean-zay3_8006/nbextensions/nbextensions_configurator/render/render.js?v=20220823094812 (10.148.0.38) 32.320000ms
+[D 09:48:54.797 NotebookApp] Path jupyter_tensorboard/tensorboardlist.js served from /gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.local/share/jupyter/nbextensions/jupyter_tensorboard/tensorboardlist.js
+[D 09:48:54.818 NotebookApp] 200 GET /jean-zay3_8006/nbextensions/jupyter_tensorboard/tensorboardlist.js?v=20220823094812 (10.148.0.38) 31.110000ms
+[D 09:48:54.831 NotebookApp] Path ipyparallel/clusterlist.css served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/share/jupyter/nbextensions/ipyparallel/clusterlist.css
+[D 09:48:54.832 NotebookApp] 200 GET /jean-zay3_8006/nbextensions/ipyparallel/clusterlist.css (10.148.0.38) 5.090000ms
+[D 09:48:54.942 NotebookApp] Adding cluster profile 'default'
+[D 09:48:54.942 NotebookApp] 200 GET /jean-zay3_8006/clusters?_=1661240934705 (10.148.0.38) 110.060000ms
+[D 09:48:54.948 NotebookApp] Path nbextensions_configurator/kse_components.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/kse_components.js
+[D 09:48:54.953 NotebookApp] 200 GET /jean-zay3_8006/nbextensions/nbextensions_configurator/kse_components.js?v=20220823094812 (10.148.0.38) 10.340000ms
+[D 09:48:54.987 NotebookApp] Path notebook/js/quickhelp.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/notebook/js/quickhelp.js
+[D 09:48:54.997 NotebookApp] 200 GET /jean-zay3_8006/static/notebook/js/quickhelp.js?v=20220823094812 (10.148.0.38) 53.990000ms
+[D 09:48:55.023 NotebookApp] Path components/jquery-ui/jquery-ui.min.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/jquery-ui/jquery-ui.min.js
+[D 09:48:55.046 NotebookApp] 200 GET /jean-zay3_8006/static/components/jquery-ui/jquery-ui.min.js?v=20220823094812 (10.148.0.38) 46.370000ms
+[D 09:48:55.069 NotebookApp] Path base/js/security.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/base/js/security.js
+[D 09:48:55.081 NotebookApp] 200 GET /jean-zay3_8006/static/base/js/security.js?v=20220823094812 (10.148.0.38) 31.710000ms
+[D 09:48:55.097 NotebookApp] Path jupyter_tensorboard/style.css served from /gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.local/share/jupyter/nbextensions/jupyter_tensorboard/style.css
+[D 09:48:55.098 NotebookApp] 200 GET /jean-zay3_8006/nbextensions/jupyter_tensorboard/style.css (10.148.0.38) 47.920000ms
+[D 09:48:55.099 NotebookApp] 200 GET /jean-zay3_8006/api/tensorboard?_=1661240934706 (10.148.0.38) 48.080000ms
+[D 09:48:55.112 NotebookApp] Path notebook/js/mathjaxutils.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/notebook/js/mathjaxutils.js
+[D 09:48:55.114 NotebookApp] 200 GET /jean-zay3_8006/static/notebook/js/mathjaxutils.js?v=20220823094812 (10.148.0.38) 14.730000ms
+[D 09:48:55.154 NotebookApp] Path components/codemirror/addon/runmode/runmode.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/codemirror/addon/runmode/runmode.js
+[D 09:48:55.156 NotebookApp] 200 GET /jean-zay3_8006/static/components/codemirror/addon/runmode/runmode.js?v=20220823094812 (10.148.0.38) 40.760000ms
+[D 09:48:55.182 NotebookApp] Path components/codemirror/mode/gfm/gfm.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/codemirror/mode/gfm/gfm.js
+[D 09:48:55.213 NotebookApp] 200 GET /jean-zay3_8006/static/components/codemirror/mode/gfm/gfm.js?v=20220823094812 (10.148.0.38) 48.650000ms
+[D 09:48:55.230 NotebookApp] Path notebook/js/codemirror-ipython.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/notebook/js/codemirror-ipython.js
+[D 09:48:55.232 NotebookApp] 200 GET /jean-zay3_8006/static/notebook/js/codemirror-ipython.js?v=20220823094812 (10.148.0.38) 18.880000ms
+[D 09:48:55.239 NotebookApp] Path nbextensions_configurator/quickhelp_shim.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/quickhelp_shim.js
+[D 09:48:55.246 NotebookApp] 200 GET /jean-zay3_8006/nbextensions/nbextensions_configurator/quickhelp_shim.js?v=20220823094812 (10.148.0.38) 32.390000ms
+[D 09:48:55.247 NotebookApp] Path notebook/js/codemirror-ipythongfm.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/notebook/js/codemirror-ipythongfm.js
+[D 09:48:55.248 NotebookApp] 200 GET /jean-zay3_8006/static/notebook/js/codemirror-ipythongfm.js?v=20220823094812 (10.148.0.38) 34.910000ms
+[D 09:48:55.273 NotebookApp] Path components/google-caja/html-css-sanitizer-minified.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/google-caja/html-css-sanitizer-minified.js
+[D 09:48:55.283 NotebookApp] 200 GET /jean-zay3_8006/static/components/google-caja/html-css-sanitizer-minified.js?v=20220823094812 (10.148.0.38) 31.090000ms
+[D 09:48:55.297 NotebookApp] Path base/js/mathjaxutils.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/base/js/mathjaxutils.js
+[D 09:48:55.307 NotebookApp] 200 GET /jean-zay3_8006/static/base/js/mathjaxutils.js?v=20220823094812 (10.148.0.38) 22.040000ms
+[D 09:48:55.325 NotebookApp] Path components/codemirror/mode/markdown/markdown.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/codemirror/mode/markdown/markdown.js
+[D 09:48:55.334 NotebookApp] 200 GET /jean-zay3_8006/static/components/codemirror/mode/markdown/markdown.js?v=20220823094812 (10.148.0.38) 27.540000ms
+[D 09:48:55.343 NotebookApp] Path components/codemirror/addon/mode/overlay.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/codemirror/addon/mode/overlay.js
+[D 09:48:55.344 NotebookApp] 200 GET /jean-zay3_8006/static/components/codemirror/addon/mode/overlay.js?v=20220823094812 (10.148.0.38) 9.730000ms
+[D 09:48:55.356 NotebookApp] Path components/codemirror/mode/python/python.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/codemirror/mode/python/python.js
+[D 09:48:55.366 NotebookApp] 200 GET /jean-zay3_8006/static/components/codemirror/mode/python/python.js?v=20220823094812 (10.148.0.38) 20.740000ms
+[D 09:48:55.369 NotebookApp] Path components/codemirror/addon/mode/multiplex.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/codemirror/addon/mode/multiplex.js
+[D 09:48:55.372 NotebookApp] 200 GET /jean-zay3_8006/static/components/codemirror/addon/mode/multiplex.js?v=20220823094812 (10.148.0.38) 5.900000ms
+[D 09:48:55.388 NotebookApp] Path components/codemirror/mode/stex/stex.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/codemirror/mode/stex/stex.js
+[D 09:48:55.391 NotebookApp] 200 GET /jean-zay3_8006/static/components/codemirror/mode/stex/stex.js?v=20220823094812 (10.148.0.38) 18.440000ms
+[D 09:48:55.399 NotebookApp] Path components/codemirror/mode/xml/xml.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/codemirror/mode/xml/xml.js
+[D 09:48:55.414 NotebookApp] 200 GET /jean-zay3_8006/static/components/codemirror/mode/xml/xml.js?v=20220823094812 (10.148.0.38) 20.280000ms
+[D 09:48:55.452 NotebookApp] Path nbextensions_configurator/main.css served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/main.css
+[D 09:48:55.461 NotebookApp] 200 GET /jean-zay3_8006/nbextensions/nbextensions_configurator/main.css?v=20220823094812 (10.148.0.38) 18.290000ms
+[D 09:48:55.473 NotebookApp] Path nbextensions_configurator/render/rendermd.css served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/render/rendermd.css
+[D 09:48:55.474 NotebookApp] 200 GET /jean-zay3_8006/nbextensions/nbextensions_configurator/render/rendermd.css?v=20220823094812 (10.148.0.38) 10.130000ms
+[D 09:48:55.484 NotebookApp] Paths used for configuration of edit: 
+    	/etc/jupyter/nbconfig/edit.json
+[D 09:48:55.484 NotebookApp] Paths used for configuration of edit: 
+    	/usr/local/etc/jupyter/nbconfig/edit.json
+[D 09:48:55.485 NotebookApp] Paths used for configuration of edit: 
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/edit.json
+[D 09:48:55.485 NotebookApp] Paths used for configuration of edit: 
+    	/gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter/nbconfig/edit.json
+[D 09:48:55.498 NotebookApp] 200 GET /jean-zay3_8006/api/config/edit?_=1661240934710 (10.148.0.38) 15.680000ms
+[D 09:48:55.499 NotebookApp] Paths used for configuration of edit: 
+    	/etc/jupyter/nbconfig/edit.json
+[D 09:48:55.499 NotebookApp] Paths used for configuration of edit: 
+    	/usr/local/etc/jupyter/nbconfig/edit.json
+[D 09:48:55.499 NotebookApp] Paths used for configuration of edit: 
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/edit.json
+[D 09:48:55.500 NotebookApp] Paths used for configuration of edit: 
+    	/gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter/nbconfig/edit.json
+[D 09:48:55.500 NotebookApp] 200 GET /jean-zay3_8006/api/config/edit?_=1661240934709 (10.148.0.38) 2.220000ms
+[D 09:48:55.501 NotebookApp] Paths used for configuration of notebook: 
+    	/etc/jupyter/nbconfig/notebook.json
+[D 09:48:55.502 NotebookApp] Paths used for configuration of notebook: 
+    	/usr/local/etc/jupyter/nbconfig/notebook.json
+[D 09:48:55.503 NotebookApp] Paths used for configuration of notebook: 
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/notebook.d/widgetsnbextension.json
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/notebook.json
+[D 09:48:55.516 NotebookApp] Paths used for configuration of notebook: 
+    	/gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter/nbconfig/notebook.json
+[D 09:48:55.530 NotebookApp] 200 GET /jean-zay3_8006/api/config/notebook?_=1661240934707 (10.148.0.38) 29.680000ms
+[D 09:48:55.532 NotebookApp] Paths used for configuration of notebook: 
+    	/etc/jupyter/nbconfig/notebook.json
+[D 09:48:55.532 NotebookApp] Paths used for configuration of notebook: 
+    	/usr/local/etc/jupyter/nbconfig/notebook.json
+[D 09:48:55.533 NotebookApp] Paths used for configuration of notebook: 
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/notebook.d/widgetsnbextension.json
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/notebook.json
+[D 09:48:55.534 NotebookApp] Paths used for configuration of notebook: 
+    	/gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter/nbconfig/notebook.json
+[D 09:48:55.534 NotebookApp] 200 GET /jean-zay3_8006/api/config/notebook?_=1661240934708 (10.148.0.38) 3.900000ms
+[D 09:48:55.538 NotebookApp] Paths used for configuration of tree: 
+    	/etc/jupyter/nbconfig/tree.json
+[D 09:48:55.539 NotebookApp] Paths used for configuration of tree: 
+    	/usr/local/etc/jupyter/nbconfig/tree.json
+[D 09:48:55.539 NotebookApp] Paths used for configuration of tree: 
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/tree.d/ipyparallel-nbextension.json
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/tree.json
+[D 09:48:55.540 NotebookApp] Paths used for configuration of tree: 
+    	/gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter/nbconfig/tree.json
+[D 09:48:55.540 NotebookApp] 200 GET /jean-zay3_8006/api/config/tree?_=1661240934711 (10.148.0.38) 5.110000ms
+[D 09:48:55.541 NotebookApp] Paths used for configuration of tree: 
+    	/etc/jupyter/nbconfig/tree.json
+[D 09:48:55.542 NotebookApp] Paths used for configuration of tree: 
+    	/usr/local/etc/jupyter/nbconfig/tree.json
+[D 09:48:55.542 NotebookApp] Paths used for configuration of tree: 
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/tree.d/ipyparallel-nbextension.json
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/tree.json
+[D 09:48:55.543 NotebookApp] Paths used for configuration of tree: 
+    	/gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter/nbconfig/tree.json
+[D 09:48:55.543 NotebookApp] 200 GET /jean-zay3_8006/api/config/tree?_=1661240934712 (10.148.0.38) 2.560000ms
+[D 09:48:55.544 NotebookApp] Paths used for configuration of common: 
+    	/etc/jupyter/nbconfig/common.json
+[D 09:48:55.544 NotebookApp] Paths used for configuration of common: 
+    	/usr/local/etc/jupyter/nbconfig/common.json
+[D 09:48:55.545 NotebookApp] Paths used for configuration of common: 
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/common.json
+[D 09:48:55.545 NotebookApp] Paths used for configuration of common: 
+    	/gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter/nbconfig/common.json
+[D 09:48:55.545 NotebookApp] 200 GET /jean-zay3_8006/api/config/common?_=1661240934713 (10.148.0.38) 1.870000ms
+[D 09:48:55.546 NotebookApp] Paths used for configuration of common: 
+    	/etc/jupyter/nbconfig/common.json
+[D 09:48:55.546 NotebookApp] Paths used for configuration of common: 
+    	/usr/local/etc/jupyter/nbconfig/common.json
+[D 09:48:55.547 NotebookApp] Paths used for configuration of common: 
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/common.json
+[D 09:48:55.547 NotebookApp] Paths used for configuration of common: 
+    	/gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter/nbconfig/common.json
+[D 09:48:55.547 NotebookApp] 200 GET /jean-zay3_8006/api/config/common?_=1661240934714 (10.148.0.38) 1.860000ms
+[D 09:48:55.604 NotebookApp] [jupyter_nbextensions_configurator] Looking for nbextension yaml descriptor files in /gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.local/share/jupyter/nbextensions
+[D 09:48:55.605 NotebookApp] [jupyter_nbextensions_configurator] Looking for nbextension yaml descriptor files in /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/share/jupyter/nbextensions
+[D 09:48:55.606 NotebookApp] [jupyter_nbextensions_configurator] Looking for nbextension yaml descriptor files in /usr/local/share/jupyter/nbextensions
+[D 09:48:55.606 NotebookApp] [jupyter_nbextensions_configurator] Looking for nbextension yaml descriptor files in /usr/share/jupyter/nbextensions
+[D 09:48:55.606 NotebookApp] [jupyter_nbextensions_configurator] Looking for nbextension yaml descriptor files in /gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.ipython/nbextensions
+[D 09:48:55.606 NotebookApp] [jupyter_nbextensions_configurator] Looking for nbextension yaml descriptor files in /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/jupyter_nbextensions_configurator/static
+[D 09:48:55.617 NotebookApp] [jupyter_nbextensions_configurator] Found nbextension 'Nbextensions edit menu item' in nbextensions_configurator/config_menu/config_menu.yaml
+[D 09:48:55.627 NotebookApp] [jupyter_nbextensions_configurator] Found nbextension 'Nbextensions dashboard tab' in nbextensions_configurator/tree_tab/tree_tab.yaml
+[D 09:48:55.627 NotebookApp] 200 GET /jean-zay3_8006/nbextensions/nbextensions_configurator/list?_=1661240934715 (10.148.0.38) 22.900000ms
+[D 09:48:58.190 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad?type=directory&_=1661240934716 (10.148.0.38) 57.940000ms
+[D 09:51:51.609 NotebookApp] 200 GET /jean-zay3_8006/api/sessions?_=1661240934717 (10.148.0.38) 0.770000ms
+[D 09:51:51.611 NotebookApp] 200 GET /jean-zay3_8006/api/terminals?_=1661240934718 (10.148.0.38) 0.480000ms
+[D 09:51:51.644 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/Bash?type=directory&_=1661240934719 (10.148.0.38) 2.260000ms
+[D 09:51:51.651 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/Bash?type=directory&_=1661240934720 (10.148.0.38) 2.050000ms
+[D 09:51:52.244 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/Bash/Test?type=directory&_=1661240934721 (10.148.0.38) 4.140000ms
+[D 09:51:54.342 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad?type=directory&_=1661240934722 (10.148.0.38) 6.710000ms
+[D 09:51:56.657 NotebookApp] Using contents: services/contents
+[D 09:51:56.697 NotebookApp] Path base/images/favicon-file.ico served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/base/images/favicon-file.ico
+[D 09:51:56.734 NotebookApp] Path components/codemirror/lib/codemirror.css served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/codemirror/lib/codemirror.css
+[D 09:51:56.775 NotebookApp] Path components/codemirror/addon/dialog/dialog.css served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/codemirror/addon/dialog/dialog.css
+[D 09:51:56.813 NotebookApp] Path edit/js/main.min.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/edit/js/main.min.js
+[D 09:51:56.845 NotebookApp] 200 GET /jean-zay3_8006/edit/cflow-ad/train.py (10.148.0.38) 188.410000ms
+[D 09:51:56.903 NotebookApp] 200 GET /jean-zay3_8006/static/components/codemirror/lib/codemirror.css?v=81fecb54f83101e2bbe6d2e3131e252ac83f2910366100ca83ba4834f5d41754c837f306eecfdceed05f9c9111614942e2ced5acdd8040746b66c6bef0141d0e (10.148.0.38) 1.450000ms
+[D 09:51:56.929 NotebookApp] 200 GET /jean-zay3_8006/static/components/codemirror/addon/dialog/dialog.css?v=e7f5db4afaccf8a00c10d62c3693642323d3fcf17604a4797803df04e4f144a944dc646c2fda20548df538ada775570127b2a15403996a171ced1769697f3ee4 (10.148.0.38) 1.350000ms
+[D 09:51:56.936 NotebookApp] 304 GET /jean-zay3_8006/custom/custom.css (10.148.0.38) 0.940000ms
+[D 09:51:56.968 NotebookApp] 200 GET /jean-zay3_8006/static/edit/js/main.min.js?v=6f6d31a2982c6ae99278e08d1164e4c3351c50aadcfd3a82d10948a6a7bf3d5ea2d16ac7c5fe1b307b95f045c952e54e743df229f16f3e4341ac33d330797ea6 (10.148.0.38) 16.090000ms
+[D 09:51:57.238 NotebookApp] Paths used for configuration of edit: 
+    	/etc/jupyter/nbconfig/edit.json
+[D 09:51:57.238 NotebookApp] Paths used for configuration of edit: 
+    	/usr/local/etc/jupyter/nbconfig/edit.json
+[D 09:51:57.239 NotebookApp] Paths used for configuration of edit: 
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/edit.json
+[D 09:51:57.239 NotebookApp] Paths used for configuration of edit: 
+    	/gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter/nbconfig/edit.json
+[D 09:51:57.240 NotebookApp] 200 GET /jean-zay3_8006/api/config/edit?_=1661241117688 (10.148.0.38) 2.690000ms
+[D 09:51:57.241 NotebookApp] Paths used for configuration of common: 
+    	/etc/jupyter/nbconfig/common.json
+[D 09:51:57.241 NotebookApp] Paths used for configuration of common: 
+    	/usr/local/etc/jupyter/nbconfig/common.json
+[D 09:51:57.241 NotebookApp] Paths used for configuration of common: 
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/common.json
+[D 09:51:57.242 NotebookApp] Paths used for configuration of common: 
+    	/gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter/nbconfig/common.json
+[D 09:51:57.242 NotebookApp] 200 GET /jean-zay3_8006/api/config/common?_=1661241117689 (10.148.0.38) 2.120000ms
+[D 09:51:57.265 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?type=file&format=text&_=1661241117690 (10.148.0.38) 10.490000ms
+[D 09:51:57.291 NotebookApp] 304 GET /jean-zay3_8006/custom/custom.js?v=20220823094812 (10.148.0.38) 0.960000ms
+[D 09:51:57.297 NotebookApp] 200 GET /jean-zay3_8006/static/base/images/favicon-file.ico?v=f9f0a782d7d67b3a57bf7dce251d771b405c7890604576ec8b9a621a39d7670f6b43ffabef1e566f1cd741ee302e15977d9e1cf60bbacebafe75787b9916415c (10.148.0.38) 1.060000ms
+[D 09:53:18.015 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117691 (10.148.0.38) 1.110000ms
+[I 09:53:18.059 NotebookApp] Saving file at /cflow-ad/train.py
+[D 09:53:18.059 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 09:53:18.078 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 20.040000ms
+[D 10:00:35.445 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117692 (10.148.0.38) 1.150000ms
+[I 10:00:35.497 NotebookApp] Saving file at /cflow-ad/train.py
+[D 10:00:35.497 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 10:00:35.532 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 36.810000ms
+[D 10:01:07.751 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117693 (10.148.0.38) 1.240000ms
+[I 10:01:07.790 NotebookApp] Saving file at /cflow-ad/train.py
+[D 10:01:07.790 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 10:01:07.794 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 4.910000ms
+[D 10:01:23.207 NotebookApp] 200 GET /jean-zay3_8006/api/terminals?_=1661240934724 (10.148.0.38) 0.630000ms
+[D 10:01:23.208 NotebookApp] 200 GET /jean-zay3_8006/api/sessions?_=1661240934723 (10.148.0.38) 0.610000ms
+[D 10:01:23.257 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad?type=directory&_=1661240934725 (10.148.0.38) 17.510000ms
+[D 10:02:56.196 NotebookApp] 200 GET /jean-zay3_8006/api/terminals?_=1661240934727 (10.148.0.38) 0.710000ms
+[D 10:02:56.197 NotebookApp] 200 GET /jean-zay3_8006/api/sessions?_=1661240934726 (10.148.0.38) 0.620000ms
+[D 10:02:56.234 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad?type=directory&_=1661240934728 (10.148.0.38) 6.630000ms
+[D 10:03:02.403 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117694 (10.148.0.38) 1.160000ms
+[I 10:03:02.469 NotebookApp] Saving file at /cflow-ad/train.py
+[D 10:03:02.469 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 10:03:02.476 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 8.020000ms
+[D 10:11:45.833 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117695 (10.148.0.38) 1.190000ms
+[I 10:11:45.890 NotebookApp] Saving file at /cflow-ad/train.py
+[D 10:11:45.890 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 10:11:45.897 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 8.230000ms
+[D 10:13:23.644 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117696 (10.148.0.38) 1.180000ms
+[I 10:13:23.678 NotebookApp] Saving file at /cflow-ad/train.py
+[D 10:13:23.678 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 10:13:23.682 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 9.850000ms
+[D 10:18:33.494 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117697 (10.148.0.38) 1.190000ms
+[I 10:18:33.528 NotebookApp] Saving file at /cflow-ad/train.py
+[D 10:18:33.528 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 10:18:33.535 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 8.000000ms
+[D 10:19:43.357 NotebookApp] 200 GET /jean-zay3_8006/api/sessions?_=1661240934729 (10.148.0.38) 0.770000ms
+[D 10:19:43.359 NotebookApp] 200 GET /jean-zay3_8006/api/terminals?_=1661240934730 (10.148.0.38) 0.480000ms
+[D 10:19:43.388 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad?type=directory&_=1661240934731 (10.148.0.38) 6.890000ms
+[D 10:30:17.514 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117698 (10.148.0.38) 1.150000ms
+[I 10:30:17.545 NotebookApp] Saving file at /cflow-ad/train.py
+[D 10:30:17.545 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 10:30:17.570 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 25.060000ms
+[D 10:35:29.861 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117699 (10.148.0.38) 1.230000ms
+[D 10:35:30.467 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117700 (10.148.0.38) 1.200000ms
+[I 10:35:30.502 NotebookApp] Saving file at /cflow-ad/train.py
+[D 10:35:30.502 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 10:35:30.509 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 7.980000ms
+[I 10:35:30.993 NotebookApp] Saving file at /cflow-ad/train.py
+[D 10:35:30.993 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 10:35:30.996 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 1023.580000ms
+[D 10:35:32.605 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117701 (10.148.0.38) 1.260000ms
+[I 10:35:33.049 NotebookApp] Saving file at /cflow-ad/train.py
+[D 10:35:33.049 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 10:35:33.053 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 358.020000ms
+[D 10:35:46.616 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117702 (10.148.0.38) 1.210000ms
+[I 10:35:46.659 NotebookApp] Saving file at /cflow-ad/train.py
+[D 10:35:46.659 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 10:35:46.664 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 4.990000ms
+[D 10:51:43.362 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117703 (10.148.0.38) 1.220000ms
+[I 10:51:43.398 NotebookApp] Saving file at /cflow-ad/train.py
+[D 10:51:43.398 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 10:51:43.451 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 53.900000ms
+[D 10:52:18.414 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117704 (10.148.0.38) 1.130000ms
+[I 10:52:18.457 NotebookApp] Saving file at /cflow-ad/train.py
+[D 10:52:18.457 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 10:52:18.462 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 6.300000ms
+[D 10:52:23.458 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117705 (10.148.0.38) 1.330000ms
+[I 10:52:23.486 NotebookApp] Saving file at /cflow-ad/train.py
+[D 10:52:23.486 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 10:52:23.491 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 5.170000ms
+[D 11:03:51.192 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117706 (10.148.0.38) 1.120000ms
+[I 11:03:51.225 NotebookApp] Saving file at /cflow-ad/train.py
+[D 11:03:51.225 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 11:03:51.234 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 9.730000ms
+[D 11:04:25.267 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117707 (10.148.0.38) 1.120000ms
+[I 11:04:25.311 NotebookApp] Saving file at /cflow-ad/train.py
+[D 11:04:25.311 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 11:04:25.315 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 4.850000ms
+[D 11:04:35.285 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117708 (10.148.0.38) 1.220000ms
+[I 11:04:35.316 NotebookApp] Saving file at /cflow-ad/train.py
+[D 11:04:35.316 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 11:04:35.320 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 5.370000ms
+[D 11:12:17.342 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117709 (10.148.0.38) 1.130000ms
+[I 11:12:17.384 NotebookApp] Saving file at /cflow-ad/train.py
+[D 11:12:17.384 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 11:12:17.439 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 55.880000ms
+[D 11:12:39.410 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117710 (10.148.0.38) 1.230000ms
+[I 11:12:39.439 NotebookApp] Saving file at /cflow-ad/train.py
+[D 11:12:39.440 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 11:12:39.444 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 4.790000ms
+[D 11:12:46.652 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117711 (10.148.0.38) 1.250000ms
+[I 11:12:46.687 NotebookApp] Saving file at /cflow-ad/train.py
+[D 11:12:46.687 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 11:12:46.692 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 5.660000ms
+[D 11:18:24.202 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117712 (10.148.0.38) 1.230000ms
+[I 11:18:24.245 NotebookApp] Saving file at /cflow-ad/train.py
+[D 11:18:24.245 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 11:18:24.306 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 61.090000ms
+[D 11:23:28.178 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117713 (10.148.0.38) 1.180000ms
+[I 11:23:28.214 NotebookApp] Saving file at /cflow-ad/train.py
+[D 11:23:28.214 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 11:23:28.272 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 59.010000ms
+[D 11:24:09.357 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117714 (10.148.0.38) 1.110000ms
+[I 11:24:09.400 NotebookApp] Saving file at /cflow-ad/train.py
+[D 11:24:09.400 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 11:24:09.404 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 4.500000ms
+[D 11:26:29.632 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117715 (10.148.0.38) 1.250000ms
+[I 11:26:29.677 NotebookApp] Saving file at /cflow-ad/train.py
+[D 11:26:29.677 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 11:26:29.681 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 5.280000ms
+[D 11:35:00.915 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117716 (10.148.0.38) 1.180000ms
+[I 11:35:00.950 NotebookApp] Saving file at /cflow-ad/train.py
+[D 11:35:00.950 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 11:35:00.978 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 28.640000ms
+[D 11:35:12.393 NotebookApp] 200 GET /jean-zay3_8006/api/terminals?_=1661240934733 (10.148.0.38) 0.630000ms
+[D 11:35:12.394 NotebookApp] 200 GET /jean-zay3_8006/api/sessions?_=1661240934732 (10.148.0.38) 0.570000ms
+[D 11:35:12.517 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad?type=directory&_=1661240934734 (10.148.0.38) 90.520000ms
+[I 11:35:14.989 NotebookApp] Creating new notebook in /cflow-ad
+[D 11:35:15.050 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/Untitled.ipynb
+[D 11:35:15.273 NotebookApp] 201 POST /jean-zay3_8006/api/contents/cflow-ad (10.148.0.38) 284.550000ms
+[D 11:35:15.304 NotebookApp] Using contents: services/contents
+[D 11:35:15.437 NotebookApp] Path base/images/favicon-notebook.ico served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/base/images/favicon-notebook.ico
+[D 11:35:15.484 NotebookApp] Path components/bootstrap-tour/build/css/bootstrap-tour.min.css served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/bootstrap-tour/build/css/bootstrap-tour.min.css
+[D 11:35:15.526 NotebookApp] Path notebook/css/override.css served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/notebook/css/override.css
+[D 11:35:26.378 NotebookApp] Path components/text-encoding/lib/encoding.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/text-encoding/lib/encoding.js
+[D 11:35:26.406 NotebookApp] Path notebook/js/main.min.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/notebook/js/main.min.js
+[D 11:35:26.451 NotebookApp] 200 GET /jean-zay3_8006/notebooks/cflow-ad/Untitled.ipynb?kernel_name=python3 (10.148.0.38) 11147.670000ms
+[D 11:35:26.511 NotebookApp] Path components/MathJax/MathJax.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/MathJax/MathJax.js
+[D 11:35:26.531 NotebookApp] 200 GET /jean-zay3_8006/static/components/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full,Safe&delayStartupUntil=configured (10.148.0.38) 34.450000ms
+[D 11:35:26.539 NotebookApp] 200 GET /jean-zay3_8006/static/components/bootstrap-tour/build/css/bootstrap-tour.min.css?v=95c93e52db61ab29625defe55361384ce6776a7d303b97da5a73fef5ddf8e391a6223599a0b58669476bd71645a4f0022df0517c88b0c05df80ba465e36f5417 (10.148.0.38) 1.920000ms
+[D 11:35:26.552 NotebookApp] 304 GET /jean-zay3_8006/custom/custom.css (10.148.0.38) 14.360000ms
+[D 11:35:26.554 NotebookApp] 200 GET /jean-zay3_8006/static/notebook/css/override.css?v=16733f6ba5f2224692fe4e654f3cbb2e3cae82f1df06ca53aa1cb88b147465f16c968c0898e2b0203a7ad3a469f82b959e26bb4b27b790f7f364c4336449b0aa (10.148.0.38) 1.320000ms
+[D 11:35:26.577 NotebookApp] 200 GET /jean-zay3_8006/static/components/text-encoding/lib/encoding.js?v=737ac6f9f978afb6348b5914877e7d7136de7465cd4cdf389bad9a6b3ad5ceffbfb23febc75c23378967d7d36f98f5388208e8eb78c80f2bf47e8f8c000481ad (10.148.0.38) 1.440000ms
+[D 11:35:26.612 NotebookApp] Path components/MathJax/config/TeX-AMS-MML_HTMLorMML-full.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/MathJax/config/TeX-AMS-MML_HTMLorMML-full.js
+[D 11:35:26.633 NotebookApp] 200 GET /jean-zay3_8006/static/components/MathJax/config/TeX-AMS-MML_HTMLorMML-full.js?V=2.7.9 (10.148.0.38) 40.920000ms
+[D 11:35:26.687 NotebookApp] 200 GET /jean-zay3_8006/static/notebook/js/main.min.js?v=931f67b1add7892d4e6a16145eb8c86f6771d4c6083c0f03cfd231ca946305a28e3e3be1cfca3f4755834a5fd7aafb859f1db1464c3a34beb96555340d3f25c5 (10.148.0.38) 109.070000ms
+[D 11:35:26.776 NotebookApp] Path components/MathJax/config/Safe.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/MathJax/config/Safe.js
+[D 11:35:26.777 NotebookApp] 200 GET /jean-zay3_8006/static/components/MathJax/config/Safe.js?V=2.7.9 (10.148.0.38) 6.030000ms
+[D 11:35:26.959 NotebookApp] Paths used for configuration of notebook: 
+    	/etc/jupyter/nbconfig/notebook.json
+[D 11:35:26.959 NotebookApp] Paths used for configuration of notebook: 
+    	/usr/local/etc/jupyter/nbconfig/notebook.json
+[D 11:35:27.015 NotebookApp] Paths used for configuration of notebook: 
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/notebook.d/widgetsnbextension.json
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/notebook.json
+[D 11:35:27.040 NotebookApp] Paths used for configuration of notebook: 
+    	/gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter/nbconfig/notebook.json
+[D 11:35:27.054 NotebookApp] 200 GET /jean-zay3_8006/api/config/notebook?_=1661247326864 (10.148.0.38) 96.110000ms
+[D 11:35:27.061 NotebookApp] Paths used for configuration of common: 
+    	/etc/jupyter/nbconfig/common.json
+[D 11:35:27.062 NotebookApp] Paths used for configuration of common: 
+    	/usr/local/etc/jupyter/nbconfig/common.json
+[D 11:35:27.062 NotebookApp] Paths used for configuration of common: 
+    	/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/etc/jupyter/nbconfig/common.json
+[D 11:35:27.063 NotebookApp] Paths used for configuration of common: 
+    	/gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.jupyter/nbconfig/common.json
+[D 11:35:27.063 NotebookApp] 200 GET /jean-zay3_8006/api/config/common?_=1661247326865 (10.148.0.38) 2.240000ms
+[D 11:35:27.095 NotebookApp] Path components/MathJax/extensions/TeX/begingroup.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/MathJax/extensions/TeX/begingroup.js
+[D 11:35:27.097 NotebookApp] 200 GET /jean-zay3_8006/static/components/MathJax/extensions/TeX/begingroup.js?V=2.7.9 (10.148.0.38) 33.450000ms
+[D 11:35:27.111 NotebookApp] Path components/MathJax/extensions/TeX/newcommand.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/MathJax/extensions/TeX/newcommand.js
+[D 11:35:27.119 NotebookApp] 200 GET /jean-zay3_8006/static/components/MathJax/extensions/TeX/newcommand.js?V=2.7.9 (10.148.0.38) 55.070000ms
+[D 11:35:27.135 NotebookApp] Path components/MathJax/extensions/MathML/content-mathml.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/MathJax/extensions/MathML/content-mathml.js
+[D 11:35:27.146 NotebookApp] 200 GET /jean-zay3_8006/static/components/MathJax/extensions/MathML/content-mathml.js?V=2.7.9 (10.148.0.38) 81.690000ms
+[D 11:35:27.189 NotebookApp] Found kernel xpython in /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/share/jupyter/kernels
+[D 11:35:27.189 NotebookApp] Found kernel python3 in /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/share/jupyter/kernels
+[D 11:35:27.207 NotebookApp] 304 GET /jean-zay3_8006/api/kernelspecs (10.148.0.38) 44.540000ms
+[D 11:35:27.224 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/Untitled.ipynb?type=notebook&_=1661247326866 (10.148.0.38) 9.310000ms
+[D 11:35:27.285 NotebookApp] Path components/MathJax/jax/output/HTML-CSS/fonts/STIX-Web/fontdata.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/MathJax/jax/output/HTML-CSS/fonts/STIX-Web/fontdata.js
+[D 11:35:27.298 NotebookApp] 200 GET /jean-zay3_8006/static/components/MathJax/jax/output/HTML-CSS/fonts/STIX-Web/fontdata.js?V=2.7.9 (10.148.0.38) 82.810000ms
+[D 11:35:27.309 NotebookApp] 304 GET /jean-zay3_8006/custom/custom.js?v=20220823094812 (10.148.0.38) 93.900000ms
+[D 11:35:27.320 NotebookApp] Path components/MathJax/extensions/Safe.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/components/MathJax/extensions/Safe.js
+[D 11:35:27.327 NotebookApp] 200 GET /jean-zay3_8006/static/components/MathJax/extensions/Safe.js?V=2.7.9 (10.148.0.38) 17.810000ms
+[D 11:35:27.379 NotebookApp] Path jupyter-js-widgets/extension.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/share/jupyter/nbextensions/jupyter-js-widgets/extension.js
+[D 11:35:27.399 NotebookApp] 200 GET /jean-zay3_8006/nbextensions/jupyter-js-widgets/extension.js?v=20220823094812 (10.148.0.38) 68.030000ms
+[D 11:35:27.466 NotebookApp] Path nbextensions_configurator/config_menu/main.js served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/config_menu/main.js
+[D 11:35:27.469 NotebookApp] 200 GET /jean-zay3_8006/nbextensions/nbextensions_configurator/config_menu/main.js?v=20220823094812 (10.148.0.38) 67.850000ms
+[D 11:35:27.763 NotebookApp] Starting kernel: ['/gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/bin/python', '-m', 'ipykernel_launcher', '-f', '/gpfs7kw/linkhome/rech/genkmw01/ueu39kt/.local/share/jupyter/runtime/kernel-9d544cf2-7a26-490d-9749-e488398b94a6.json']
+[D 11:35:27.806 NotebookApp] Connecting to: tcp://127.0.0.1:40879
+[D 11:35:27.860 NotebookApp] Connecting to: tcp://127.0.0.1:58053
+[I 11:35:27.861 NotebookApp] Kernel started: 9d544cf2-7a26-490d-9749-e488398b94a6, name: python3
+[D 11:35:27.861 NotebookApp] Kernel args: {'kernel_name': 'python3', 'cwd': '/linkhome/rech/genkmw01/ueu39kt/cflow-ad'}
+[D 11:35:27.864 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/Untitled.ipynb/checkpoints?_=1661247326867 (10.148.0.38) 2.080000ms
+[D 11:35:27.865 NotebookApp] 201 POST /jean-zay3_8006/api/sessions (10.148.0.38) 396.000000ms
+[D 11:35:27.866 NotebookApp] Serving kernel resource from: /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/share/jupyter/kernels/python3
+[D 11:35:27.884 NotebookApp] 200 GET /jean-zay3_8006/kernelspecs/python3/logo-64x64.png (10.148.0.38) 20.070000ms
+[D 11:35:27.932 NotebookApp] 200 GET /jean-zay3_8006/static/base/images/favicon-notebook.ico?v=eb02bb6f6435d048eba1bf1bd3b3621f8c14f26518dbadd8efd4ee6ee2721caf2367bc0cbc27d2ee2c35bc3b035aad07c6d625422b9445bf301897f493d0edc5 (10.148.0.38) 2.680000ms
+[D 11:35:27.934 NotebookApp] Initializing websocket connection /jean-zay3_8006/api/kernels/9d544cf2-7a26-490d-9749-e488398b94a6/channels
+[D 11:35:27.935 NotebookApp] Requesting kernel info from 9d544cf2-7a26-490d-9749-e488398b94a6
+[D 11:35:27.935 NotebookApp] Connecting to: tcp://127.0.0.1:48219
+[D 11:35:28.920 NotebookApp] Path base/images/favicon-busy-1.ico served from /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/notebook/static/base/images/favicon-busy-1.ico
+[D 11:35:28.938 NotebookApp] 200 GET /jean-zay3_8006/static/base/images/favicon-busy-1.ico (10.148.0.38) 29.520000ms
+[D 11:35:41.512 NotebookApp] activity on 9d544cf2-7a26-490d-9749-e488398b94a6: status (starting)
+[D 11:35:41.513 NotebookApp] activity on 9d544cf2-7a26-490d-9749-e488398b94a6: status (busy)
+[D 11:35:41.514 NotebookApp] activity on 9d544cf2-7a26-490d-9749-e488398b94a6: status (idle)
+[D 11:35:41.514 NotebookApp] Received kernel info: {'status': 'ok', 'protocol_version': '5.3', 'implementation': 'ipython', 'implementation_version': '7.25.0', 'language_info': {'name': 'python', 'version': '3.9.6', 'mimetype': 'text/x-python', 'codemirror_mode': {'name': 'ipython', 'version': 3}, 'pygments_lexer': 'ipython3', 'nbconvert_exporter': 'python', 'file_extension': '.py'}, 'banner': "Python 3.9.6 | packaged by conda-forge | (default, Jul  6 2021, 08:53:59) \nType 'copyright', 'credits' or 'license' for more information\nIPython 7.25.0 -- An enhanced Interactive Python. Type '?' for help.\n", 'help_links': [{'text': 'Python Reference', 'url': 'https://docs.python.org/3.9'}, {'text': 'IPython Reference', 'url': 'https://ipython.org/documentation.html'}, {'text': 'NumPy Reference', 'url': 'https://docs.scipy.org/doc/numpy/reference/'}, {'text': 'SciPy Reference', 'url': 'https://docs.scipy.org/doc/scipy/reference/'}, {'text': 'Matplotlib Reference', 'url': 'https://matplotlib.org/contents.html'}, {'text': 'SymPy Reference', 'url': 'http://docs.sympy.org/latest/index.html'}, {'text': 'pandas Reference', 'url': 'https://pandas.pydata.org/pandas-docs/stable/'}]}
+[D 11:35:41.515 NotebookApp] 101 GET /jean-zay3_8006/api/kernels/9d544cf2-7a26-490d-9749-e488398b94a6/channels?session_id=538c23104f6b43cd8c2dda2daefbea22 (10.148.0.38) 13580.980000ms
+[D 11:35:41.515 NotebookApp] Opening websocket /jean-zay3_8006/api/kernels/9d544cf2-7a26-490d-9749-e488398b94a6/channels
+[D 11:35:41.516 NotebookApp] Getting buffer for 9d544cf2-7a26-490d-9749-e488398b94a6
+[D 11:35:41.516 NotebookApp] Connecting to: tcp://127.0.0.1:58053
+[D 11:35:41.516 NotebookApp] Connecting to: tcp://127.0.0.1:48219
+[D 11:35:41.516 NotebookApp] Connecting to: tcp://127.0.0.1:40879
+[D 11:35:41.516 NotebookApp] Connecting to: tcp://127.0.0.1:42715
+[D 11:35:41.517 NotebookApp] Connecting to: tcp://127.0.0.1:48219
+[D 11:35:41.517 NotebookApp] Nudge: attempt 1 on kernel 9d544cf2-7a26-490d-9749-e488398b94a6
+[D 11:35:41.519 NotebookApp] activity on 9d544cf2-7a26-490d-9749-e488398b94a6: status (busy)
+[D 11:35:41.519 NotebookApp] Nudge: IOPub received: 9d544cf2-7a26-490d-9749-e488398b94a6
+[D 11:35:41.519 NotebookApp] Nudge: resolving iopub future: 9d544cf2-7a26-490d-9749-e488398b94a6
+[D 11:35:41.519 NotebookApp] Nudge: shell info reply received: 9d544cf2-7a26-490d-9749-e488398b94a6
+[D 11:35:41.519 NotebookApp] Nudge: resolving shell future: 9d544cf2-7a26-490d-9749-e488398b94a6
+[D 11:35:41.519 NotebookApp] activity on 9d544cf2-7a26-490d-9749-e488398b94a6: status (idle)
+[D 11:35:41.549 NotebookApp] activity on 9d544cf2-7a26-490d-9749-e488398b94a6: status (busy)
+[D 11:35:41.551 NotebookApp] activity on 9d544cf2-7a26-490d-9749-e488398b94a6: status (idle)
+[D 11:35:41.551 NotebookApp] activity on 9d544cf2-7a26-490d-9749-e488398b94a6: status (busy)
+[D 11:35:41.552 NotebookApp] activity on 9d544cf2-7a26-490d-9749-e488398b94a6: status (idle)
+[D 11:35:41.596 NotebookApp] 200 GET /jean-zay3_8006/static/base/images/favicon-notebook.ico (10.148.0.38) 1.540000ms
+[D 11:35:43.322 NotebookApp] Renaming checkpoint /linkhome/rech/genkmw01/ueu39kt/cflow-ad/.ipynb_checkpoints/Untitled-checkpoint.ipynb -> /linkhome/rech/genkmw01/ueu39kt/cflow-ad/.ipynb_checkpoints/CFlow_Test-checkpoint.ipynb
+[D 11:35:43.323 NotebookApp] 200 PATCH /jean-zay3_8006/api/contents/cflow-ad/Untitled.ipynb (10.148.0.38) 4.480000ms
+[D 11:35:43.352 NotebookApp] 200 PATCH /jean-zay3_8006/api/sessions/1d2b1d01-55ed-435e-aeab-01d8e20864be (10.148.0.38) 1.070000ms
+[D 11:35:45.246 NotebookApp] 200 GET /jean-zay3_8006/api/sessions?_=1661240934735 (10.148.0.38) 0.990000ms
+[D 11:35:45.267 NotebookApp] 200 GET /jean-zay3_8006/api/terminals?_=1661240934736 (10.148.0.38) 0.590000ms
+[D 11:35:45.302 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad?type=directory&_=1661240934737 (10.148.0.38) 12.520000ms
+[D 11:35:52.430 NotebookApp] activity on 9d544cf2-7a26-490d-9749-e488398b94a6: status (busy)
+[D 11:35:52.431 NotebookApp] activity on 9d544cf2-7a26-490d-9749-e488398b94a6: execute_input
+[D 11:35:53.482 NotebookApp] 304 GET /jean-zay3_8006/static/base/images/favicon-busy-1.ico (10.148.0.38) 1.400000ms
+[D 11:36:28.217 NotebookApp] 200 GET /jean-zay3_8006/api/terminals?_=1661240934739 (10.148.0.38) 0.720000ms
+[D 11:36:28.219 NotebookApp] 200 GET /jean-zay3_8006/api/sessions?_=1661240934738 (10.148.0.38) 0.750000ms
+[D 11:36:28.251 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad?type=directory&_=1661240934740 (10.148.0.38) 9.990000ms
+[D 11:36:30.111 NotebookApp] activity on 9d544cf2-7a26-490d-9749-e488398b94a6: error
+[D 11:36:30.113 NotebookApp] activity on 9d544cf2-7a26-490d-9749-e488398b94a6: status (idle)
+[D 11:36:30.113 NotebookApp] activity on 9d544cf2-7a26-490d-9749-e488398b94a6: status (busy)
+[D 11:36:30.114 NotebookApp] activity on 9d544cf2-7a26-490d-9749-e488398b94a6: status (idle)
+[D 11:36:30.115 NotebookApp] activity on 9d544cf2-7a26-490d-9749-e488398b94a6: status (busy)
+[D 11:36:30.116 NotebookApp] activity on 9d544cf2-7a26-490d-9749-e488398b94a6: status (idle)
+[D 11:37:27.362 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/CFlow_Test.ipynb?content=0&_=1661247326868 (10.148.0.38) 1.220000ms
+[I 11:37:27.400 NotebookApp] Saving file at /cflow-ad/CFlow_Test.ipynb
+[D 11:37:27.400 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/CFlow_Test.ipynb
+[D 11:37:27.439 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/CFlow_Test.ipynb (10.148.0.38) 39.420000ms
+[D 11:45:57.000 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117717 (10.148.0.38) 1.190000ms
+[I 11:45:57.037 NotebookApp] Saving file at /cflow-ad/train.py
+[D 11:45:57.037 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 11:45:57.085 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 49.150000ms
+[D 11:46:14.875 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117718 (10.148.0.38) 1.300000ms
+[I 11:46:14.913 NotebookApp] Saving file at /cflow-ad/train.py
+[D 11:46:14.913 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 11:46:14.918 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 5.490000ms
+[D 11:47:30.606 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117719 (10.148.0.38) 1.220000ms
+[I 11:47:30.640 NotebookApp] Saving file at /cflow-ad/train.py
+[D 11:47:30.640 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 11:47:30.651 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 11.820000ms
+[D 11:49:03.081 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117720 (10.148.0.38) 1.120000ms
+[I 11:49:03.122 NotebookApp] Saving file at /cflow-ad/train.py
+[D 11:49:03.122 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 11:49:03.130 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 8.690000ms
+[D 11:50:25.842 NotebookApp] 200 GET /jean-zay3_8006/api/contents/cflow-ad/train.py?content=0&_=1661241117721 (10.148.0.38) 1.180000ms
+[I 11:50:25.871 NotebookApp] Saving file at /cflow-ad/train.py
+[D 11:50:25.871 NotebookApp] Saving /linkhome/rech/genkmw01/ueu39kt/cflow-ad/train.py
+[D 11:50:25.882 NotebookApp] 200 PUT /jean-zay3_8006/api/contents/cflow-ad/train.py (10.148.0.38) 11.760000ms
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.

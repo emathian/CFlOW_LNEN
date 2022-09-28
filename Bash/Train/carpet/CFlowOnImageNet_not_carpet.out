@@ -1,0 +1,62 @@
+LR schedule: [12, 18, 22]
+LR schedule: [12, 18, 22]
+Number of pool layers = 3
+Number of pool layers = 3
+CNF coder: 512
+CNF coder: 512
+CNF coder: 1024
+CNF coder: 1024
+CNF coder: 2048
+CNF coder: 2048
+img_types   1
+img_types   6
+train/test loader length 280 117
+train/test loader batches 8 4
+Train meta epoch: 0
+Len train loader =  8
+Epoch: 0 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 8
+img_types   1
+img_types   6
+train/test loader length 280 117
+train/test loader batches 8 4
+Train meta epoch: 0
+Len train loader =  8
+Epoch: 0 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 8
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_2809/carpet/0/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_0_0.pt
+Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_0_0.pt
+Epoch: 0.0 	 train loss: 0.3779, lr=0.000097
+Len test_loader   4
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+Epoch: 0 	 step: 0.0000 
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_2809/carpet/0/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_0_0.pt
+Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_0_0.pt
+Epoch: 0.0 	 train loss: 0.3779, lr=0.000097
+Len test_loader   4
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+Epoch: 0 	 test_loss: 8335.6583 and 6.87 fps
+DET_AUROC: 	 last: 99.52 	 max: 99.52 	 epoch_max: 0
+DET_AUROC  0.9951845906902086
+Epoch: 0 	 step: 0.0000 
+ SEG_AUROC   0.9809393306564994
+SEG_AUROC: 	 last: 98.09 	 max: 98.09 	 epoch_max: 0
+Epoch: 0 	 test_loss: 8335.6583 and 6.81 fps
+Function: save_weights - Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2022-09-28-10:25:41.pt
+Train meta epoch: 1
+Len train loader =  8
+Epoch: 1 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 8
+DET_AUROC: 	 last: 99.52 	 max: 99.52 	 epoch_max: 0
+DET_AUROC  0.9951845906902086
+ SEG_AUROC   0.9809393306564994
+SEG_AUROC: 	 last: 98.09 	 max: 98.09 	 epoch_max: 0
+Function: save_weights - Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2022-09-28-10:25:41.pt
+Train meta epoch: 1
+Len train loader =  8
+Epoch: 1 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 8
