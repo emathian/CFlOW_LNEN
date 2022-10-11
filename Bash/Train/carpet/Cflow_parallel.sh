@@ -9,8 +9,8 @@
 #SBATCH --gres=gpu:2 # 4
 # nombre de taches MPI par noeud
 #SBATCH --time=20:00:00   # temps d execution maximum demande (HH:MM:SS)
-#SBATCH --output=CFlowOnImageNet_carpet_parallel.out          # nom du fichier de sortie
-#SBATCH --error=CFlowOnImageNet_carpet_parallel.error     
+#SBATCH --output=CFlowOnImageNet_carpet_parallel_0310.out          # nom du fichier de sortie
+#SBATCH --error=CFlowOnImageNet_carpet_parallel_0310.error     
 #SBATCH --account ohv@v100
 
 module purge

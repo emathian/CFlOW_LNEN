@@ -234,7 +234,8 @@ class TumorNormalDataset(Dataset):
         self.is_train = is_train
         self.cropsize = c.crp_size
         self.infer_train = c.infer_train
-        self.list_file = c.list_file
+        self.list_file_test = c.list_file_test
+        self.list_file_train = c.list_file_train
         # load dataset
         self.x, self.y, self.mask  = self.load_dataset_folder()
         # set transforms
@@ -274,14 +275,14 @@ class TumorNormalDataset(Dataset):
     def load_dataset_folder(self):
         if self.is_train :
             phase = 'train' 
-            list_file = 'TrainTumorNormal.txt'
+            list_file =  self.list_file_train #'TrainTumorNormal.txt'
         else:
             if not self.infer_train:
                 phase = 'test'
-                list_file = 'TestTumorNormal.txt'
+                list_file = self.list_file_test #'TestTumorNormal.txt'
             else:
                 phase = 'train'
-                list_file = 'TrainTumorNormal.txt'
+                list_file =   self.list_file_train #'TrainTumorNormal.txt'
         x, y, mask = [], [], []
         img_dir = os.path.join(self.dataset_path, list_file)
         with open(img_dir, 'r') as f:

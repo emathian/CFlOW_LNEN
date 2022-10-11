@@ -329,6 +329,7 @@ def test_meta_epoch_lnen(c, epoch, loader, encoder, decoders, pool_layers, N):
             res_df['BinaryLabels'] = labels_c
             res_df['MaxScoreAnomalyMap'] = score_label_max.flatten().tolist()
             res_df['MeanScoreAnomalyMap'] = score_label_mean.flatten().tolist()
+            print(os.path.join(c.viz_dir, c.class_name, res_tab_name))
             with open(os.path.join(c.viz_dir, c.class_name, res_tab_name), 'a') as table_file: 
                 for row in range(res_df.shape[0]):
                     file_path_ = res_df[ 'FilesPath'][row]
@@ -504,8 +505,11 @@ def train(c):
         train_dataset = StcDataset(c, is_train=True)
         test_dataset  = StcDataset(c, is_train=False)
     elif c.dataset == 'TumorNormal':
-        train_dataset = TumorNormalDataset(c, is_train=True)
-        test_dataset  = TumorNormalDataset(c, is_train=False)
+        if c.action_type == 'norm-train':
+            train_dataset = TumorNormalDataset(c, is_train=True)
+            test_dataset  = TumorNormalDataset(c, is_train=False)
+        else:
+            test_dataset  = TumorNormalDataset(c, is_train=False)
     else:
         raise NotImplementedError('{} is not supported dataset!'.format(c.dataset))
     #
@@ -514,16 +518,18 @@ def train(c):
         train_sampler = torch.utils.data.distributed.DistributedSampler(train_dataset, num_replicas=idr_torch_size, rank=idr_torch_rank) 
         train_loader = torch.utils.data.DataLoader(dataset=train_dataset,  batch_size=batch_size_per_gpu,  shuffle=False,   num_workers=0,                         pin_memory=True, sampler=train_sampler)
         
-        test_sampler = torch.utils.data.distributed.DistributedSampler(test_dataset, num_replicas=idr_torch_size, rank=idr_torch_rank) 
-        test_loader = torch.utils.data.DataLoader(dataset=test_dataset,  batch_size=batch_size_per_gpu,  shuffle=False,   num_workers=0,                         pin_memory=True, sampler=test_sampler,  prefetch_factor=2)
-        #test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=c.batch_size, shuffle=True, drop_last=False, **kwargs)
+        test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=c.batch_size, shuffle=True, drop_last=False, **kwargs)
 
     else:
-        train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=c.batch_size, shuffle=True, drop_last=True, **kwargs)
-        test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=c.batch_size, shuffle=True, drop_last=False, **kwargs)
+        if c.action_type == 'norm-train':
+            train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=c.batch_size, shuffle=True, drop_last=True, **kwargs)
+            test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=c.batch_size, shuffle=True, drop_last=False, **kwargs)
+            print('train/test loader length', len(train_loader.dataset), len(test_loader.dataset))
+            print('train/test loader batches', len(train_loader), len(test_loader))
+        else:
+            test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=c.batch_size, shuffle=True, drop_last=False, **kwargs)
     N = 256  # hyperparameter that increases batch size for the decoder model by N
-    print('train/test loader length', len(train_loader.dataset), len(test_loader.dataset))
-    print('train/test loader batches', len(train_loader), len(test_loader))
+  
     # stats
     det_roc_obs = Score_Observer('DET_AUROC')
     seg_roc_obs = Score_Observer('SEG_AUROC')
@@ -557,11 +563,11 @@ def train(c):
             c, epoch, test_loader, encoder, decoders, pool_layers, N)
         else:
             # LINE FOR VALIDATION
-            height, width, test_image_list, test_dist, gt_label_list, gt_mask_list, files_path_list = test_meta_epoch(
-            c, epoch, test_loader, encoder, decoders, pool_layers, N)
-            # LINE FOR EVALUATION
-#             height, width, test_image_list, test_dist, gt_label_list, gt_mask_list, files_path_list = test_meta_epoch_lnen(
-#             c, epoch, test_loader, encoder, decoders, pool_layers, N) # test_meta_epoch_lnen
+#             height, width, test_image_list, test_dist, gt_label_list, gt_mask_list, files_path_list = test_meta_epoch(
+#             c, epoch, test_loader, encoder, decoders, pool_layers, N)
+#             # LINE FOR EVALUATION
+            height, width, test_image_list, test_dist, gt_label_list, gt_mask_list, files_path_list = test_meta_epoch_lnen(
+            c, epoch, test_loader, encoder, decoders, pool_layers, N) # test_meta_epoch_lnen
             
         if  c.dataset != 'TumorNormal'  :
             files_path_list =  [item for sublist in files_path_list for item in sublist]

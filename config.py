@@ -12,15 +12,18 @@ def get_args():
                         help='file with saved checkpoint')
     parser.add_argument('-cl', '--class-name', default='none', type=str, metavar='C',
                         help='class name for MVTec/STC (default: none)')
-    parser.add_argument('-lf', '--list-file', default='TrainTumorNormal.txt', type=str, metavar='C',
+    parser.add_argument('-lfr', '--list-file-train', default='TrainTumorNormal.txt', type=str, metavar='C',
+                        help='List of files for LNEN dataset')
+    parser.add_argument('-lft', '--list-file-test', default='TestTumorNormal.txt', type=str, metavar='C',
                         help='List of files for LNEN dataset')
     parser.add_argument('-vd', '--viz-dir', default='/gpfsscratch/rech/ohv/ueu39kt/CFLOW/viz', type=str, metavar='C',
                         help='visualization outputdir')
     parser.add_argument('-rd', '--res-dir', default='/gpfsscratch/rech/ohv/ueu39kt/CFLOW/results', type=str, metavar='C',
                         help='result outputdir')
-    parser.add_argument('-wd', '--weights-dir', default='/gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_2809_3', type=str, metavar='C', help='result outputdir')
+    parser.add_argument('-wd', '--weights-dir', default='/gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_hatim_10102022', type=str, metavar='C', help='result outputdir')
+    parser.add_argument('-rdp', '--root-data-path', default='/gpfsscratch/rech/ohv/ueu39kt/KI67_Normal_Tumoral', type=str, metavar='C', help='root directory containing the file list')
     # /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/tumor_normal_ki67_2809
-    parser.add_argument('--infer_train', action='store_true', default=False,
+    parser.add_argument('--infer-train', action='store_true', default=False, 
                         help='Infer the train set')
     parser.add_argument('--parallel', action='store_true', default=False,
                         help='Parallelize the training on the data set')
@@ -41,8 +44,8 @@ def get_args():
     parser.add_argument('-bs', '--batch-size', default=32, type=int, metavar='B',
                         help='train batch size (default: 32)') # 64 if parallel 2 GPU
     parser.add_argument('--lr', type=float, default=2e-4, metavar='LR',
-                        help='learning rate (default: 2e-4)')
-    parser.add_argument('--meta-epochs', type=int, default=25, metavar='N',
+                        help='learning rate (default: 2e-4)') # low_lr = 2e-5
+    parser.add_argument('--meta-epochs', type=int, default=5, metavar='N',
                         help='number of meta epochs to train (default: 25)')
     parser.add_argument('--sub-epochs', type=int, default=1, metavar='N',
                         help='number of sub epochs to train (default: 8)')

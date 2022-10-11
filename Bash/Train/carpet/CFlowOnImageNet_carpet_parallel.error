@@ -17,6 +17,3 @@ Loading pytorch-gpu/py3/1.9.0
   return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
 /gpfslocalsup/pub/anaconda-py3/2021.05/envs/pytorch-gpu-1.9.0+py3.9/lib/python3.9/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  ../c10/core/TensorImpl.h:1156.)
   return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
-srun: Job step aborted: Waiting up to 62 seconds for job step to finish.
-slurmstepd: error: *** JOB 1847474 ON jean-zay-ia818 CANCELLED AT 2022-09-28T15:42:11 ***
-slurmstepd: error: *** STEP 1847474.0 ON jean-zay-ia818 CANCELLED AT 2022-09-28T15:42:11 ***
