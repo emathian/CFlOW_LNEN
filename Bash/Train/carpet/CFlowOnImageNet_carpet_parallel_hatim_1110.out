@@ -1,0 +1,398 @@
+LR schedule: [2, 3, 4]
+LR schedule: [2, 3, 4]
+local_rank   0
+local_rank   1
+Number of pool layers = 3
+Number of pool layers = 3
+CNF coder: 512
+CNF coder: 512
+CNF coder: 1024
+CNF coder: 1024
+CNF coder: 2048
+CNF coder: 2048
+img_types   1
+img_types   1
+img_types   6
+img_types   6
+Len train loader =  9
+Len train loader =  9
+Epoch: 0 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Epoch: 0 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/0/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_mataepoch_0_subepoch_0_loader_0_decoder_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/0/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_mataepoch_0_subepoch_0_loader_0_decoder_1.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/0/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_mataepoch_0_subepoch_0_loader_0_decoder_2.pt
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/0/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_0_0.pt
+Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_0_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/0/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_0_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/0/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_0_0.pt
+Epoch: 0.0 	 train loss: 0.4389, lr=0.000069
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_0_0.pt
+Epoch: 0.0 	 train loss: 0.4402, lr=0.000069
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 0 	 step: 0.0000 
+Epoch: 0 	 step: 0.0000 
+Epoch: 0 	 test_loss: 3564.5196 and 6.11 fps
+DET_AUROC: 	 last: 99.24 	 max: 99.24 	 epoch_max: 0
+DET_AUROC  0.9923756019261637
+Epoch: 0 	 test_loss: 3564.5196 and 6.17 fps
+DET_AUROC: 	 last: 99.24 	 max: 99.24 	 epoch_max: 0
+DET_AUROC  0.9923756019261637
+ SEG_AUROC   0.9887914560973581
+SEG_AUROC: 	 last: 98.88 	 max: 98.88 	 epoch_max: 0
+Save best Weight parallel
+Function: save_weights - Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2022-10-11-23:20:10.pt
+Len train loader =  9
+Epoch: 1 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9887914560973581
+SEG_AUROC: 	 last: 98.88 	 max: 98.88 	 epoch_max: 0
+Save best Weight parallel
+Function: save_weights - Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2022-10-11-23:20:10.pt
+Len train loader =  9
+Epoch: 1 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/1/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_mataepoch_1_subepoch_0_loader_0_decoder_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/1/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_mataepoch_1_subepoch_0_loader_0_decoder_1.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/1/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_mataepoch_1_subepoch_0_loader_0_decoder_2.pt
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/1/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_1_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/1/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_1_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/1/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_1_0.pt
+Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_1_0.pt
+Epoch: 1.0 	 train loss: 0.2766, lr=0.000125
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_1_0.pt
+Epoch: 1.0 	 train loss: 0.2778, lr=0.000125
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 1 	 step: 0.0000 
+Epoch: 1 	 step: 0.0000 
+Epoch: 1 	 test_loss: 4430.8449 and 6.32 fps
+DET_AUROC: 	 last: 98.96 	 max: 99.24 	 epoch_max: 0
+DET_AUROC  0.9895666131621187
+Epoch: 1 	 test_loss: 4430.8449 and 6.43 fps
+DET_AUROC: 	 last: 98.96 	 max: 99.24 	 epoch_max: 0
+DET_AUROC  0.9895666131621187
+ SEG_AUROC   0.9875596201548813
+SEG_AUROC: 	 last: 98.76 	 max: 98.88 	 epoch_max: 0
+Len train loader =  9
+Epoch: 2 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9875596201548813
+SEG_AUROC: 	 last: 98.76 	 max: 98.88 	 epoch_max: 0
+Len train loader =  9
+Epoch: 2 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/2/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_mataepoch_2_subepoch_0_loader_0_decoder_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/2/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_mataepoch_2_subepoch_0_loader_0_decoder_1.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/2/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_mataepoch_2_subepoch_0_loader_0_decoder_2.pt
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/2/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/2/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/2/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2_0.pt
+Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2_0.pt
+Epoch: 2.0 	 train loss: 0.2441, lr=0.000131
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2_0.pt
+Epoch: 2.0 	 train loss: 0.2451, lr=0.000131
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 2 	 step: 0.0000 
+Epoch: 2 	 step: 0.0000 
+Epoch: 2 	 test_loss: 50.9784 and 6.44 fps
+DET_AUROC: 	 last: 99.24 	 max: 99.24 	 epoch_max: 0
+DET_AUROC  0.9923756019261637
+Epoch: 2 	 test_loss: 50.9784 and 6.46 fps
+DET_AUROC: 	 last: 99.24 	 max: 99.24 	 epoch_max: 0
+DET_AUROC  0.9923756019261637
+ SEG_AUROC   0.9900048121134898
+SEG_AUROC: 	 last: 99.00 	 max: 99.00 	 epoch_max: 2
+Save best Weight parallel
+Function: save_weights - Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2022-10-11-23:20:10.pt
+Len train loader =  9
+Epoch: 3 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9900048121134898
+SEG_AUROC: 	 last: 99.00 	 max: 99.00 	 epoch_max: 2
+Save best Weight parallel
+Function: save_weights - Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2022-10-11-23:20:10.pt
+Len train loader =  9
+Epoch: 3 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/3/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_mataepoch_3_subepoch_0_loader_0_decoder_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/3/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_mataepoch_3_subepoch_0_loader_0_decoder_1.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/3/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_mataepoch_3_subepoch_0_loader_0_decoder_2.pt
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/3/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_3_0.pt
+Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_3_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/3/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_3_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/3/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_3_0.pt
+Epoch: 3.0 	 train loss: 0.2006, lr=0.000069
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_3_0.pt
+Epoch: 3.0 	 train loss: 0.2017, lr=0.000069
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 3 	 step: 0.0000 
+Epoch: 3 	 step: 0.0000 
+Epoch: 3 	 test_loss: 115.0999 and 6.44 fps
+DET_AUROC: 	 last: 98.64 	 max: 99.24 	 epoch_max: 0
+DET_AUROC  0.9863563402889245
+Epoch: 3 	 test_loss: 115.0999 and 6.42 fps
+DET_AUROC: 	 last: 98.64 	 max: 99.24 	 epoch_max: 0
+DET_AUROC  0.9863563402889245
+ SEG_AUROC   0.9890939209202076
+SEG_AUROC: 	 last: 98.91 	 max: 99.00 	 epoch_max: 2
+Len train loader =  9
+Epoch: 4 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9890939209202076
+SEG_AUROC: 	 last: 98.91 	 max: 99.00 	 epoch_max: 2
+Len train loader =  9
+Epoch: 4 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/4/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_mataepoch_4_subepoch_0_loader_0_decoder_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/4/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_mataepoch_4_subepoch_0_loader_0_decoder_1.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/4/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_mataepoch_4_subepoch_0_loader_0_decoder_2.pt
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/4/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_4_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/4/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_4_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/FlowOnImageNet_carpet_parallel_hatim_1110/carpet/4/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_4_0.pt
+Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_4_0.pt
+Epoch: 4.0 	 train loss: 0.1847, lr=0.000019
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_4_0.pt
+Epoch: 4.0 	 train loss: 0.1858, lr=0.000019
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 4 	 step: 0.0000 
+Epoch: 4 	 step: 0.0000 
+Epoch: 4 	 test_loss: 1.1999 and 6.33 fps
+DET_AUROC: 	 last: 98.76 	 max: 99.24 	 epoch_max: 0
+DET_AUROC  0.9875601926163723
+Epoch: 4 	 test_loss: 1.1999 and 6.39 fps
+DET_AUROC: 	 last: 98.76 	 max: 99.24 	 epoch_max: 0
+DET_AUROC  0.9875601926163723
+ SEG_AUROC   0.9902150490176158
+SEG_AUROC: 	 last: 99.02 	 max: 99.02 	 epoch_max: 4
+Save best Weight parallel
+Function: save_weights - Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2022-10-11-23:20:10.pt
+ SEG_AUROC   0.9902150490176158
+SEG_AUROC: 	 last: 99.02 	 max: 99.02 	 epoch_max: 4
+Save best Weight parallel
+Function: save_weights - Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2022-10-11-23:20:10.pt

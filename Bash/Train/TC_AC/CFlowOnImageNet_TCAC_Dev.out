@@ -1,0 +1,367 @@
+ c.data_path   /gpfsscratch/rech/ohv/ueu39kt/Tiles_HE_all_samples_384_384_Vahadane_2
+LR schedule: [2, 3, 4]
+local_rank   0
+Number of pool layers = 3
+CNF coder: 512
+CNF coder: 1024
+CNF coder: 2048
+Len train loader =  63
+Epoch: 0 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 63
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/0/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_0_subepoch_0_loader_0_decoder_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/0/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_0_subepoch_0_loader_0_decoder_1.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/0/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_0_subepoch_0_loader_0_decoder_2.pt
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+step  % :  31.746031746031743  i/I =  20 / 63
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/0/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_0_subepoch_0_loader_20_decoder_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/0/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_0_subepoch_0_loader_20_decoder_1.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/0/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_0_subepoch_0_loader_20_decoder_2.pt
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+step  % :  63.49206349206349  i/I =  40 / 63
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/0/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_0_subepoch_0_loader_40_decoder_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/0/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_0_subepoch_0_loader_40_decoder_1.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/0/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_0_subepoch_0_loader_40_decoder_2.pt
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+step  % :  95.23809523809523  i/I =  60 / 63
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/0/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_0_subepoch_0_loader_60_decoder_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/0/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_0_subepoch_0_loader_60_decoder_1.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/0/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_0_subepoch_0_loader_60_decoder_2.pt
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/0/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_0_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/0/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_0_0.pt
+Saving weights to TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_0_0.pt
+Epoch: 0.0 	 train loss: 0.3407, lr=0.000075
+Len test_loader   63
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 63
+Epoch: 0 	 step: 0.0000 
+step  % :  15.873015873015872  i/I =  10 / 63
+step  % :  31.746031746031743  i/I =  20 / 63
+step  % :  47.61904761904761  i/I =  30 / 63
+step  % :  63.49206349206349  i/I =  40 / 63
+step  % :  79.36507936507937  i/I =  50 / 63
+step  % :  95.23809523809523  i/I =  60 / 63
+Epoch: 0 	 test_loss: 0.2964 and 3.72 fps
+Len train loader =  63
+Epoch: 1 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 63
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/1/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_1_subepoch_0_loader_0_decoder_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/1/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_1_subepoch_0_loader_0_decoder_1.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/1/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_1_subepoch_0_loader_0_decoder_2.pt
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+step  % :  31.746031746031743  i/I =  20 / 63
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/1/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_1_subepoch_0_loader_20_decoder_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/1/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_1_subepoch_0_loader_20_decoder_1.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/1/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_1_subepoch_0_loader_20_decoder_2.pt
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+step  % :  63.49206349206349  i/I =  40 / 63
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/1/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_1_subepoch_0_loader_40_decoder_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/1/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_1_subepoch_0_loader_40_decoder_1.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/1/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_1_subepoch_0_loader_40_decoder_2.pt
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+step  % :  95.23809523809523  i/I =  60 / 63
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/1/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_1_subepoch_0_loader_60_decoder_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/1/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_1_subepoch_0_loader_60_decoder_1.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/1/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_1_subepoch_0_loader_60_decoder_2.pt
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/1/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_1_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/1/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_1_0.pt
+Saving weights to TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_1_0.pt
+Epoch: 1.0 	 train loss: 0.2501, lr=0.000130
+Len test_loader   63
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 63
+Epoch: 1 	 step: 0.0000 
+step  % :  15.873015873015872  i/I =  10 / 63
+step  % :  31.746031746031743  i/I =  20 / 63
+step  % :  47.61904761904761  i/I =  30 / 63
+step  % :  63.49206349206349  i/I =  40 / 63
+step  % :  79.36507936507937  i/I =  50 / 63
+step  % :  95.23809523809523  i/I =  60 / 63
+Epoch: 1 	 test_loss: 0.3425 and 3.69 fps
+Len train loader =  63
+Epoch: 2 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 63
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/2/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_2_subepoch_0_loader_0_decoder_0.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/2/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_2_subepoch_0_loader_0_decoder_1.pt
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/AC0_train_dev/none/2/TCAC_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_none_mataepoch_2_subepoch_0_loader_0_decoder_2.pt
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   0

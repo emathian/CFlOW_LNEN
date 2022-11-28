@@ -1,0 +1,711 @@
+LR schedule: [12, 18, 22]
+LR schedule: [12, 18, 22]
+local_rank   1
+local_rank   0
+Number of pool layers = 3
+Number of pool layers = 3
+CNF coder: 512
+CNF coder: 512
+CNF coder: 1024
+CNF coder: 1024
+CNF coder: 2048
+CNF coder: 2048
+img_types   1
+img_types   1
+img_types   6
+img_types   6
+train/test loader length 280 117
+train/test loader length 280 117
+train/test loader batches 9 4
+train/test loader batches 9 4
+Len train loader =  9
+Len train loader =  9
+Epoch: 0 	 sub-epoch: 0.0000 
+Epoch: 0 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Epoch: 0.0 	 train loss: 0.4384, lr=0.000099
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_no_distribution_test_set_0710/carpet/0/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_0_0.pt
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Epoch: 0.0 	 train loss: 0.4396, lr=0.000099
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 0 	 step: 0.0000 
+Epoch: 0 	 step: 0.0000 
+Epoch: 0 	 test_loss: 3835.6816 and 6.35 fps
+DET_AUROC: 	 last: 98.43 	 max: 98.43 	 epoch_max: 0
+DET_AUROC  0.9843499197431782
+Epoch: 0 	 test_loss: 3835.6816 and 6.37 fps
+DET_AUROC: 	 last: 98.43 	 max: 98.43 	 epoch_max: 0
+DET_AUROC  0.9843499197431782
+ SEG_AUROC   0.9890725491202975
+SEG_AUROC: 	 last: 98.91 	 max: 98.91 	 epoch_max: 0
+Save best Weight parallel
+Function: save_weights - Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2022-10-07-11:59:58.pt
+Len train loader =  9
+Epoch: 1 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9890725491202975
+SEG_AUROC: 	 last: 98.91 	 max: 98.91 	 epoch_max: 0
+Save best Weight parallel
+Function: save_weights - Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2022-10-07-11:59:58.pt
+Len train loader =  9
+Epoch: 1 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Epoch: 1.0 	 train loss: 0.2770, lr=0.000187
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_no_distribution_test_set_0710/carpet/1/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_1_0.pt
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Epoch: 1.0 	 train loss: 0.2779, lr=0.000187
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 1 	 step: 0.0000 
+Epoch: 1 	 step: 0.0000 
+Epoch: 1 	 test_loss: 4.3061 and 6.48 fps
+DET_AUROC: 	 last: 99.00 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.989967897271268
+Epoch: 1 	 test_loss: 4.3061 and 6.42 fps
+DET_AUROC: 	 last: 99.00 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.989967897271268
+ SEG_AUROC   0.9895616196061691
+SEG_AUROC: 	 last: 98.96 	 max: 98.96 	 epoch_max: 1
+Save best Weight parallel
+Function: save_weights - Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2022-10-07-11:59:58.pt
+Len train loader =  9
+Epoch: 2 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9895616196061691
+SEG_AUROC: 	 last: 98.96 	 max: 98.96 	 epoch_max: 1
+Save best Weight parallel
+Function: save_weights - Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2022-10-07-11:59:58.pt
+Len train loader =  9
+Epoch: 2 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Epoch: 2.0 	 train loss: 0.2344, lr=0.000197
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_no_distribution_test_set_0710/carpet/2/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2_0.pt
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Epoch: 2.0 	 train loss: 0.2355, lr=0.000197
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 2 	 step: 0.0000 
+Epoch: 2 	 step: 0.0000 
+Epoch: 2 	 test_loss: 42.0109 and 6.82 fps
+DET_AUROC: 	 last: 98.96 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9895666131621188
+Epoch: 2 	 test_loss: 42.0109 and 6.67 fps
+DET_AUROC: 	 last: 98.96 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9895666131621188
+ SEG_AUROC   0.9893700103052769
+SEG_AUROC: 	 last: 98.94 	 max: 98.96 	 epoch_max: 1
+Len train loader =  9
+Epoch: 3 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9893700103052769
+SEG_AUROC: 	 last: 98.94 	 max: 98.96 	 epoch_max: 1
+Len train loader =  9
+Epoch: 3 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Epoch: 3.0 	 train loss: 0.2060, lr=0.000193
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_no_distribution_test_set_0710/carpet/3/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_3_0.pt
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Epoch: 3.0 	 train loss: 0.2073, lr=0.000193
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 3 	 step: 0.0000 
+Epoch: 3 	 step: 0.0000 
+Epoch: 3 	 test_loss: 3.4536 and 6.71 fps
+DET_AUROC: 	 last: 98.48 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9847512038523274
+Epoch: 3 	 test_loss: 3.4536 and 6.59 fps
+DET_AUROC: 	 last: 98.48 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9847512038523274
+ SEG_AUROC   0.9891148355041723
+SEG_AUROC: 	 last: 98.91 	 max: 98.96 	 epoch_max: 1
+Len train loader =  9
+Epoch: 4 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9891148355041723
+SEG_AUROC: 	 last: 98.91 	 max: 98.96 	 epoch_max: 1
+Len train loader =  9
+Epoch: 4 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Epoch: 4.0 	 train loss: 0.1850, lr=0.000188
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_no_distribution_test_set_0710/carpet/4/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_4_0.pt
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Epoch: 4.0 	 train loss: 0.1860, lr=0.000188
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 4 	 step: 0.0000 
+Epoch: 4 	 step: 0.0000 
+Epoch: 4 	 test_loss: 4.8911 and 6.65 fps
+DET_AUROC: 	 last: 98.07 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9807383627608346
+Epoch: 4 	 test_loss: 4.8911 and 6.51 fps
+DET_AUROC: 	 last: 98.07 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9807383627608346
+ SEG_AUROC   0.9901124655340606
+SEG_AUROC: 	 last: 99.01 	 max: 99.01 	 epoch_max: 4
+Save best Weight parallel
+Function: save_weights - Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2022-10-07-11:59:58.pt
+Len train loader =  9
+Epoch: 5 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9901124655340606
+SEG_AUROC: 	 last: 99.01 	 max: 99.01 	 epoch_max: 4
+Save best Weight parallel
+Function: save_weights - Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2022-10-07-11:59:58.pt
+Len train loader =  9
+Epoch: 5 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_no_distribution_test_set_0710/carpet/5/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_5_0.pt
+Epoch: 5.0 	 train loss: 0.1783, lr=0.000181
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Epoch: 5.0 	 train loss: 0.1793, lr=0.000181
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 5 	 step: 0.0000 
+Epoch: 5 	 step: 0.0000 
+Epoch: 5 	 test_loss: 9.3115 and 6.71 fps
+DET_AUROC: 	 last: 97.87 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9787319422150882
+Epoch: 5 	 test_loss: 9.3115 and 6.55 fps
+DET_AUROC: 	 last: 97.87 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9787319422150882
+ SEG_AUROC   0.9898979422122258
+SEG_AUROC: 	 last: 98.99 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 6 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9898979422122258
+SEG_AUROC: 	 last: 98.99 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 6 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Epoch: 6.0 	 train loss: 0.1707, lr=0.000173
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_no_distribution_test_set_0710/carpet/6/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_6_0.pt
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Epoch: 6.0 	 train loss: 0.1717, lr=0.000173
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 6 	 step: 0.0000 
+Epoch: 6 	 step: 0.0000 
+Epoch: 6 	 test_loss: 23.7557 and 6.64 fps
+DET_AUROC: 	 last: 98.23 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9823434991974317
+Epoch: 6 	 test_loss: 23.7557 and 6.59 fps
+DET_AUROC: 	 last: 98.23 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9823434991974317
+ SEG_AUROC   0.9892030469385117
+SEG_AUROC: 	 last: 98.92 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 7 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9892030469385117
+SEG_AUROC: 	 last: 98.92 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 7 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Epoch: 7.0 	 train loss: 0.1599, lr=0.000164
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_no_distribution_test_set_0710/carpet/7/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_7_0.pt
+Epoch: 7.0 	 train loss: 0.1608, lr=0.000164
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 7 	 step: 0.0000 
+Epoch: 7 	 step: 0.0000 
+Epoch: 7 	 test_loss: 29.6881 and 6.54 fps
+DET_AUROC: 	 last: 97.79 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9779293739967896
+Epoch: 7 	 test_loss: 29.6881 and 6.47 fps
+DET_AUROC: 	 last: 97.79 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9779293739967896
+ SEG_AUROC   0.989868548557499
+SEG_AUROC: 	 last: 98.99 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 8 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.989868548557499
+SEG_AUROC: 	 last: 98.99 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 8 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Epoch: 8.0 	 train loss: 0.1541, lr=0.000154
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_no_distribution_test_set_0710/carpet/8/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_8_0.pt
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Epoch: 8.0 	 train loss: 0.1550, lr=0.000154
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 8 	 step: 0.0000 
+Epoch: 8 	 step: 0.0000 
+Epoch: 8 	 test_loss: 54.7570 and 6.53 fps
+DET_AUROC: 	 last: 97.75 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9775280898876404
+Epoch: 8 	 test_loss: 54.7570 and 6.53 fps
+DET_AUROC: 	 last: 97.75 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9775280898876404
+ SEG_AUROC   0.9899420048932897
+SEG_AUROC: 	 last: 98.99 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 9 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9899420048932897
+SEG_AUROC: 	 last: 98.99 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 9 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Epoch: 9.0 	 train loss: 0.1524, lr=0.000143
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_no_distribution_test_set_0710/carpet/9/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_9_0.pt
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Epoch: 9.0 	 train loss: 0.1534, lr=0.000143
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 9 	 step: 0.0000 
+Epoch: 9 	 step: 0.0000 
+Epoch: 9 	 test_loss: 79.3344 and 6.59 fps
+DET_AUROC: 	 last: 98.15 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9815409309791332
+Epoch: 9 	 test_loss: 79.3344 and 6.49 fps
+DET_AUROC: 	 last: 98.15 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9815409309791332
+ SEG_AUROC   0.9897999984004975
+SEG_AUROC: 	 last: 98.98 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 10 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9897999984004975
+SEG_AUROC: 	 last: 98.98 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 10 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Epoch: 10.0 	 train loss: 0.1442, lr=0.000131
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_no_distribution_test_set_0710/carpet/10/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_10_0.pt
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Epoch: 10.0 	 train loss: 0.1451, lr=0.000131
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 10 	 step: 0.0000 
+Epoch: 10 	 step: 0.0000 
+Epoch: 10 	 test_loss: 86.0355 and 6.55 fps
+DET_AUROC: 	 last: 97.79 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9779293739967897
+Epoch: 10 	 test_loss: 86.0355 and 6.48 fps
+DET_AUROC: 	 last: 97.79 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9779293739967897
+ SEG_AUROC   0.9894426697201737
+SEG_AUROC: 	 last: 98.94 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 11 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9894426697201737
+SEG_AUROC: 	 last: 98.94 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 11 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Epoch: 11.0 	 train loss: 0.1414, lr=0.000119
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_no_distribution_test_set_0710/carpet/11/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_11_0.pt
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Epoch: 11.0 	 train loss: 0.1423, lr=0.000119
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 11 	 step: 0.0000 
+Epoch: 11 	 step: 0.0000 
+Epoch: 11 	 test_loss: 98.2708 and 6.56 fps
+DET_AUROC: 	 last: 97.71 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9771268057784911
+Epoch: 11 	 test_loss: 98.2708 and 6.45 fps
+DET_AUROC: 	 last: 97.71 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9771268057784911
+ SEG_AUROC   0.9898405523935164
+SEG_AUROC: 	 last: 98.98 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 12 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9898405523935164
+SEG_AUROC: 	 last: 98.98 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 12 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Epoch: 12.0 	 train loss: 0.1384, lr=0.000106
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_no_distribution_test_set_0710/carpet/12/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_12_0.pt
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Epoch: 12.0 	 train loss: 0.1395, lr=0.000106
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 12 	 step: 0.0000 
+Epoch: 12 	 step: 0.0000 
+Epoch: 12 	 test_loss: 99.5261 and 6.53 fps
+DET_AUROC: 	 last: 97.19 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9719101123595505
+Epoch: 12 	 test_loss: 99.5261 and 6.50 fps
+DET_AUROC: 	 last: 97.19 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9719101123595505
+ SEG_AUROC   0.9890683075335218
+SEG_AUROC: 	 last: 98.91 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 13 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9890683075335218
+SEG_AUROC: 	 last: 98.91 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 13 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Epoch: 13.0 	 train loss: 0.1354, lr=0.000094
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_no_distribution_test_set_0710/carpet/13/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_13_0.pt
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Epoch: 13.0 	 train loss: 0.1362, lr=0.000094
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 13 	 step: 0.0000 
+Epoch: 13 	 step: 0.0000 
+Epoch: 13 	 test_loss: 93.1577 and 6.56 fps
+DET_AUROC: 	 last: 97.75 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9775280898876404
+Epoch: 13 	 test_loss: 93.1577 and 6.51 fps
+DET_AUROC: 	 last: 97.75 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9775280898876404
+ SEG_AUROC   0.9898265366955008
+SEG_AUROC: 	 last: 98.98 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 14 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9898265366955008
+SEG_AUROC: 	 last: 98.98 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 14 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Epoch: 14.0 	 train loss: 0.1346, lr=0.000081
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_no_distribution_test_set_0710/carpet/14/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_14_0.pt
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Epoch: 14.0 	 train loss: 0.1355, lr=0.000081
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 14 	 step: 0.0000 
+Epoch: 14 	 step: 0.0000 
+Epoch: 14 	 test_loss: 10.8888 and 6.52 fps
+DET_AUROC: 	 last: 97.67 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9767255216693419
+Epoch: 14 	 test_loss: 10.8888 and 6.52 fps
+DET_AUROC: 	 last: 97.67 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9767255216693419
+ SEG_AUROC   0.990061472300315
+SEG_AUROC: 	 last: 99.01 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 15 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.990061472300315
+SEG_AUROC: 	 last: 99.01 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 15 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_no_distribution_test_set_0710/carpet/15/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_15_0.pt
+Epoch: 15.0 	 train loss: 0.1301, lr=0.000069
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Epoch: 15.0 	 train loss: 0.1308, lr=0.000069
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 15 	 step: 0.0000 
+Epoch: 15 	 step: 0.0000 
+Epoch: 15 	 test_loss: 8.5169 and 6.51 fps
+DET_AUROC: 	 last: 97.47 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9747191011235955
+Epoch: 15 	 test_loss: 8.5169 and 6.49 fps
+DET_AUROC: 	 last: 97.47 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9747191011235955
+ SEG_AUROC   0.9899356980567596
+SEG_AUROC: 	 last: 98.99 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 16 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9899356980567596
+SEG_AUROC: 	 last: 98.99 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 16 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_no_distribution_test_set_0710/carpet/16/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_16_0.pt
+Epoch: 16.0 	 train loss: 0.1266, lr=0.000058
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Epoch: 16.0 	 train loss: 0.1275, lr=0.000058
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 16 	 step: 0.0000 
+Epoch: 16 	 step: 0.0000 
+Epoch: 16 	 test_loss: 11.3562 and 6.58 fps
+DET_AUROC: 	 last: 97.47 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9747191011235954
+Epoch: 16 	 test_loss: 11.3562 and 6.42 fps
+DET_AUROC: 	 last: 97.47 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9747191011235954
+ SEG_AUROC   0.9900285070991878
+SEG_AUROC: 	 last: 99.00 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 17 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9900285070991878
+SEG_AUROC: 	 last: 99.00 	 max: 99.01 	 epoch_max: 4
+Len train loader =  9
+Epoch: 17 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Epoch: 17.0 	 train loss: 0.1247, lr=0.000047
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_no_distribution_test_set_0710/carpet/17/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_17_0.pt
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Epoch: 17.0 	 train loss: 0.1256, lr=0.000047
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 17 	 step: 0.0000 
+Epoch: 17 	 step: 0.0000 
+Epoch: 17 	 test_loss: 13.1963 and 6.52 fps
+DET_AUROC: 	 last: 97.47 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9747191011235955
+Epoch: 17 	 test_loss: 13.1963 and 6.54 fps
+DET_AUROC: 	 last: 97.47 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.9747191011235955
+ SEG_AUROC   0.9901839743767732
+SEG_AUROC: 	 last: 99.02 	 max: 99.02 	 epoch_max: 17
+Save best Weight parallel
+Function: save_weights - Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2022-10-07-11:59:58.pt
+Len train loader =  9
+Epoch: 18 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9901839743767732
+SEG_AUROC: 	 last: 99.02 	 max: 99.02 	 epoch_max: 17
+Save best Weight parallel
+Function: save_weights - Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2022-10-07-11:59:58.pt
+Len train loader =  9
+Epoch: 18 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+Save each subepoch data parallel
+c.idr_torch_rank   0
+Save each subepoch data parallel
+c.idr_torch_rank   1
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_no_distribution_test_set_0710/carpet/18/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_18_0.pt
+Epoch: 18.0 	 train loss: 0.1228, lr=0.000036
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+Epoch: 18.0 	 train loss: 0.1237, lr=0.000036
+Len test_loader   4
+Eval model parallel
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+step  % :  0.0  i/I =  0 / 4
+Epoch: 18 	 step: 0.0000 
+Epoch: 18 	 step: 0.0000 
+Epoch: 18 	 test_loss: 11.2303 and 6.58 fps
+DET_AUROC: 	 last: 97.83 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.978330658105939
+Epoch: 18 	 test_loss: 11.2303 and 6.47 fps
+DET_AUROC: 	 last: 97.83 	 max: 99.00 	 epoch_max: 1
+DET_AUROC  0.978330658105939
+ SEG_AUROC   0.9905793733726105
+SEG_AUROC: 	 last: 99.06 	 max: 99.06 	 epoch_max: 18
+Save best Weight parallel
+Function: save_weights - Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2022-10-07-11:59:58.pt
+Len train loader =  9
+Epoch: 19 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9
+ SEG_AUROC   0.9905793733726105
+SEG_AUROC: 	 last: 99.06 	 max: 99.06 	 epoch_max: 18
+Save best Weight parallel
+Function: save_weights - Saving weights to mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_2022-10-07-11:59:58.pt
+Len train loader =  9
+Epoch: 19 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 9

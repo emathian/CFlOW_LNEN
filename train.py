@@ -35,9 +35,10 @@ def train_meta_epoch(c, epoch, loader, encoder, decoders, optimizer, pool_layers
         print('Epoch: {:d} \t sub-epoch: {:.4f} '.format(epoch, sub_epoch))
         train_loss = 0.0
         train_count = 0
+        
         for i in range(I):
             if i % 20 == 0:
-                print('step  % : ', (i/I) * 100, ' i/I = ', i , '/' , I)
+                print('step  % : ', (i/I) * 100, ' i/I = ', i , '/' , I)               
             # warm-up learning rate
             lr = warmup_learning_rate(c, epoch, i+sub_epoch*I, I*c.sub_epochs, optimizer)
             # sample batch
@@ -89,26 +90,28 @@ def train_meta_epoch(c, epoch, loader, encoder, decoders, optimizer, pool_layers
                     loss.mean().backward()
                     optimizer.step()
                     train_loss += t2np(loss.sum())
-                    train_count += len(loss)       
-        if c.parallel:
-            # ~~~~~~~~~~~~~~~~~ SAVE PART ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            print('Save each subepoch data parallel')
-            print('c.idr_torch_rank  ', c.idr_torch_rank)
-            epoch_s = str(epoch)
-            sub_epoch_s = str(sub_epoch)
-            if not os.path.exists(c.weights_dir):
-                os.makedirs(c.weights_dir, exist_ok = True )
-            if not os.path.exists(os.path.join(c.weights_dir, c.class_name)):
-                os.makedirs(os.path.join(c.weights_dir, c.class_name), exist_ok = True)
-            if not os.path.exists(os.path.join(c.weights_dir, c.class_name, epoch_s)):
-                os.makedirs(os.path.join(c.weights_dir, c.class_name, epoch_s), exist_ok = True)
-            state = {'encoder_state_dict': encoder.state_dict(),
-                     'decoder_state_dict': [decoder.state_dict() for decoder in decoders]}
-            filename = '{}_{}_{}.pt'.format(c.model, epoch_s, sub_epoch_s)
-            path = os.path.join(c.weights_dir, c.class_name, epoch_s,  filename)
-            if c.idr_torch_rank == 0:
-                print('Path : ', path)
-                torch.save(state, path)
+                    train_count += len(loss)
+            if c.parallel:
+                # ~~~~~~~~~~~~~~~~~ SAVE PART ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                epoch_s = str(epoch)
+                sub_epoch_s = str(sub_epoch)
+                if not os.path.exists(c.weights_dir):
+                    os.makedirs(c.weights_dir, exist_ok = True )
+                if not os.path.exists(os.path.join(c.weights_dir, c.class_name)):
+                    os.makedirs(os.path.join(c.weights_dir, c.class_name), exist_ok = True)
+                if not os.path.exists(os.path.join(c.weights_dir, c.class_name, epoch_s)):
+                    os.makedirs(os.path.join(c.weights_dir, c.class_name, epoch_s), exist_ok = True)
+
+                for j, ddp_decoder in enumerate(decoders):
+                    if i % 1000 == 0:
+                                
+                        mean_train_loss = train_loss / train_count
+                        print('Epoch: {:d}.{:d} \t train loss: {:.4f}, lr={:.6f}'.format(epoch, sub_epoch, mean_train_loss, lr))
+                        filename = '{}_mataepoch_{}_subepoch_{}_loader_{}_decoder_{}.pt'.format(c.model, epoch_s, sub_epoch_s, i,j)
+                        path = os.path.join(c.weights_dir, c.class_name, epoch_s,  filename)
+                        if c.idr_torch_rank == 0:
+                            print('Path : ', path)
+                            torch.save(ddp_decoder.state_dict(), path)
             
         else:
             save_weights_epoch(c, encoder, decoders, c.model, epoch, sub_epoch)
@@ -213,8 +216,7 @@ def test_meta_epoch(c, epoch, loader, encoder, decoders, pool_layers, N):
 
 def test_meta_epoch_lnen(c, epoch, loader, encoder, decoders, pool_layers, N):
     # test
-    if c.verbose:
-        print('\nCompute loss and scores on test set:')
+    print('\nCompute loss and scores on test set:')
     #
     P = c.condition_vec
     decoders = [decoder.eval() for decoder in decoders]
@@ -236,13 +238,14 @@ def test_meta_epoch_lnen(c, epoch, loader, encoder, decoders, pool_layers, N):
     table_file.close()
     with torch.no_grad():
         for i, (image, label, mask, filespath) in enumerate(tqdm(loader, disable=c.hide_tqdm_bar)):
-            if i % 20 == 0:
-                print('\n step  % : ', (i/I) * 100, ' i/I = ', i , '/' , I)
+            if i % 1000 == 0:
+                print('\n test_meta_epoch_lnen - step  % : ', (i/I) * 100, ' i/I = ', i , '/' , I)
             files_path_list_c = filespath
             # save
             
             labels_c = t2np(label)
             # data
+            
             image = image.to(c.device) # single scale
             _ = encoder(image)  # BxCxHxW
             # test decoder
@@ -256,6 +259,14 @@ def test_meta_epoch_lnen(c, epoch, loader, encoder, decoders, pool_layers, N):
                     e = e.reshape(-1, e.size(1), e_hw, e_hw)  # BxCxHxW
                 else:
                     e = activation[layer]  # BxCxHxW
+#                     if l == 2:
+#                         avg_pool = torch.nn.AvgPool2d(3, stride=4)
+#                         avg_pool_2 = torch.nn.AvgPool2d(3)
+#                         pool_enc = avg_pool(e)
+#                         pool_enc_2 = avg_pool_2(pool_enc)
+#                         pool_enc_2 = pool_enc_2.squeeze().detach().cpu().numpy()
+#                         print("pool_enc_2 ", pool_enc_2.shape)
+#                         write_enc_v_map(c, pool_enc_2, files_path_list_c)           
                 #
                 B, C, H, W = e.size()
                 S = H*W
@@ -318,8 +329,10 @@ def test_meta_epoch_lnen(c, epoch, loader, encoder, decoders, pool_layers, N):
             super_mask = score_mask
             # WARNING sice we write the map on the fly we can't get a proper value for score_mask.max() so we are writing  score_mask
             # Our probs are then reversed
-            write_anom_map(c, super_mask, files_path_list_c)           
-
+            
+            ######## WRITE ANOM MAP
+            #write_anom_map(c, super_mask, files_path_list_c)           
+            
             score_label_max = np.max(super_mask, axis=(1, 2))
             score_label_mean = np.mean(super_mask, axis=(1, 2))
             ### write table 
@@ -329,7 +342,6 @@ def test_meta_epoch_lnen(c, epoch, loader, encoder, decoders, pool_layers, N):
             res_df['BinaryLabels'] = labels_c
             res_df['MaxScoreAnomalyMap'] = score_label_max.flatten().tolist()
             res_df['MeanScoreAnomalyMap'] = score_label_mean.flatten().tolist()
-            print(os.path.join(c.viz_dir, c.class_name, res_tab_name))
             with open(os.path.join(c.viz_dir, c.class_name, res_tab_name), 'a') as table_file: 
                 for row in range(res_df.shape[0]):
                     file_path_ = res_df[ 'FilesPath'][row]
@@ -341,26 +353,6 @@ def test_meta_epoch_lnen(c, epoch, loader, encoder, decoders, pool_layers, N):
             if i % 1000 == 0 :
                 print('Epoch: {:d} \t step: {:.4f} '.format(epoch, i))
         
-#     # Write summary table
-#     files_path_list =  [item for sublist in files_path_list for item in sublist]
-#     res_df = pd.DataFrame()
-#     res_df['FilesPath'] = files_path_list
-#     res_df['BinaryLabels'] = gt_label_list
-#     score_label_mean_l = np.array(score_label_mean_l).flatten().tolist()
-#     score_label_max_l = np.array(score_label_max_l).flatten().tolist()
-#     score_label_max_l =  [item for sublist in score_label_max_l for item  in sublist]
-#     score_label_mean_l =  [item for sublist in score_label_mean_l for item  in sublist]
-
-#     res_df['MaxScoreAnomalyMap'] = score_label_max_l
-#     res_df['MeanScoreAnomalyMap'] = score_label_mean_l
-#     export_results_df(c,  res_df)
-
-#     fps = len(loader.dataset) / (time.time() - start)
-#     mean_test_loss = test_loss / test_count
-#     if c.verbose:
-#         print('Epoch: {:d} \t test_loss: {:.4f} and {:.2f} fps'.format(epoch, mean_test_loss, fps))
-#     #
-#     return height, width, image_list, test_dist, gt_label_list, gt_mask_list, files_path_list
 
 
 def test_meta_fps(c, epoch, loader, encoder, decoders, pool_layers, N):
@@ -448,7 +440,7 @@ def test_meta_fps(c, epoch, loader, encoder, decoders, pool_layers, N):
 
 
 def train(c):
-    if c.parallel:
+    if c.parallel :
         idr_torch_rank = int(os.environ['SLURM_PROCID'])
         # New config
         c.idr_torch_rank = idr_torch_rank
@@ -488,6 +480,7 @@ def train(c):
         for decoder in decoders:
              ddp_decoders.append(DDP(decoder, device_ids=[local_rank])) # , output_device=local_rank
     params = list(decoders[0].parameters())
+
     for l in range(1, L):
         if c.parallel:
             params += list(ddp_decoders[l].parameters())
@@ -510,10 +503,16 @@ def train(c):
             test_dataset  = TumorNormalDataset(c, is_train=False)
         else:
             test_dataset  = TumorNormalDataset(c, is_train=False)
+    elif c.dataset == 'TCAC':
+        if c.action_type == 'norm-train':
+            train_dataset = TCACDataset(c, is_train=True)
+            test_dataset  = TCACDataset(c, is_train=False)
+        else:
+            test_dataset  = TCACDataset(c, is_train=False)
     else:
         raise NotImplementedError('{} is not supported dataset!'.format(c.dataset))
     #
-    if c.parallel:
+    if c.parallel and c.action_type == 'norm-train':
         batch_size_per_gpu =  c.batch_size // idr_torch_size
         train_sampler = torch.utils.data.distributed.DistributedSampler(train_dataset, num_replicas=idr_torch_size, rank=idr_torch_rank) 
         train_loader = torch.utils.data.DataLoader(dataset=train_dataset,  batch_size=batch_size_per_gpu,  shuffle=False,   num_workers=0,                         pin_memory=True, sampler=train_sampler)
@@ -538,7 +537,16 @@ def train(c):
         c.meta_epochs = 1
     for epoch in range(c.meta_epochs):  
         if c.action_type == 'norm-test' and c.checkpoint:
+            if c.parallel:
+                print("Load weights Parallel")
+                for i, ddp_decoder in enumerate(ddp_decoders):
+                    c_checkpoint = c.checkpoint[:-3]+f'_{i}.pt'
+                    print(c_checkpoint)
+                    ddp_decoder.load_state_dict(torch.load(c_checkpoint))
+            else:
                 load_weights(encoder, decoders, c.checkpoint)
+            
+#                 load_weights(encoder, decoders, c.checkpoint)
         elif c.action_type == 'norm-train':
             if c.parallel:
                 train_meta_epoch(c, epoch, train_loader, ddp_encoder, ddp_decoders, optimizer, pool_layers, N)
@@ -552,7 +560,7 @@ def train(c):
         # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         #if not c.parallel:    
         
-        if c.dataset != 'TumorNormal' :
+        if c.dataset != 'TumorNormal' and c.dataset != 'TCAC' :
             print('Len test_loader  ', len(test_loader))
             if c.parallel:
                 print('Eval model parallel')
@@ -562,14 +570,26 @@ def train(c):
                 height, width, test_image_list, test_dist, gt_label_list, gt_mask_list, files_path_list = test_meta_epoch(
             c, epoch, test_loader, encoder, decoders, pool_layers, N)
         else:
-            # LINE FOR VALIDATION
-#             height, width, test_image_list, test_dist, gt_label_list, gt_mask_list, files_path_list = test_meta_epoch(
-#             c, epoch, test_loader, encoder, decoders, pool_layers, N)
-#             # LINE FOR EVALUATION
-            height, width, test_image_list, test_dist, gt_label_list, gt_mask_list, files_path_list = test_meta_epoch_lnen(
-            c, epoch, test_loader, encoder, decoders, pool_layers, N) # test_meta_epoch_lnen
-            
-        if  c.dataset != 'TumorNormal'  :
+            if c.action_type == 'norm-train':
+                #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                #LINE FOR VALIDATION
+                #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                height, width, test_image_list, test_dist, gt_label_list, gt_mask_list, files_path_list = test_meta_epoch(
+                c, epoch, test_loader, encoder, decoders, pool_layers, N)
+            else:
+                # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                # LINE FOR EVALUATION
+                # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                if c.parallel:
+                    print('EVAL IN C.PARALLEL test_meta_epoch_lnen')
+                    height, width, test_image_list, test_dist, gt_label_list, gt_mask_list, files_path_list = test_meta_epoch_lnen(
+                c, epoch, test_loader, ddp_encoder, ddp_decoders, pool_layers, N) 
+                else:
+                    print('TEst not paraller LNEN')
+                    height, width, test_image_list, test_dist, gt_label_list, gt_mask_list, files_path_list = test_meta_epoch_lnen(
+                c, epoch, test_loader, encoder, decoders, pool_layers, N) # test_meta_epoch_lnen
+    
+        if  c.dataset != 'TumorNormal' and c.dataset != 'TCAC'  :
             files_path_list =  [item for sublist in files_path_list for item in sublist]
             res_df = pd.DataFrame()
             res_df['FilesPath'] = files_path_list
@@ -691,7 +711,7 @@ def train(c):
                     pros_mean_selected = pros_mean[idx]    
                     seg_pro_auc = auc(fprs_selected, pros_mean_selected)
                     _ = seg_pro_obs.update(100.0*seg_pro_auc, epoch)
-            #
+            
             if  c.dataset != 'TumorNormal':
                 save_results(c, det_roc_obs, seg_roc_obs, seg_pro_obs, c.model, c.class_name, run_date)
             # export visualuzations

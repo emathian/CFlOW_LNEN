@@ -181,11 +181,26 @@ def write_anom_map(c, super_mask, files_path_list):
     os.makedirs(os.path.join(c.viz_dir, c.class_name, anom_map_folder), exist_ok= True)
     for i in range(len(files_path_list)):
         img_name = files_path_list[i].split('/')[-1]
-        ########## For TumorNormal folder
-        # anom = files_path_list[i].split('/')[-3]
-        ########## For TumorNormal inference
-        anom = files_path_list[i].split('/')[-2]
+        anom = files_path_list[i].split('/')[-3]
         os.makedirs(os.path.join(c.viz_dir, c.class_name, anom_map_folder, anom), exist_ok= True)
         c_anom_map = super_mask[i]
         np.save(os.path.join(c.viz_dir, c.class_name, anom_map_folder, anom, img_name.split('.')[0]), c_anom_map)
+        
+def write_enc_v_map(c, encoded_v, files_path_list):
+    os.makedirs(os.path.join(c.viz_dir, c.class_name), exist_ok= True)   
+    if not c.infer_train:
+         encoded_v_folder = 'encoded_vectors'
+    else:
+        encoded_v_folder = 'encoded_vectors_train'
+    os.makedirs(os.path.join(c.viz_dir, c.class_name, encoded_v_folder), exist_ok= True)
+    for i in range(len(files_path_list)):
+        img_name = files_path_list[i].split('/')[-1]
+        ########## For TumorNormal folder
+        # anom = files_path_list[i].split('/')[-3]
+        ########## For TumorNormal inference
+        anom = files_path_list[i].split('/')[-3]
+        os.makedirs(os.path.join(c.viz_dir, c.class_name, encoded_v_folder, anom), exist_ok= True)
+        c_anom_map = encoded_v[i]
+        np.save(os.path.join(c.viz_dir, c.class_name, encoded_v_folder, anom, img_name.split('.')[0]), 
+                encoded_v)
         

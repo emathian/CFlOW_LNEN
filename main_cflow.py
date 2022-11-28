@@ -45,15 +45,16 @@ def main(c):
     c.dropout = 0.0  # dropout in s-t-networks
     # dataloader parameters
     if c.dataset == 'mvtec':
-        c.data_path = '/gpfsscratch/rech/ohv/ueu39kt/mvtec'
+        c.data_path = '/gpfsscratch/rech/uli/ueu39kt/mvtec'
     elif c.dataset == 'stc':
         c.data_path = './data/STC/shanghaitech'
     elif c.dataset == 'video':
         c.data_path = c.video_path
     elif  c.dataset == 'TumorNormal':
-        c.data_path =  c.root_data_path # '/gpfsscratch/rech/ohv/ueu39kt/KI67_Normal_Tumoral' KI67 '/gpfsscratch/rech/ohv/ueu39kt/Tiles_HE_all_samples_384_384_Vahadane_2' ### LNEN
+        c.data_path =  c.root_data_path
+    elif  c.dataset == 'TCAC':
+        c.data_path =  c.root_data_path
         print(' c.data_path  ',  c.data_path)
-        #'/gpfsscratch/rech/ohv/ueu39kt/TumoralNormalForFastFlow_Vahadane'
     else:
         raise NotImplementedError('{} is not supported dataset!'.format(c.dataset))
     # output settings

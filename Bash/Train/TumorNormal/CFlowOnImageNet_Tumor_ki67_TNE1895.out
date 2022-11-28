@@ -1,0 +1,1158 @@
+ c.data_path   /gpfsscratch/rech/ohv/ueu39kt/KI67_individual_data_for_segmentation
+LR schedule: [12, 18, 22]
+Number of pool layers = 3
+CNF coder: 512
+CNF coder: 1024
+CNF coder: 2048
+train/test loader length 150 89
+train/test loader batches 4 3
+Len train loader =  4
+Epoch: 0 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/0/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_0.pt
+Epoch: 0.0 	 train loss: 0.6158, lr=0.000028
+Epoch: 0 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/0/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_1.pt
+Epoch: 0.1 	 train loss: 0.4227, lr=0.000039
+Epoch: 0 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/0/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_2.pt
+Epoch: 0.2 	 train loss: 0.3617, lr=0.000050
+Epoch: 0 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/0/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_3.pt
+Epoch: 0.3 	 train loss: 0.3306, lr=0.000061
+Epoch: 0 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/0/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_4.pt
+Epoch: 0.4 	 train loss: 0.3175, lr=0.000073
+Epoch: 0 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/0/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_5.pt
+Epoch: 0.5 	 train loss: 0.3008, lr=0.000084
+Epoch: 0 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/0/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_6.pt
+Epoch: 0.6 	 train loss: 0.2939, lr=0.000095
+Epoch: 0 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/0/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_0_7.pt
+Epoch: 0.7 	 train loss: 0.2798, lr=0.000106
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 0 	 step: 0.0000 
+Epoch: 0 	 test_loss: 0.4177 and 12.30 fps
+Len train loader =  4
+Epoch: 1 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/1/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_0.pt
+Epoch: 1.0 	 train loss: 0.2800, lr=0.000117
+Epoch: 1 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/1/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_1.pt
+Epoch: 1.1 	 train loss: 0.2686, lr=0.000128
+Epoch: 1 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/1/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_2.pt
+Epoch: 1.2 	 train loss: 0.2597, lr=0.000139
+Epoch: 1 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/1/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_3.pt
+Epoch: 1.3 	 train loss: 0.2606, lr=0.000150
+Epoch: 1 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/1/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_4.pt
+Epoch: 1.4 	 train loss: 0.2564, lr=0.000161
+Epoch: 1 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/1/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_5.pt
+Epoch: 1.5 	 train loss: 0.2464, lr=0.000172
+Epoch: 1 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/1/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_6.pt
+Epoch: 1.6 	 train loss: 0.2406, lr=0.000183
+Epoch: 1 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/1/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_1_7.pt
+Epoch: 1.7 	 train loss: 0.2405, lr=0.000194
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 1 	 step: 0.0000 
+Epoch: 1 	 test_loss: 0.2823 and 12.58 fps
+Len train loader =  4
+Epoch: 2 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/2/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_2_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_2_0.pt
+Epoch: 2.0 	 train loss: 0.2497, lr=0.000197
+Epoch: 2 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/2/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_2_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_2_1.pt
+Epoch: 2.1 	 train loss: 0.2259, lr=0.000197
+Epoch: 2 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/2/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_2_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_2_2.pt
+Epoch: 2.2 	 train loss: 0.2273, lr=0.000197
+Epoch: 2 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/2/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_2_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_2_3.pt
+Epoch: 2.3 	 train loss: 0.2286, lr=0.000197
+Epoch: 2 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/2/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_2_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_2_4.pt
+Epoch: 2.4 	 train loss: 0.2210, lr=0.000197
+Epoch: 2 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/2/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_2_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_2_5.pt
+Epoch: 2.5 	 train loss: 0.2177, lr=0.000197
+Epoch: 2 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/2/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_2_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_2_6.pt
+Epoch: 2.6 	 train loss: 0.2112, lr=0.000197
+Epoch: 2 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/2/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_2_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_2_7.pt
+Epoch: 2.7 	 train loss: 0.2100, lr=0.000197
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 2 	 step: 0.0000 
+Epoch: 2 	 test_loss: 0.3402 and 15.01 fps
+Len train loader =  4
+Epoch: 3 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/3/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_3_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_3_0.pt
+Epoch: 3.0 	 train loss: 0.2127, lr=0.000193
+Epoch: 3 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/3/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_3_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_3_1.pt
+Epoch: 3.1 	 train loss: 0.2019, lr=0.000193
+Epoch: 3 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/3/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_3_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_3_2.pt
+Epoch: 3.2 	 train loss: 0.2014, lr=0.000193
+Epoch: 3 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/3/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_3_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_3_3.pt
+Epoch: 3.3 	 train loss: 0.2043, lr=0.000193
+Epoch: 3 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/3/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_3_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_3_4.pt
+Epoch: 3.4 	 train loss: 0.1983, lr=0.000193
+Epoch: 3 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/3/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_3_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_3_5.pt
+Epoch: 3.5 	 train loss: 0.1974, lr=0.000193
+Epoch: 3 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/3/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_3_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_3_6.pt
+Epoch: 3.6 	 train loss: 0.1917, lr=0.000193
+Epoch: 3 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/3/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_3_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_3_7.pt
+Epoch: 3.7 	 train loss: 0.1975, lr=0.000193
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 3 	 step: 0.0000 
+Epoch: 3 	 test_loss: 0.2710 and 14.04 fps
+Len train loader =  4
+Epoch: 4 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/4/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_4_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_4_0.pt
+Epoch: 4.0 	 train loss: 0.1894, lr=0.000188
+Epoch: 4 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/4/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_4_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_4_1.pt
+Epoch: 4.1 	 train loss: 0.1896, lr=0.000188
+Epoch: 4 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/4/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_4_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_4_2.pt
+Epoch: 4.2 	 train loss: 0.1851, lr=0.000188
+Epoch: 4 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/4/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_4_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_4_3.pt
+Epoch: 4.3 	 train loss: 0.1859, lr=0.000188
+Epoch: 4 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/4/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_4_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_4_4.pt
+Epoch: 4.4 	 train loss: 0.1877, lr=0.000188
+Epoch: 4 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/4/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_4_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_4_5.pt
+Epoch: 4.5 	 train loss: 0.1799, lr=0.000188
+Epoch: 4 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/4/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_4_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_4_6.pt
+Epoch: 4.6 	 train loss: 0.1869, lr=0.000188
+Epoch: 4 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/4/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_4_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_4_7.pt
+Epoch: 4.7 	 train loss: 0.1793, lr=0.000188
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 4 	 step: 0.0000 
+Epoch: 4 	 test_loss: 0.2659 and 14.77 fps
+Len train loader =  4
+Epoch: 5 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/5/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_5_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_5_0.pt
+Epoch: 5.0 	 train loss: 0.1783, lr=0.000181
+Epoch: 5 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/5/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_5_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_5_1.pt
+Epoch: 5.1 	 train loss: 0.1782, lr=0.000181
+Epoch: 5 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/5/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_5_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_5_2.pt
+Epoch: 5.2 	 train loss: 0.1743, lr=0.000181
+Epoch: 5 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/5/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_5_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_5_3.pt
+Epoch: 5.3 	 train loss: 0.1743, lr=0.000181
+Epoch: 5 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/5/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_5_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_5_4.pt
+Epoch: 5.4 	 train loss: 0.1732, lr=0.000181
+Epoch: 5 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/5/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_5_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_5_5.pt
+Epoch: 5.5 	 train loss: 0.1708, lr=0.000181
+Epoch: 5 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/5/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_5_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_5_6.pt
+Epoch: 5.6 	 train loss: 0.1680, lr=0.000181
+Epoch: 5 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/5/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_5_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_5_7.pt
+Epoch: 5.7 	 train loss: 0.1712, lr=0.000181
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 5 	 step: 0.0000 
+Epoch: 5 	 test_loss: 0.2354 and 15.12 fps
+Len train loader =  4
+Epoch: 6 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/6/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_6_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_6_0.pt
+Epoch: 6.0 	 train loss: 0.1664, lr=0.000173
+Epoch: 6 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/6/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_6_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_6_1.pt
+Epoch: 6.1 	 train loss: 0.1656, lr=0.000173
+Epoch: 6 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/6/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_6_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_6_2.pt
+Epoch: 6.2 	 train loss: 0.1644, lr=0.000173
+Epoch: 6 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/6/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_6_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_6_3.pt
+Epoch: 6.3 	 train loss: 0.1612, lr=0.000173
+Epoch: 6 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/6/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_6_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_6_4.pt
+Epoch: 6.4 	 train loss: 0.1623, lr=0.000173
+Epoch: 6 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/6/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_6_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_6_5.pt
+Epoch: 6.5 	 train loss: 0.1607, lr=0.000173
+Epoch: 6 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/6/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_6_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_6_6.pt
+Epoch: 6.6 	 train loss: 0.1591, lr=0.000173
+Epoch: 6 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/6/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_6_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_6_7.pt
+Epoch: 6.7 	 train loss: 0.1588, lr=0.000173
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 6 	 step: 0.0000 
+Epoch: 6 	 test_loss: 0.2233 and 14.66 fps
+Len train loader =  4
+Epoch: 7 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/7/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_7_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_7_0.pt
+Epoch: 7.0 	 train loss: 0.1557, lr=0.000164
+Epoch: 7 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/7/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_7_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_7_1.pt
+Epoch: 7.1 	 train loss: 0.1546, lr=0.000164
+Epoch: 7 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/7/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_7_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_7_2.pt
+Epoch: 7.2 	 train loss: 0.1534, lr=0.000164
+Epoch: 7 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/7/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_7_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_7_3.pt
+Epoch: 7.3 	 train loss: 0.1541, lr=0.000164
+Epoch: 7 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/7/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_7_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_7_4.pt
+Epoch: 7.4 	 train loss: 0.1537, lr=0.000164
+Epoch: 7 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/7/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_7_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_7_5.pt
+Epoch: 7.5 	 train loss: 0.1547, lr=0.000164
+Epoch: 7 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/7/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_7_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_7_6.pt
+Epoch: 7.6 	 train loss: 0.1493, lr=0.000164
+Epoch: 7 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/7/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_7_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_7_7.pt
+Epoch: 7.7 	 train loss: 0.1497, lr=0.000164
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 7 	 step: 0.0000 
+Epoch: 7 	 test_loss: 0.2271 and 15.71 fps
+Len train loader =  4
+Epoch: 8 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/8/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_8_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_8_0.pt
+Epoch: 8.0 	 train loss: 0.1481, lr=0.000154
+Epoch: 8 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/8/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_8_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_8_1.pt
+Epoch: 8.1 	 train loss: 0.1479, lr=0.000154
+Epoch: 8 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/8/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_8_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_8_2.pt
+Epoch: 8.2 	 train loss: 0.1464, lr=0.000154
+Epoch: 8 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/8/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_8_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_8_3.pt
+Epoch: 8.3 	 train loss: 0.1468, lr=0.000154
+Epoch: 8 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/8/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_8_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_8_4.pt
+Epoch: 8.4 	 train loss: 0.1459, lr=0.000154
+Epoch: 8 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/8/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_8_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_8_5.pt
+Epoch: 8.5 	 train loss: 0.1454, lr=0.000154
+Epoch: 8 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/8/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_8_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_8_6.pt
+Epoch: 8.6 	 train loss: 0.1959, lr=0.000154
+Epoch: 8 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/8/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_8_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_8_7.pt
+Epoch: 8.7 	 train loss: 0.1462, lr=0.000154
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 8 	 step: 0.0000 
+Epoch: 8 	 test_loss: 0.1920 and 12.81 fps
+Len train loader =  4
+Epoch: 9 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/9/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_9_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_9_0.pt
+Epoch: 9.0 	 train loss: 0.1425, lr=0.000143
+Epoch: 9 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/9/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_9_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_9_1.pt
+Epoch: 9.1 	 train loss: 0.1416, lr=0.000143
+Epoch: 9 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/9/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_9_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_9_2.pt
+Epoch: 9.2 	 train loss: 0.1419, lr=0.000143
+Epoch: 9 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/9/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_9_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_9_3.pt
+Epoch: 9.3 	 train loss: 0.1402, lr=0.000143
+Epoch: 9 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/9/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_9_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_9_4.pt
+Epoch: 9.4 	 train loss: 0.1413, lr=0.000143
+Epoch: 9 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/9/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_9_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_9_5.pt
+Epoch: 9.5 	 train loss: 0.1387, lr=0.000143
+Epoch: 9 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/9/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_9_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_9_6.pt
+Epoch: 9.6 	 train loss: 0.1394, lr=0.000143
+Epoch: 9 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/9/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_9_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_9_7.pt
+Epoch: 9.7 	 train loss: 0.1384, lr=0.000143
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 9 	 step: 0.0000 
+Epoch: 9 	 test_loss: 0.1920 and 13.23 fps
+Len train loader =  4
+Epoch: 10 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/10/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_10_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_10_0.pt
+Epoch: 10.0 	 train loss: 0.1366, lr=0.000131
+Epoch: 10 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/10/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_10_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_10_1.pt
+Epoch: 10.1 	 train loss: 0.1371, lr=0.000131
+Epoch: 10 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/10/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_10_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_10_2.pt
+Epoch: 10.2 	 train loss: 0.1363, lr=0.000131
+Epoch: 10 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/10/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_10_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_10_3.pt
+Epoch: 10.3 	 train loss: 0.1351, lr=0.000131
+Epoch: 10 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/10/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_10_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_10_4.pt
+Epoch: 10.4 	 train loss: 0.1356, lr=0.000131
+Epoch: 10 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/10/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_10_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_10_5.pt
+Epoch: 10.5 	 train loss: 0.1343, lr=0.000131
+Epoch: 10 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/10/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_10_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_10_6.pt
+Epoch: 10.6 	 train loss: 0.1353, lr=0.000131
+Epoch: 10 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/10/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_10_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_10_7.pt
+Epoch: 10.7 	 train loss: 0.1348, lr=0.000131
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 10 	 step: 0.0000 
+Epoch: 10 	 test_loss: 0.1979 and 12.47 fps
+Len train loader =  4
+Epoch: 11 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/11/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_11_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_11_0.pt
+Epoch: 11.0 	 train loss: 0.1315, lr=0.000119
+Epoch: 11 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/11/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_11_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_11_1.pt
+Epoch: 11.1 	 train loss: 0.1328, lr=0.000119
+Epoch: 11 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/11/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_11_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_11_2.pt
+Epoch: 11.2 	 train loss: 0.1313, lr=0.000119
+Epoch: 11 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/11/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_11_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_11_3.pt
+Epoch: 11.3 	 train loss: 0.1300, lr=0.000119
+Epoch: 11 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/11/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_11_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_11_4.pt
+Epoch: 11.4 	 train loss: 0.1319, lr=0.000119
+Epoch: 11 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/11/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_11_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_11_5.pt
+Epoch: 11.5 	 train loss: 0.1312, lr=0.000119
+Epoch: 11 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/11/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_11_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_11_6.pt
+Epoch: 11.6 	 train loss: 0.1297, lr=0.000119
+Epoch: 11 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/11/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_11_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_11_7.pt
+Epoch: 11.7 	 train loss: 0.1299, lr=0.000119
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 11 	 step: 0.0000 
+Epoch: 11 	 test_loss: 0.1793 and 15.22 fps
+Len train loader =  4
+Epoch: 12 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/12/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_12_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_12_0.pt
+Epoch: 12.0 	 train loss: 0.1275, lr=0.000106
+Epoch: 12 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/12/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_12_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_12_1.pt
+Epoch: 12.1 	 train loss: 0.1281, lr=0.000106
+Epoch: 12 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/12/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_12_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_12_2.pt
+Epoch: 12.2 	 train loss: 0.1276, lr=0.000106
+Epoch: 12 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/12/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_12_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_12_3.pt
+Epoch: 12.3 	 train loss: 0.1275, lr=0.000106
+Epoch: 12 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/12/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_12_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_12_4.pt
+Epoch: 12.4 	 train loss: 0.1264, lr=0.000106
+Epoch: 12 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/12/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_12_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_12_5.pt
+Epoch: 12.5 	 train loss: 0.1283, lr=0.000106
+Epoch: 12 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/12/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_12_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_12_6.pt
+Epoch: 12.6 	 train loss: 0.1267, lr=0.000106
+Epoch: 12 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/12/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_12_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_12_7.pt
+Epoch: 12.7 	 train loss: 0.1265, lr=0.000106
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 12 	 step: 0.0000 
+Epoch: 12 	 test_loss: 0.1848 and 12.45 fps
+Len train loader =  4
+Epoch: 13 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/13/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_13_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_13_0.pt
+Epoch: 13.0 	 train loss: 0.1242, lr=0.000094
+Epoch: 13 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/13/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_13_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_13_1.pt
+Epoch: 13.1 	 train loss: 0.1247, lr=0.000094
+Epoch: 13 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/13/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_13_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_13_2.pt
+Epoch: 13.2 	 train loss: 0.1243, lr=0.000094
+Epoch: 13 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/13/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_13_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_13_3.pt
+Epoch: 13.3 	 train loss: 0.1239, lr=0.000094
+Epoch: 13 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/13/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_13_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_13_4.pt
+Epoch: 13.4 	 train loss: 0.1249, lr=0.000094
+Epoch: 13 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/13/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_13_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_13_5.pt
+Epoch: 13.5 	 train loss: 0.1240, lr=0.000094
+Epoch: 13 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/13/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_13_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_13_6.pt
+Epoch: 13.6 	 train loss: 0.1232, lr=0.000094
+Epoch: 13 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/13/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_13_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_13_7.pt
+Epoch: 13.7 	 train loss: 0.1236, lr=0.000094
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 13 	 step: 0.0000 
+Epoch: 13 	 test_loss: 0.1677 and 12.55 fps
+Len train loader =  4
+Epoch: 14 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/14/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_14_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_14_0.pt
+Epoch: 14.0 	 train loss: 0.1219, lr=0.000081
+Epoch: 14 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/14/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_14_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_14_1.pt
+Epoch: 14.1 	 train loss: 0.1213, lr=0.000081
+Epoch: 14 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/14/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_14_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_14_2.pt
+Epoch: 14.2 	 train loss: 0.1215, lr=0.000081
+Epoch: 14 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/14/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_14_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_14_3.pt
+Epoch: 14.3 	 train loss: 0.1217, lr=0.000081
+Epoch: 14 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/14/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_14_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_14_4.pt
+Epoch: 14.4 	 train loss: 0.1213, lr=0.000081
+Epoch: 14 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/14/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_14_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_14_5.pt
+Epoch: 14.5 	 train loss: 0.1199, lr=0.000081
+Epoch: 14 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/14/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_14_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_14_6.pt
+Epoch: 14.6 	 train loss: 0.1204, lr=0.000081
+Epoch: 14 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/14/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_14_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_14_7.pt
+Epoch: 14.7 	 train loss: 0.1208, lr=0.000081
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 14 	 step: 0.0000 
+Epoch: 14 	 test_loss: 0.2120 and 15.37 fps
+Len train loader =  4
+Epoch: 15 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/15/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_15_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_15_0.pt
+Epoch: 15.0 	 train loss: 0.1193, lr=0.000069
+Epoch: 15 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/15/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_15_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_15_1.pt
+Epoch: 15.1 	 train loss: 0.1190, lr=0.000069
+Epoch: 15 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/15/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_15_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_15_2.pt
+Epoch: 15.2 	 train loss: 0.1179, lr=0.000069
+Epoch: 15 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/15/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_15_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_15_3.pt
+Epoch: 15.3 	 train loss: 0.1186, lr=0.000069
+Epoch: 15 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/15/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_15_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_15_4.pt
+Epoch: 15.4 	 train loss: 0.1190, lr=0.000069
+Epoch: 15 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/15/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_15_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_15_5.pt
+Epoch: 15.5 	 train loss: 0.1178, lr=0.000069
+Epoch: 15 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/15/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_15_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_15_6.pt
+Epoch: 15.6 	 train loss: 0.1179, lr=0.000069
+Epoch: 15 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/15/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_15_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_15_7.pt
+Epoch: 15.7 	 train loss: 0.1182, lr=0.000069
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 15 	 step: 0.0000 
+Epoch: 15 	 test_loss: 0.1651 and 12.63 fps
+Len train loader =  4
+Epoch: 16 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/16/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_16_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_16_0.pt
+Epoch: 16.0 	 train loss: 0.1164, lr=0.000058
+Epoch: 16 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/16/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_16_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_16_1.pt
+Epoch: 16.1 	 train loss: 0.1166, lr=0.000058
+Epoch: 16 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/16/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_16_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_16_2.pt
+Epoch: 16.2 	 train loss: 0.1166, lr=0.000058
+Epoch: 16 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/16/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_16_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_16_3.pt
+Epoch: 16.3 	 train loss: 0.1161, lr=0.000058
+Epoch: 16 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/16/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_16_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_16_4.pt
+Epoch: 16.4 	 train loss: 0.1159, lr=0.000058
+Epoch: 16 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/16/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_16_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_16_5.pt
+Epoch: 16.5 	 train loss: 0.1159, lr=0.000058
+Epoch: 16 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/16/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_16_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_16_6.pt
+Epoch: 16.6 	 train loss: 0.1153, lr=0.000058
+Epoch: 16 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/16/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_16_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_16_7.pt
+Epoch: 16.7 	 train loss: 0.1161, lr=0.000058
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 16 	 step: 0.0000 
+Epoch: 16 	 test_loss: 0.1808 and 12.43 fps
+Len train loader =  4
+Epoch: 17 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/17/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_17_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_17_0.pt
+Epoch: 17.0 	 train loss: 0.1150, lr=0.000047
+Epoch: 17 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/17/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_17_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_17_1.pt
+Epoch: 17.1 	 train loss: 0.1146, lr=0.000047
+Epoch: 17 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/17/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_17_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_17_2.pt
+Epoch: 17.2 	 train loss: 0.1144, lr=0.000047
+Epoch: 17 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/17/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_17_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_17_3.pt
+Epoch: 17.3 	 train loss: 0.1138, lr=0.000047
+Epoch: 17 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/17/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_17_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_17_4.pt
+Epoch: 17.4 	 train loss: 0.1137, lr=0.000047
+Epoch: 17 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/17/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_17_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_17_5.pt
+Epoch: 17.5 	 train loss: 0.1139, lr=0.000047
+Epoch: 17 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/17/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_17_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_17_6.pt
+Epoch: 17.6 	 train loss: 0.1140, lr=0.000047
+Epoch: 17 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/17/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_17_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_17_7.pt
+Epoch: 17.7 	 train loss: 0.1134, lr=0.000047
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 17 	 step: 0.0000 
+Epoch: 17 	 test_loss: 0.1539 and 12.33 fps
+Len train loader =  4
+Epoch: 18 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/18/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_18_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_18_0.pt
+Epoch: 18.0 	 train loss: 0.1131, lr=0.000036
+Epoch: 18 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/18/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_18_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_18_1.pt
+Epoch: 18.1 	 train loss: 0.1125, lr=0.000036
+Epoch: 18 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/18/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_18_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_18_2.pt
+Epoch: 18.2 	 train loss: 0.1128, lr=0.000036
+Epoch: 18 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/18/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_18_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_18_3.pt
+Epoch: 18.3 	 train loss: 0.1126, lr=0.000036
+Epoch: 18 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/18/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_18_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_18_4.pt
+Epoch: 18.4 	 train loss: 0.1123, lr=0.000036
+Epoch: 18 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/18/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_18_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_18_5.pt
+Epoch: 18.5 	 train loss: 0.1120, lr=0.000036
+Epoch: 18 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/18/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_18_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_18_6.pt
+Epoch: 18.6 	 train loss: 0.1119, lr=0.000036
+Epoch: 18 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/18/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_18_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_18_7.pt
+Epoch: 18.7 	 train loss: 0.1125, lr=0.000036
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 18 	 step: 0.0000 
+Epoch: 18 	 test_loss: 0.1555 and 14.81 fps
+Len train loader =  4
+Epoch: 19 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/19/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_19_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_19_0.pt
+Epoch: 19.0 	 train loss: 0.1113, lr=0.000027
+Epoch: 19 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/19/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_19_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_19_1.pt
+Epoch: 19.1 	 train loss: 0.1115, lr=0.000027
+Epoch: 19 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/19/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_19_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_19_2.pt
+Epoch: 19.2 	 train loss: 0.1112, lr=0.000027
+Epoch: 19 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/19/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_19_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_19_3.pt
+Epoch: 19.3 	 train loss: 0.1111, lr=0.000027
+Epoch: 19 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/19/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_19_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_19_4.pt
+Epoch: 19.4 	 train loss: 0.1110, lr=0.000027
+Epoch: 19 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/19/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_19_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_19_5.pt
+Epoch: 19.5 	 train loss: 0.1110, lr=0.000027
+Epoch: 19 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/19/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_19_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_19_6.pt
+Epoch: 19.6 	 train loss: 0.1107, lr=0.000027
+Epoch: 19 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/19/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_19_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_19_7.pt
+Epoch: 19.7 	 train loss: 0.1109, lr=0.000027
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 19 	 step: 0.0000 
+Epoch: 19 	 test_loss: 0.1396 and 14.81 fps
+Len train loader =  4
+Epoch: 20 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/20/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_20_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_20_0.pt
+Epoch: 20.0 	 train loss: 0.1104, lr=0.000019
+Epoch: 20 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/20/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_20_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_20_1.pt
+Epoch: 20.1 	 train loss: 0.1104, lr=0.000019
+Epoch: 20 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/20/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_20_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_20_2.pt
+Epoch: 20.2 	 train loss: 0.1101, lr=0.000019
+Epoch: 20 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/20/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_20_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_20_3.pt
+Epoch: 20.3 	 train loss: 0.1103, lr=0.000019
+Epoch: 20 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/20/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_20_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_20_4.pt
+Epoch: 20.4 	 train loss: 0.1101, lr=0.000019
+Epoch: 20 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/20/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_20_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_20_5.pt
+Epoch: 20.5 	 train loss: 0.1099, lr=0.000019
+Epoch: 20 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/20/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_20_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_20_6.pt
+Epoch: 20.6 	 train loss: 0.1096, lr=0.000019
+Epoch: 20 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/20/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_20_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_20_7.pt
+Epoch: 20.7 	 train loss: 0.1097, lr=0.000019
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 20 	 step: 0.0000 
+Epoch: 20 	 test_loss: 0.1458 and 12.67 fps
+Len train loader =  4
+Epoch: 21 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/21/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_21_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_21_0.pt
+Epoch: 21.0 	 train loss: 0.1092, lr=0.000013
+Epoch: 21 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/21/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_21_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_21_1.pt
+Epoch: 21.1 	 train loss: 0.1092, lr=0.000013
+Epoch: 21 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/21/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_21_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_21_2.pt
+Epoch: 21.2 	 train loss: 0.1089, lr=0.000013
+Epoch: 21 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/21/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_21_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_21_3.pt
+Epoch: 21.3 	 train loss: 0.1091, lr=0.000013
+Epoch: 21 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/21/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_21_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_21_4.pt
+Epoch: 21.4 	 train loss: 0.1093, lr=0.000013
+Epoch: 21 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/21/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_21_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_21_5.pt
+Epoch: 21.5 	 train loss: 0.1093, lr=0.000013
+Epoch: 21 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/21/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_21_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_21_6.pt
+Epoch: 21.6 	 train loss: 0.1093, lr=0.000013
+Epoch: 21 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/21/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_21_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_21_7.pt
+Epoch: 21.7 	 train loss: 0.1092, lr=0.000013
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 21 	 step: 0.0000 
+Epoch: 21 	 test_loss: 0.1332 and 15.15 fps
+Len train loader =  4
+Epoch: 22 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/22/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_22_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_22_0.pt
+Epoch: 22.0 	 train loss: 0.1087, lr=0.000007
+Epoch: 22 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/22/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_22_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_22_1.pt
+Epoch: 22.1 	 train loss: 0.1085, lr=0.000007
+Epoch: 22 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/22/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_22_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_22_2.pt
+Epoch: 22.2 	 train loss: 0.1083, lr=0.000007
+Epoch: 22 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/22/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_22_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_22_3.pt
+Epoch: 22.3 	 train loss: 0.1085, lr=0.000007
+Epoch: 22 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/22/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_22_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_22_4.pt
+Epoch: 22.4 	 train loss: 0.1087, lr=0.000007
+Epoch: 22 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/22/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_22_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_22_5.pt
+Epoch: 22.5 	 train loss: 0.1084, lr=0.000007
+Epoch: 22 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/22/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_22_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_22_6.pt
+Epoch: 22.6 	 train loss: 0.1091, lr=0.000007
+Epoch: 22 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/22/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_22_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_22_7.pt
+Epoch: 22.7 	 train loss: 0.1084, lr=0.000007
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 22 	 step: 0.0000 
+Epoch: 22 	 test_loss: 0.1276 and 12.34 fps
+Len train loader =  4
+Epoch: 23 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/23/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_23_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_23_0.pt
+Epoch: 23.0 	 train loss: 0.1084, lr=0.000003
+Epoch: 23 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/23/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_23_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_23_1.pt
+Epoch: 23.1 	 train loss: 0.1082, lr=0.000003
+Epoch: 23 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/23/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_23_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_23_2.pt
+Epoch: 23.2 	 train loss: 0.1083, lr=0.000003
+Epoch: 23 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/23/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_23_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_23_3.pt
+Epoch: 23.3 	 train loss: 0.1083, lr=0.000003
+Epoch: 23 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/23/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_23_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_23_4.pt
+Epoch: 23.4 	 train loss: 0.1081, lr=0.000003
+Epoch: 23 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/23/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_23_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_23_5.pt
+Epoch: 23.5 	 train loss: 0.1085, lr=0.000003
+Epoch: 23 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/23/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_23_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_23_6.pt
+Epoch: 23.6 	 train loss: 0.1083, lr=0.000003
+Epoch: 23 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/23/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_23_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_23_7.pt
+Epoch: 23.7 	 train loss: 0.1082, lr=0.000003
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 23 	 step: 0.0000 
+Epoch: 23 	 test_loss: 0.1242 and 12.80 fps
+Len train loader =  4
+Epoch: 24 	 sub-epoch: 0.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/24/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_24_0.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_24_0.pt
+Epoch: 24.0 	 train loss: 0.1080, lr=0.000001
+Epoch: 24 	 sub-epoch: 1.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/24/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_24_1.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_24_1.pt
+Epoch: 24.1 	 train loss: 0.1079, lr=0.000001
+Epoch: 24 	 sub-epoch: 2.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/24/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_24_2.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_24_2.pt
+Epoch: 24.2 	 train loss: 0.1080, lr=0.000001
+Epoch: 24 	 sub-epoch: 3.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/24/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_24_3.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_24_3.pt
+Epoch: 24.3 	 train loss: 0.1078, lr=0.000001
+Epoch: 24 	 sub-epoch: 4.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/24/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_24_4.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_24_4.pt
+Epoch: 24.4 	 train loss: 0.1079, lr=0.000001
+Epoch: 24 	 sub-epoch: 5.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/24/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_24_5.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_24_5.pt
+Epoch: 24.5 	 train loss: 0.1079, lr=0.000001
+Epoch: 24 	 sub-epoch: 6.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/24/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_24_6.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_24_6.pt
+Epoch: 24.6 	 train loss: 0.1079, lr=0.000001
+Epoch: 24 	 sub-epoch: 7.0000 
+step  % :  0.0  i/I =  0 / 4
+Path :  /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1895_seg/Tumor/24/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_24_7.pt
+Saving weights to TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_24_7.pt
+Epoch: 24.7 	 train loss: 0.1081, lr=0.000001
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 3
+Epoch: 24 	 step: 0.0000 
+Epoch: 24 	 test_loss: 0.1201 and 12.55 fps

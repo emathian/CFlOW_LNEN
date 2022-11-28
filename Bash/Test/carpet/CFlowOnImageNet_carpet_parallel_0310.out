@@ -1,0 +1,23 @@
+========================================================================
+First test parallel epoch 3
+========================================================================
+LR schedule: [12, 18, 22]
+Number of pool layers = 3
+CNF coder: 512
+CNF coder: 1024
+CNF coder: 2048
+img_types   1
+img_types   6
+train/test loader length 280 117
+train/test loader batches 8 4
+Loading weights from /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/carpet_parallel_0310/carpet/3/mvtec_wide_resnet50_2_freia-cflow_pl3_cb8_inp512_run0_carpet_3_0.pt
+Len test_loader   4
+
+Compute loss and scores on test set:
+step  % :  0.0  i/I =  0 / 4
+Epoch: 0 	 step: 0.0000 
+Epoch: 0 	 test_loss: 1.2725 and 6.08 fps
+DET_AUROC: 	 last: 90.33 	 max: 90.33 	 epoch_max: 0
+DET_AUROC  0.9032905296950241
+ SEG_AUROC   0.9184677909536693
+SEG_AUROC: 	 last: 91.85 	 max: 91.85 	 epoch_max: 0

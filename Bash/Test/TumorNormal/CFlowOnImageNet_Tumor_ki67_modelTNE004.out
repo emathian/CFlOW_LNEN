@@ -1,0 +1,30 @@
+===============================================================
+INFER TEST
+===============================================================
+CNF coder: 2048
+CNF coder: 2048
+LR schedule: [12, 18, 22]
+LR schedule: [12, 18, 22]
+Number of pool layers = 3
+Number of pool layers = 3
+CNF coder: 512
+CNF coder: 512
+CNF coder: 1024
+CNF coder: 1024
+LR schedule: [12, 18, 22]LR schedule: [12, 18, 22]LR schedule: [12, 18, 22]
+
+
+Number of pool layers =Number of pool layers =Number of pool layers =  3 
+33
+
+CNF coder:CNF coder:  512512
+
+CNF coder: 512
+CNF coder: 1024
+CNF coder: 1024
+CNF coder: 1024
+CNF coder: 2048
+CNF coder: 2048
+CNF coder: 2048
+CNF coder: 2048
+CNF coder: 2048

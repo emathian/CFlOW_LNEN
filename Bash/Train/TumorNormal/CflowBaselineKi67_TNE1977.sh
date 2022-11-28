@@ -16,4 +16,4 @@ module purge
 export PYTHONUSERBASE=/gpfswork/rech/ohv/ueu39kt/.local_base_timm
 module load pytorch-gpu/py3/1.9.0
 mkdir /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1977_seg
-python /linkhome/rech/genkmw01/ueu39kt/cflow-ad/main_cflow.py --gpu 0 -inp 384 --dataset TumorNormal --class-name Tumor  --root-data-path /gpfsscratch/rech/ohv/ueu39kt/KI67_individual_data_for_segmentation --weights-dir /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1977_seg  --list-file-train TNE1977_train_tiles_list.txt --list-file-test TNE1977_test_tiles_list.txt
+python /linkhome/rech/genkmw01/ueu39kt/cflow-ad/main_cflow.py --gpu 0 -inp 384 --dataset TumorNormal --class-name Tumor  --root-data-path /gpfsscratch/rech/ohv/ueu39kt/KI67_individual_data_for_segmentation --weights-dir /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormalKi67_TNE1977_seg  --list-file-train TNE1977_train_tiles_list.txt --list-file-test TNE1977_test_tiles_list.txt 

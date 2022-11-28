@@ -1,0 +1,45 @@
+LR schedule: [12, 18, 22]
+Number of pool layers = 3
+CNF coder: 512
+CNF coder: 1024
+CNF coder: 2048
+Loading weights from /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormal/Tumor/11/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_11_2.pt
+
+Compute loss and scores on test set:
+os.path.join(c.viz_dir, c.class_name, res_tab_name)   /gpfsscratch/rech/ohv/ueu39kt/CFLOW/viz/TumorNormal_Inf_CLB_cohort2_TNE04-5/Tumor/results_table.csv
+
+ test_meta_epoch_lnen - step  % :  0.0  i/I =  0 / 11130
+Epoch: 0 	 step: 0.0000 
+
+ test_meta_epoch_lnen - step  % :  8.984725965858042  i/I =  1000 / 11130
+Epoch: 0 	 step: 1000.0000 
+
+ test_meta_epoch_lnen - step  % :  17.969451931716083  i/I =  2000 / 11130
+Epoch: 0 	 step: 2000.0000 
+
+ test_meta_epoch_lnen - step  % :  26.954177897574123  i/I =  3000 / 11130
+Epoch: 0 	 step: 3000.0000 
+
+ test_meta_epoch_lnen - step  % :  35.93890386343217  i/I =  4000 / 11130
+Epoch: 0 	 step: 4000.0000 
+
+ test_meta_epoch_lnen - step  % :  44.923629829290206  i/I =  5000 / 11130
+Epoch: 0 	 step: 5000.0000 
+
+ test_meta_epoch_lnen - step  % :  53.908355795148246  i/I =  6000 / 11130
+Epoch: 0 	 step: 6000.0000 
+
+ test_meta_epoch_lnen - step  % :  62.893081761006286  i/I =  7000 / 11130
+Epoch: 0 	 step: 7000.0000 
+
+ test_meta_epoch_lnen - step  % :  71.87780772686433  i/I =  8000 / 11130
+Epoch: 0 	 step: 8000.0000 
+
+ test_meta_epoch_lnen - step  % :  80.86253369272237  i/I =  9000 / 11130
+Epoch: 0 	 step: 9000.0000 
+
+ test_meta_epoch_lnen - step  % :  89.84725965858041  i/I =  10000 / 11130
+Epoch: 0 	 step: 10000.0000 
+
+ test_meta_epoch_lnen - step  % :  98.83198562443846  i/I =  11000 / 11130
+Epoch: 0 	 step: 11000.0000 

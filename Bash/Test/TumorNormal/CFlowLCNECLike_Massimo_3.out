@@ -1,0 +1,33 @@
+LR schedule: [12, 18, 22]
+Number of pool layers = 3
+CNF coder: 512
+CNF coder: 1024
+CNF coder: 2048
+Loading weights from /gpfsscratch/rech/ohv/ueu39kt/CFLOW/weights/TumorNormal/Tumor/11/TumorNormal_wide_resnet50_2_freia-cflow_pl3_cb8_inp384_run0_Tumor_11_2.pt
+
+Compute loss and scores on test set:
+os.path.join(c.viz_dir, c.class_name, res_tab_name)   /gpfsscratch/rech/ohv/ueu39kt/CFLOW/viz/TumorNormal_Inf_LCNEC_Massimo_3/Tumor/results_table.csv
+
+ test_meta_epoch_lnen - step  % :  0.0  i/I =  0 / 7611
+Epoch: 0 	 step: 0.0000 
+
+ test_meta_epoch_lnen - step  % :  13.13887793982394  i/I =  1000 / 7611
+Epoch: 0 	 step: 1000.0000 
+
+ test_meta_epoch_lnen - step  % :  26.27775587964788  i/I =  2000 / 7611
+Epoch: 0 	 step: 2000.0000 
+
+ test_meta_epoch_lnen - step  % :  39.41663381947182  i/I =  3000 / 7611
+Epoch: 0 	 step: 3000.0000 
+
+ test_meta_epoch_lnen - step  % :  52.55551175929576  i/I =  4000 / 7611
+Epoch: 0 	 step: 4000.0000 
+
+ test_meta_epoch_lnen - step  % :  65.6943896991197  i/I =  5000 / 7611
+Epoch: 0 	 step: 5000.0000 
+
+ test_meta_epoch_lnen - step  % :  78.83326763894364  i/I =  6000 / 7611
+Epoch: 0 	 step: 6000.0000 
+
+ test_meta_epoch_lnen - step  % :  91.97214557876757  i/I =  7000 / 7611
+Epoch: 0 	 step: 7000.0000 

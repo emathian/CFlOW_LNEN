@@ -3,7 +3,7 @@
 #SBATCH --qos=qos_gpu-t4
 #SBATCH --nodes=1
 ##SBATCH -C v100-32g
-#SBATCH --partition=gpu_p2
+#SBATCH --partition=gpu_p13
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=3
 #SBATCH --gres=gpu:1 # 4
