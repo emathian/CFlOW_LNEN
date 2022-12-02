@@ -87,9 +87,13 @@ def load_encoder_arch(c, L):
             encoder = resnext50_32x4d(pretrained=True, progress=True)
         elif c.enc_arch == 'wide_resnet50_2':
             encoder = wide_resnet50_2(pretrained=False, progress=False) 
-        
             encoder.load_state_dict(torch.load(
-               '/gpfsscratch/rech/ohv/ueu39kt/CFLOW/features_extractor/wide_resnet50_2-95faca4d.pth'), strict=False)
+               '/gpfsscratch/rech/ohv/ueu39kt/CFLOW/features_extractor/wide_resnet50_2-95faca4d.pth'), strict=False)            
+        elif c.enc_arch == 'wide_resnet50_barlowtwin_LNEN':
+            print('LOAD ... wide_resnet50_barlowtwin_LNEN ')
+            encoder = wide_resnet50_2(pretrained=False, progress=False) 
+            encoder.load_state_dict(torch.load(        '/gpfsscratch/rech/uli/ueu39kt/barlowtwins/train_tiles_harsh_dataaug_z128/wide_resnet50_90000.pth', map_location='cpu'), strict=False)
+            
         else:
             raise NotImplementedError('{} is not supported architecture!'.format(c.enc_arch))
         #

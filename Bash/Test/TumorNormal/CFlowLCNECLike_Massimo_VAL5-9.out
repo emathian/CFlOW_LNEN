@@ -1,5 +1,0 @@
-LR schedule: [12, 18, 22]
-Number of pool layers = 3
-CNF coder: 512
-CNF coder: 1024
-CNF coder: 2048
