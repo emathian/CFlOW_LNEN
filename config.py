@@ -6,12 +6,12 @@ __all__ = ['get_args']
 
 def get_args():
     parser = argparse.ArgumentParser(description='CFLOW-AD')
-    parser.add_argument('--dataset', default='mvtec', type=str, metavar='D',
-                        help='dataset name: mvtec/stc (default: mvtec)')
+    parser.add_argument('--dataset', default='TCAC', type=str, metavar='D',
+                        help='dataset name: TCAC ')
     parser.add_argument('--checkpoint', default='', type=str, metavar='D',
                         help='file with saved checkpoint')
     parser.add_argument('-cl', '--class-name', default='none', type=str, metavar='C',
-                        help='class name for MVTec/STC (default: none)')
+                        help='class name for LNEN  (default: none)')
     parser.add_argument('-lfr', '--list-file-train', default='TrainTumorNormal.txt', type=str, metavar='C',
                         help='List of files for LNEN dataset')
     parser.add_argument('-lft', '--list-file-test', default='TestTumorNormal.txt', type=str, metavar='C',
@@ -37,7 +37,7 @@ def get_args():
                         help='number of layers used in NF model (default: 8)')
     parser.add_argument('-run', '--run-name', default=0, type=int, metavar='C',
                         help='name of the run (default: 0)')
-    parser.add_argument('-inp', '--input-size', default=256, type=int, metavar='C',
+    parser.add_argument('-inp', '--input-size', default=384, type=int, metavar='C',
                         help='image resize dimensions (default: 256)')
     parser.add_argument("--action-type", default='norm-train', type=str, metavar='T',
                         help='norm-train/norm-test (default: norm-train)')

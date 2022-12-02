@@ -44,13 +44,8 @@ def main(c):
     c.condition_vec = 128
     c.dropout = 0.0  # dropout in s-t-networks
     # dataloader parameters
-    if c.dataset == 'mvtec':
-        c.data_path = '/gpfsscratch/rech/uli/ueu39kt/mvtec'
-    elif c.dataset == 'stc':
-        c.data_path = './data/STC/shanghaitech'
-    elif c.dataset == 'video':
-        c.data_path = c.video_path
-    elif  c.dataset == 'TumorNormal':
+
+    if  c.dataset == 'TumorNormal':
         c.data_path =  c.root_data_path
     elif  c.dataset == 'TCAC':
         c.data_path =  c.root_data_path
