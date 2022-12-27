@@ -1,13 +1,13 @@
 #!/bin/bash
 #SBATCH --job-name=CFlowTCAC
-#SBATCH --qos=qos_gpu-t4
+#SBATCH --qos=qos_gpu-t3
 #SBATCH --nodes=1
-#SBATCH --partition=gpu_p2
+#SBATCH --partition=gpu_p13
 #SBATCH --ntasks-per-node=4
 #SBATCH --cpus-per-task=3
 #SBATCH --gres=gpu:4 # 4
 # nombre de taches MPI par noeud
-#SBATCH --time=100:00:00   # temps d execution maximum demande (HH:MM:SS)
+#SBATCH --time=15:00:00   # temps d execution maximum demande (HH:MM:SS)
 #SBATCH --output=CFlowOnImageNet_TCAC_segmented.out          # nom du fichier de sortie
 #SBATCH --error=CFlowOnImageNet_TCAC_segmented.error     
 #SBATCH --account ohv@v100

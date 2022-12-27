@@ -1,1 +1,1 @@
-from .loader import MVTecDataset, StcDataset, TumorNormalDataset, TCACDataset
+from .loader import  TumorNormalDataset, TCACDataset
